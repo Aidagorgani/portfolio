@@ -1,0 +1,236 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  background-color: #FBF4EC;
+  font-family: "Open Sans"
+}
+
+h1 {
+  font-size: 3rem;
+  line-height: 4.5rem;
+  font-weight: 600;
+  font-family: "Montserrat";
+}
+
+h2 {
+font-size: 2rem;
+font-family: "Montserrat";
+font-weight: 500;
+}
+
+.container {
+  background-color: white;
+  display: grid;
+  grid-template-columns: 1fr;
+  /* grid-gap: 1rem; */
+  grid-auto-rows: minmax(20px, auto);
+  grid-template-areas:
+  "hero"
+  "project1"
+  "project2"
+  "approach"
+  "footer";
+}
+
+.hero {
+  background-color:#FBF4EC;
+  color: #3F3E87;
+  grid-area: hero;
+}
+
+.project1 {
+  background-color: #D7908D;
+  grid-area: project1;
+  display: grid;
+  grid-template-rows: 1fr auto;
+  grid-template-areas:
+  "project1-image"
+  "project1-info";
+}
+
+.project2{
+  background-color: #C1BFBF;
+  grid-area: project2;
+  display: grid;
+  grid-template-rows: 1fr auto;
+  grid-template-areas:
+  "project2-image"
+  "project2-info";
+}
+
+.project1-image {
+  grid-area: project1-image;
+  width:100%;
+  margin:5% 0;
+}
+
+.project1-info {
+  grid-area: project1-info;
+}
+
+.project2-image {
+  grid-area: project2-image;
+  max-width: 330px;
+  margin: 1% auto;
+}
+
+.project2-info {
+  grid-area: project2-info;
+}
+
+.approach{
+  background-color: #62AAB1;
+  grid-area: approach;
+}
+
+.footer{
+  background-color: #636267;
+  grid-area: footer;
+  display: block;
+  height: 80px;
+}
+
+
+@media screen and (min-width:768px) {
+  .container{
+    background-color: red;
+    grid-template-columns: 6fr 6fr;
+    grid-template-areas:
+    "hero project1"
+    "hero project2"
+    "hero approach"
+    "hero footer";
+  }
+  .hero{
+    position: fixed;
+    width: 50%;
+    height:100%;
+  }
+  .main-title, .about {
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+  .project1 {
+    grid-template-rows: 1fr auto;
+    grid-template-areas:
+    "project1-image"
+    "project1-info";
+  }
+
+  .project2{
+    grid-template-rows: 1fr auto;
+    grid-template-areas:
+    "project2-image"
+    "project2-info";
+  }
+
+}
+
+@media screen and (min-width:1025px) {
+  .container{
+    background-color: yellow;
+    grid-template-columns: 3fr 9fr;
+    grid-template-areas:
+    "hero project1"
+    "hero project2"
+    "hero approach"
+    "hero footer";
+  }
+  .hero {
+    position: fixed;
+    width: 25%;
+    height:100%;
+  }
+  .main-title, .about {
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+  .project1 {
+    grid-template-columns: 2fr 2fr;
+    grid-template-areas:
+    "project1-info project1-image";
+  }
+
+  .project2 {
+    grid-template-columns: 2fr 2fr;
+    grid-template-areas:
+    "project2-image project2-info";
+  }
+}
+
+.flex-container {
+  display: flex;
+  justify-content:space-around;
+  flex-direction: row;
+  align-items: center;
+  height: 8rem;
+  font-size: 2rem;
+  font-family: "Montserrat";
+  font-weight: 600;
+  /* padding: 1rem; */
+  text-align: center;
+}
+
+li {
+  align-items: center;
+}
+
+.logo {
+  width:60px;
+}
+
+.one, .two, .three {
+  flex-grow:1;
+}
+
+p {
+  font-size: 1.8rem;
+  line-height: 3rem;
+  font-family: "Open Sans";
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.main-title {
+  margin-top: 8rem;
+  margin-bottom: 2rem;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+/* .logo1, .logo2, .logo3, .logo4{
+  width:25px;
+} */
+
+/* .flex-icons {
+  width: 45%;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  margin-left: 8%;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.linkedin, .instagram, .pinterest, .github {
+  flex-grow: 1;
+} */
+
+.button1 {
+  height: 50px;
+}
+
+.CTA{
+  margin-left: 10%;
+  margin-bottom: 2rem;
+}
+
+a:link {
+  text-decoration: none;
+}

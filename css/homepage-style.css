@@ -8,12 +8,20 @@ html {
 
 body {
   background-color: #FBF4EC;
+  font-family: "Open Sans"
 }
 
 h1 {
   font-size: 3rem;
-  line-height: 4rem;
-  font-weight: 400;
+  line-height: 4.5rem;
+  font-weight: 600;
+  font-family: "Montserrat";
+}
+
+h2 {
+font-size: 2rem;
+font-family: "Montserrat";
+font-weight: 500;
 }
 
 .container {
@@ -21,7 +29,7 @@ h1 {
   display: grid;
   grid-template-columns: 1fr;
   /* grid-gap: 1rem; */
-  grid-auto-rows: minmax(400px, auto);
+  grid-auto-rows: minmax(20px, auto);
   grid-template-areas:
   "hero"
   "project1"
@@ -30,20 +38,50 @@ h1 {
   "footer";
 }
 
-.hero{
+.hero {
   background-color:#FBF4EC;
   color: #3F3E87;
   grid-area: hero;
 }
 
-.project1{
+.project1 {
   background-color: #D7908D;
   grid-area: project1;
+  display: grid;
+  grid-template-rows: 1fr auto;
+  grid-template-areas:
+  "project1-image"
+  "project1-info";
 }
 
 .project2{
   background-color: #C1BFBF;
   grid-area: project2;
+  display: grid;
+  grid-template-rows: 1fr auto;
+  grid-template-areas:
+  "project2-image"
+  "project2-info";
+}
+
+.project1-image {
+  grid-area: project1-image;
+  width:100%;
+  margin:5% 0;
+}
+
+.project1-info {
+  grid-area: project1-info;
+}
+
+.project2-image {
+  grid-area: project2-image;
+  max-width: 330px;
+  margin: 1% auto;
+}
+
+.project2-info {
+  grid-area: project2-info;
 }
 
 .approach{
@@ -54,6 +92,8 @@ h1 {
 .footer{
   background-color: #636267;
   grid-area: footer;
+  display: block;
+  height: 80px;
 }
 
 
@@ -76,6 +116,20 @@ h1 {
     margin-left: 10%;
     margin-right: 10%;
   }
+  .project1 {
+    grid-template-rows: 1fr auto;
+    grid-template-areas:
+    "project1-image"
+    "project1-info";
+  }
+
+  .project2{
+    grid-template-rows: 1fr auto;
+    grid-template-areas:
+    "project2-image"
+    "project2-info";
+  }
+
 }
 
 @media screen and (min-width:1025px) {
@@ -96,6 +150,17 @@ h1 {
   .main-title, .about {
     margin-left: 10%;
     margin-right: 10%;
+  }
+  .project1 {
+    grid-template-columns: 2fr 2fr;
+    grid-template-areas:
+    "project1-info project1-image";
+  }
+
+  .project2 {
+    grid-template-columns: 2fr 2fr;
+    grid-template-areas:
+    "project2-image project2-info";
   }
 }
 
@@ -133,25 +198,39 @@ p {
 }
 
 .main-title {
-  margin-top: 6rem;
+  margin-top: 8rem;
   margin-bottom: 2rem;
   margin-left: 10%;
   margin-right: 10%;
 }
 
-.logo1, .logo2, .logo3, .logo4{
+/* .logo1, .logo2, .logo3, .logo4{
   width:25px;
-}
+} */
 
-.flex-icons {
-  width: 40%;
+/* .flex-icons {
+  width: 45%;
   display: flex;
-  justify-content: space-between;
   align-items: center;
   text-align: center;
-  margin-left: 10%;
+  margin-left: 8%;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
 }
 
-.linkedin, .instagram, .pinterest, .github{
+.linkedin, .instagram, .pinterest, .github {
   flex-grow: 1;
+} */
+
+.button1 {
+  height: 50px;
+}
+
+.CTA{
+  margin-left: 10%;
+  margin-bottom: 2rem;
+}
+
+a:link {
+  text-decoration: none;
 }
