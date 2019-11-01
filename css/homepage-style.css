@@ -8,19 +8,19 @@ html {
 
 body {
   background-color: #FBF4EC;
-  font-family: "Open Sans"
+  font-family: "Montserrat"
 }
 
 h1 {
   font-size: 3rem;
   line-height: 4.5rem;
   font-weight: 600;
-  font-family: "Montserrat";
+  font-family: "Open Sans";
 }
 
 h2 {
 font-size: 2rem;
-font-family: "Montserrat";
+font-family: "Open Sans";
 font-weight: 500;
 }
 
@@ -66,8 +66,8 @@ font-weight: 500;
 
 .project1-image {
   grid-area: project1-image;
-  width:100%;
-  margin:5% 0;
+  width:95%;
+  margin: 10% 2.5%;
 }
 
 .project1-info {
@@ -171,7 +171,6 @@ font-weight: 500;
   align-items: center;
   height: 8rem;
   font-size: 2rem;
-  font-family: "Montserrat";
   font-weight: 600;
   /* padding: 1rem; */
   text-align: center;
@@ -192,7 +191,7 @@ li {
 p {
   font-size: 1.8rem;
   line-height: 3rem;
-  font-family: "Open Sans";
+  font-family: "Montserrat";
   margin-left: 10%;
   margin-right: 10%;
 }
