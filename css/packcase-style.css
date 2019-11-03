@@ -13,16 +13,16 @@ body {
 }
 
 h1 {
-  font-size: 3rem;
+  font-size: 2.4rem;
   line-height: 4.5rem;
   font-weight: 600;
   font-family: "Open Sans";
 }
 
 h2 {
-  font-size: 2rem;
+  font-size: 1.6rem;
   font-family: "open Sans";
-  font-weight: 500;
+  font-weight: 600;
 }
 
 p {
@@ -32,14 +32,23 @@ p {
   line-height: 2.5rem;
 }
 
-.role, .duration, .tools{
+.role, .duration, .tools {
   font-weight: 500;
 }
 
-.overview, .general{
-  margin-left: 10%;
-  margin-right: 10%;
-  margin-bottom: 5%;
+.overview, .general, .question, .waveform, .lamp, .design-challenge, .Research, .research-understanding, .description, .user-flow, .user-story
+, .finding, .pen, .sitemap {
+  margin: 4% 10%;
+}
+
+section {
+  margin-top: 1%;
+  margin-bottom: 1%;
+}
+
+.com-user-flow{
+  background-image: url("../../image/com-user-flow.png");
+   background-size: cover;
 }
 
 
