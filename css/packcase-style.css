@@ -37,7 +37,8 @@ p {
 }
 
 .overview, .general, .question, .waveform, .lamp, .design-challenge, .Research, .research-understanding, .description, .user-flow, .user-story
-, .finding, .pen, .sitemap {
+, .finding, .pen, .sitemap, .branding, .color, .typeface, .marketing, .wireframe, .mockup, .preference, .iteration, .conclusion {
+
   margin: 4% 10%;
 }
 
@@ -60,6 +61,18 @@ section {
   grid-auto-rows: minmax(20px, auto);
   grid-template-areas:
   "hero";
+}
+
+.hand {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.end {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
 
 .flex-container {
@@ -132,6 +145,13 @@ li {
   right: 2rem;
   top: 40%;
   bottom: auto;
+}
+
+.box {
+  display: flex;
+  overflow-y: hidden;
+  width: 100%;
+  margin-bottom: 2rem;
 }
 
 
