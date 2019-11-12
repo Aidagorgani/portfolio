@@ -526,13 +526,16 @@ margin-bottom:2rem;
   margin-top: 2rem;
   margin-bottom:3rem;
   display: block;
-  position:;
+  padding: 5px; // by sina
+  border: 5px; // by sina
 }
 
 .dot:hover, .dot:active {
   background-color: #A95A5D;
   height: 15px;
   width: 15px;
+  padding: 0px; // by sina
+  border: 0px; // by sina
 }
 
 .tooltip {

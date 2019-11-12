@@ -14,14 +14,12 @@ body {
 h1 {
   font-size: 3rem;
   line-height: 4.5rem;
-  font-weight: 600;
   font-family: "Open Sans";
 }
 
 h2 {
-font-size: 2rem;
-font-family: "Open Sans";
-font-weight: 500;
+  font-size: 2rem;
+  font-family: "Open Sans";
 }
 
 .container {
@@ -76,7 +74,7 @@ font-weight: 500;
 
 .project2-image {
   grid-area: project2-image;
-  max-width: 330px;
+  max-width: 250px;
   margin: 1% auto;
 }
 
@@ -84,12 +82,12 @@ font-weight: 500;
   grid-area: project2-info;
 }
 
-.approach{
+.approach {
   background-color: #62AAB1;
   grid-area: approach;
 }
 
-.footer{
+.footer {
   background-color: #636267;
   grid-area: footer;
   display: block;
@@ -171,9 +169,10 @@ font-weight: 500;
   align-items: center;
   height: 8rem;
   font-size: 2rem;
-  font-weight: 600;
+  /* font-weight: 600; */
   /* padding: 1rem; */
   text-align: center;
+  font-family: "Open Sans";
 }
 
 li {
@@ -202,24 +201,6 @@ p {
   margin-left: 10%;
   margin-right: 10%;
 }
-
-/* .logo1, .logo2, .logo3, .logo4{
-  width:25px;
-} */
-
-/* .flex-icons {
-  width: 45%;
-  display: flex;
-  align-items: center;
-  text-align: center;
-  margin-left: 8%;
-  margin-top: 2rem;
-  margin-bottom: 2rem;
-}
-
-.linkedin, .instagram, .pinterest, .github {
-  flex-grow: 1;
-} */
 
 .button1 {
   height: 50px;
