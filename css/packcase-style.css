@@ -163,7 +163,7 @@ li {
 #vertical-nav {
   position: fixed;
   right: 2rem;
-  top: 40%;
+  top: 30%;
   bottom: auto;
 }
 
@@ -406,8 +406,8 @@ margin-bottom:2rem;
  }
 
 .fonts {
-   width: 60%;
-   margin: 2rem 20%;
+   width: 70%;
+   margin: 2rem 15%;
  }
 
 .moodboard {
@@ -479,7 +479,7 @@ margin-bottom:2rem;
    grid-template-columns: 1fr 2fr;
    grid-template-areas:
    "hand3 desk"
-   "hand3 desktop-link";
+   "desktop-link desktop-link";
  }
 
  .hand3 {
@@ -492,7 +492,8 @@ margin-bottom:2rem;
    grid-area: desk;
    width:100%;
    color: white;
-   padding: 5% 10%;
+   padding: 5% 5%;
+   line-height: 2.5rem;
  }
 
  .desktop-img {
@@ -577,6 +578,10 @@ margin-bottom:2rem;
   margin: 1rem 25%;
 }
 
+.desk1 {
+  font-size: 1.2rem;
+}
+
 
 @media screen and (min-width:768px) {
   .hero {
@@ -616,6 +621,878 @@ margin-bottom:2rem;
     border-left: 5px solid #A95A5D;
     padding-left: 2rem;
   }
+
+  .questions {
+    display: grid;
+    grid-template-columns:2fr 2fr;
+    grid-auto-rows: minmax(20px, auto);
+    grid-template-areas:
+    "question1 question2"
+    "question3 waveform"
+    "lamp lamp"
+    "design-challenge design-challenge";
+    margin: 0 5%;
+  }
+
+  .lamp {
+    display: flex;
+    margin-right: 2%;
+    margin-left: 25%;
+  }
+
+  .lamp-p {
+    width: 50%;
+    align-self: center;
+    margin:5% 2%;
+    padding-top: 1%;
+  }
+
+  .lamp-image {
+    width: 10%;
+    align-self: center;
+    margin:1% 2%;
+  }
+
+  .design-challenge {
+    display: flex;
+    margin: 0 0;
+  }
+
+  .design-p {
+    width: 40%;
+    align-self: center;
+    margin: 5% 5%;
+  }
+
+  .design-image {
+    width: 35%;
+    align-self: center;
+    margin:1% 5%;
+  }
+
+  .description {
+    margin: 0 30%;
+  }
+
+  .survey {
+    display: flex;
+    align-self: center;
+    height: 5rem;
+    margin-top: 2rem;
+  }
+
+  .s-image {
+    width:5%;
+    margin: 0 0;
+    align-self: center;
+  }
+
+  .survey-p1 {
+    width:55%;
+    margin:0 0;
+    display: inline-block;
+    padding: 1.2rem 1rem;
+  }
+
+  .survey-p2 {
+    width:29%;
+    margin:0 0;
+    display: inline-block;
+    text-align: right;
+    padding: 1.2rem 1rem;
+  }
+
+  .survey-p3 {
+    width: 20%;
+    margin:0 0;
+    display: inline-block;
+    text-align: right;
+    padding: 1.2rem 1rem;
+  }
+
+  .curves {
+    display: grid;
+    grid-template-columns:1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    column-gap: 2rem;
+    grid-row-gap: 2rem;
+    grid-auto-rows: minmax(20px, auto);
+    grid-template-areas:
+    "curve-1 curve-1 curve-1 curve-1 curve-2 curve-2 curve-2 curve-2"
+    "curve-3 curve-3 curve-3 curve-4 curve-4 curve-4 curve-4 curve-4"
+    "curve-5 curve-5 curve-5 curve-5 curve-5 curve-6 curve-6 curve-6"
+    "curve-7 curve-7 curve-7 curve-7 curve-8 curve-8 curve-8 curve-8";
+    background-color: #FBF4EC;
+  }
+
+  .line-1-image {
+    visibility: hidden;
+  }
+
+  .curve-1 {
+    grid-area: curve-1;
+    background-color: #E5E5E5;
+    padding: 5% 5%;
+  }
+
+  .curve-2 {
+    grid-area: curve-2;
+    background-color: #E5E5E5;
+    padding: 6% 5%;
+  }
+
+  .curve-3 {
+    grid-area: curve-3;
+    background-color: #E5E5E5;
+    padding: 10% 5%;
+  }
+
+  .curve-4 {
+    grid-area: curve-4;
+    background-color: #E5E5E5;
+    padding: 5% 5%;
+  }
+
+  .curve-5 {
+    grid-area: curve-5;
+    background-color: #E5E5E5;
+    padding: 5% 5%;
+  }
+
+  .curve-6 {
+    grid-area: curve-6;
+    background-color: #E5E5E5;
+    padding: 8% 5%;
+  }
+
+  .curve-7 {
+    grid-area: curve-7;
+    background-color: #E5E5E5;
+    padding: 5% 5%;
+  }
+
+  .curve-8 {
+    grid-area: curve-8;
+    background-color: #E5E5E5;
+    padding: 5% 5%;
+  }
+
+  .survey-conclusion{
+    display: flex;
+    margin: 0 5%;
+    align-self: center;
+  }
+
+  .s-conclusion-p {
+    width: 50%;
+    align-self: center;
+    margin: 5% 8%;
+  }
+
+  .s-conclusion-img {
+    width: 5%;
+    align-self: center;
+    margin-left: 10%;
+    margin-right: 0.1%;
+    text-align: center;
+  }
+
+  .persona.icon {
+    display: flex;
+    align-self: center;
+    height: 5rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  .persona-image {
+    width:5%;
+    margin: 0 0;
+    align-self: center;
+  }
+
+  .persona-h {
+    margin: 0 0;
+    width:20%;
+    display: inline-block;
+    padding: 1.2rem 1rem;
+    text-align: left;
+    margin-bottom: 2rem;
+  }
+
+  .persona-des {
+    display: grid;
+    align-self: center;
+    grid-template-columns:1fr 1fr;
+    grid-auto-rows: minmax(20px, auto);
+    grid-template-areas:
+    "persona-p persona-img2";
+    padding: 2.5% 2.5%;
+  }
+
+  .persona-p {
+    grid-area: persona-p;
+    margin: 0 0;
+    width: 90%;
+    padding-left: 2rem;
+    padding-top: 2rem;
+  }
+
+  .persona-img2 {
+    grid-area: persona-img2;
+    margin: 0 0;
+    align-self: center;
+  }
+
+  .img2 {
+    margin: 0 0;
+    align-items: center;
+    padding-left: 22%;
+  }
+
+  .persona-group {
+    display: grid;
+    align-self: center;
+    column-gap: 2rem;
+    grid-template-columns:1fr 1fr;
+    grid-auto-rows: minmax(20px, auto);
+    grid-template-areas:
+    "persona1 persona2";
+  }
+
+  .persona1 {
+    grid-area: persona1;
+  }
+
+  .persona2 {
+    grid-area: persona2;
+    margin-top: 2rem;
+  }
+
+  .comp.icon {
+    display: flex;
+    align-self: center;
+    height: 5rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  .comp-image {
+    width:5%;
+    margin: 0 0;
+    align-self: center;
+  }
+
+  .comp-h2 {
+    margin: 0 0;
+    width:20%;
+    display: inline-block;
+    padding: 1.2rem 1rem;
+    text-align: left;
+    margin-bottom: 2rem;
+  }
+
+  .comp-des {
+    display: grid;
+    align-self: center;
+    grid-template-columns:1fr 1fr;
+    grid-auto-rows: minmax(20px, auto);
+    grid-template-areas:
+    "persona-p persona-img2";
+    padding: 2.5% 2.5%;
+  }
+
+  .comp-p {
+    grid-area: persona-p;
+    margin: 0 0;
+    width: 90%;
+    padding-left: 2rem;
+    padding-top: 2rem;
+  }
+
+  .comp-img2 {
+    grid-area: persona-img2;
+    margin: 0 0;
+    align-self: center;
+  }
+
+  .img2 {
+    margin: 0 0;
+    align-items: center;
+    padding-left: 22%;
+  }
+
+  .img3 {
+    margin: 0 0;
+    align-items: center;
+    margin-left: 30%;
+  }
+
+  .comp-group {
+    display: grid;
+    align-self: center;
+    column-gap: 2rem;
+    grid-template-columns:1fr 1fr 1fr 1fr;
+    grid-auto-rows: minmax(20px, auto);
+    grid-template-areas:
+    "com11 com22 com33 com44";
+  }
+
+  .com11 {
+    grid-area: com11;
+  }
+
+  .com22 {
+    grid-area: com22;
+    margin-top: 2rem;
+  }
+
+  .com33 {
+    grid-area: com33;
+  }
+
+  .com44 {
+    grid-area: com44;
+    margin-top: 2rem;
+  }
+
+  .observe-more {
+    text-align: center;
+  }
+
+  .com-conclusion{
+    display: grid;
+    align-self: center;
+    column-gap: 2rem;
+    grid-template-columns:1fr 1fr;
+    grid-auto-rows: minmax(20px, auto);
+    grid-template-areas:
+    "C-1 C-2";
+  }
+  .C-1 {
+    grid-area: C-1;
+    margin-right: 1rem;
+    padding: 2rem 1rem;
+  }
+  .C-2 {
+    grid-area: C-2;
+    margin-left: 1rem;
+    padding: 2rem 1rem;
+  }
+
+  .com-conclusion-img {
+    display: inline-block;
+    width:5%;
+    margin-bottom: 0;
+  }
+
+  .comp-img {
+    text-align: center;
+  }
+
+  .user-flow {
+    display: grid;
+    align-self: center;
+    grid-template-columns:1fr 1fr;
+    grid-auto-rows: minmax(20px, auto);
+    grid-template-areas:
+    "user-des user-img";
+    padding: 2.5% 2.5%;
+    margin-top: 12rem;
+    margin-bottom: 12rem;
+  }
+
+  .user-des {
+    grid-area:user-des;
+    margin: 0 0;
+  }
+
+  .user-img {
+    grid-area:user-img;
+    margin: 0 0;
+    align-self: center;
+  }
+
+  .user-story-des {
+    display: grid;
+    align-self: center;
+    grid-template-columns:1fr 1fr;
+    grid-auto-rows: minmax(20px, auto);
+    grid-template-areas:
+    "user-story finding";
+  }
+
+  .user-story {
+    grid-area:user-story;
+    align-self: center;
+  }
+
+  .finding {
+    grid-area:finding;
+  }
+
+  .inner {
+    display: flex;
+    align-self: center;
+    height: 5rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  .user-story-image {
+    width:10%;
+    margin: 0 0;
+    align-self: center;
+  }
+
+  .user-story-h2 {
+    margin: 0 0;
+    width:50%;
+    padding: 1.2rem 1.2rem;
+    text-align: left;
+  }
+
+  .inner-finding {
+    display: flex;
+    align-self: center;
+    height: 5rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  .finding-image {
+    width:10%;
+    margin: 0 0;
+    align-self: center;
+  }
+
+  .finding-h2 {
+    margin: 0 0;
+    width:90%;
+    padding: 1.2rem 1.2rem;
+    text-align: left;
+  }
+
+  .solution-image {
+    padding-left:5%;
+    padding-right: 5%;
+  }
+
+  .paper {
+    padding-left:5%;
+    padding-right: 5%;
+  }
+
+  .pen {
+    display: flex;
+    align-self: center;
+    margin: 2rem 1%;
+  }
+
+  .pen-icon {
+    width:15%;
+    margin: 0 1rem;
+    align-self: center;
+  }
+
+  .pen-h2 {
+    margin: 0 0.1rem;
+    width:90%;
+    padding: 1rem 0;
+    text-align: left;
+    padding-top: 2.1rem;
+  }
+
+  .penpen {
+    margin:0 25%;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+  }
+
+  .sitemapp {
+    padding-left:5%;
+    padding-right: 5%;
+  }
+
+  .content-s {
+    display: flex;
+    align-self: center;
+    margin: 2rem 10%;
+  }
+
+  .horn {
+    width:20%;
+    margin: 0 1rem;
+    align-self: center;
+  }
+
+  .horn-h2 {
+    margin: 0 0;
+    width:90%;
+    padding: 1.2rem 0rem;
+    text-align: left;
+    padding-top: 2.1rem;
+  }
+
+  .sitemap {
+    margin:0 25%;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+  }
+
+  .fly {
+    display: flex;
+    align-self: center;
+    margin: 2rem 15%;
+    width: 70%;
+  }
+
+  .fly-image {
+    width:10%;
+    margin: 0 0;
+    align-self: center;
+  }
+
+  .fly-h2 {
+    margin: 0 1rem;
+    width:90%;
+    padding: 1.2rem 0rem;
+    text-align: left;
+  }
+
+  .sketch {
+    /* background-color: white; */
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 2rem;
+    grid-column: 2rem;
+    grid-auto-rows: minmax(20px, auto);
+    grid-template-areas:
+    "sk1 sk2"
+    "sk3 sk4";
+    padding-left:5%;
+    padding-right:5%;
+  }
+  .sk1 {
+    grid-area:sk1;
+    width: 90%;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+
+  .sk2 {
+    grid-area:sk2;
+    width: 90%;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+
+  .sk3 {
+    grid-area:sk3;
+    width: 90%;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+  .sk4 {
+    grid-area:sk4;
+    width: 90%;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    margin-left: 5%;
+    margin-right: 5%;
+
+  }
+
+  .Color-Palette {
+    display: flex;
+    align-self: center;
+    margin: 2rem 20%;
+    text-align: center;
+  }
+
+  .color-img {
+    width:20%;
+    margin: 0 1rem;
+    align-self: center;
+  }
+
+  .color-h2 {
+    margin: 0 0;
+    padding: 1.2rem 1.2rem;
+    text-align: left;
+  }
+
+  .color {
+    margin:0 25%;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+  }
+
+  .colors {
+    padding-left:5%;
+    padding-right: 5%;
+  }
+
+  .logo-it {
+    display: flex;
+    align-self: center;
+    margin: 2rem 20%;
+    text-align: center;
+  }
+
+  .logo-z {
+    width:15%;
+    margin: 0 0;
+    align-self: center;
+  }
+
+  .logo-h2 {
+    margin: 0 1rem;
+    padding: 2rem 0;
+    text-align: left;
+  }
+
+  .logo-design {
+    width:50%;
+    margin:0 25%;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+  }
+
+  .logos {
+    padding-left:5%;
+    padding-right: 5%;
+  }
+
+  .typeface {
+    width:50%;
+    margin:0 25%;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+  }
+
+  .typeface-select {
+    display: flex;
+    align-self: center;
+    margin: 2rem 15%;
+    text-align: center;
+  }
+
+  .pen2 {
+    width:15%;
+    margin: 0 0;
+    align-self: center;
+  }
+
+  .pen2-h2 {
+    margin: 0 1rem;
+    padding: 1.2rem 0.2rem;
+    text-align: left;
+  }
+
+  .font {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 2rem;
+    grid-auto-rows: minmax(20px, auto);
+    grid-template-areas:
+    "font1 font2";
+    margin: 0 0;
+    padding-left: 5%;
+    padding-right: 5%;
+    background-color: #FBF4EC;
+  }
+
+.font1-div {
+    grid-area: font1;
+    padding: 5% 5%;
+    display: inline-block;
+  }
+
+ .font-line {
+   visibility: hidden;
+ }
+
+  .font2-div {
+    grid-area: font2;
+    padding: 5% 5%;
+    display: inline-block;
+  }
+
+  .font1-div, .font2-div {
+    background-color: #e5e5e5;
+  }
+
+  .moodboard, .styleguide {
+      width: 30%;
+      margin:0 auto;
+      padding: 1rem;
+  }
+
+  .marketing-div {
+    display: flex;
+    align-self: center;
+    margin: 2rem 15%;
+    text-align: center;
+  }
+
+  .speaker {
+    width:20%;
+    margin: 0 0;
+    align-self: center;
+  }
+
+  .speaker-h2 {
+    margin: 0 0;
+    padding: 1.2rem 2rem;
+    text-align: left;
+    padding-top: 2rem;
+  }
+
+  .marketing {
+    margin:0 25%;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+  }
+
+  .wireframe-b {
+    width:30%;
+    margin: 2rem 2rem;
+  }
+
+ .wireframe {
+    width:40%;
+    margin:2rem auto;
+   }
+
+ .mockup {
+     width:40%;
+     margin:2rem auto;
+  }
+
+  .mockup-b {
+    width:30%;
+    margin: 2rem auto;
+  }
+
+  .preference-div {
+    display: flex;
+    align-self: center;
+    margin: 2rem 10%;
+    text-align: center;
+  }
+
+  .smile {
+    width:20%;
+    margin: 0 0;
+    align-self: center;
+  }
+
+  .smile-h2 {
+    margin: 0 0;
+    padding: 1.2rem 2rem;
+    text-align: left;
+  }
+
+  .preference {
+    margin:0 25%;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+  }
+
+  .pre1 {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+
+  .pre2 {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+
+  .pre3 {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+
+  .iteration-phase {
+    padding-left: 5%;
+    padding-right: 5%;
+    margin-bottom: 2rem;
+  }
+
+  .hand {
+    background-color: #D7908D;
+    display:grid;
+    grid-template-columns: 1fr 2fr 3fr;
+    grid-template-areas:
+    "hand3 desk desktop-link";
+  }
+
+  .desk {
+    padding: 0 1rem;
+    margin-top: 20%;
+  }
+
+  .desktop-img {
+    padding:2% 0;
+    margin-top: 10%;
+  }
+
+  .hand3 {
+    margin: 20% 0;
+    padding: 5% 0;
+    margin-right: 2%;
+  }
+
+.pp {
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+    "one-two three-four-five";
+  }
+ .one-two {
+   grid-area: one-two;
+   margin-right: 1rem;
+   padding:2rem 1rem;
+   padding-left: 0;
+}
+
+.three-four-five {
+  grid-area: three-four-five;
+  margin-right: 1rem;
+  padding:2rem 1rem;
+  padding-right: 0;
+}
+
+.research-understanding {
+  margin: 4% 5%;
+}
+ .curves {
+  margin: 0 0;
+ }
+
+ .persona {
+   margin: 0 0;
+ }
+
+ .Competitive-Analysis {
+   margin: 0 0;
+ }
+
+ .fonts {
+    margin: 2rem 30%;
+  }
+
+  .desk1 {
+    font-size: 1.5rem;
+  }
+
 }
 
 @media screen and (min-width:1025px) {
@@ -666,9 +1543,10 @@ margin-bottom:2rem;
     margin: 0 10%;
   }
 
-  .lamp{
+  .lamp {
     display: flex;
-    margin: 0 15%;
+    margin-right: 2%;
+    margin-left: 25%;
   }
 
   .lamp-p {
@@ -769,13 +1647,13 @@ margin-bottom:2rem;
   .curve-2 {
     grid-area: curve-2;
     background-color: #E5E5E5;
-    padding: 5% 5%;
+    padding: 6% 5%;
   }
 
   .curve-3 {
     grid-area: curve-3;
     background-color: #E5E5E5;
-    padding: 5% 5%;
+    padding: 10% 5%;
   }
 
   .curve-4 {
@@ -793,7 +1671,7 @@ margin-bottom:2rem;
   .curve-6 {
     grid-area: curve-6;
     background-color: #E5E5E5;
-    padding: 5% 5%;
+    padding: 8% 5%;
   }
 
   .curve-7 {
@@ -1003,12 +1881,12 @@ margin-bottom:2rem;
   .C-1 {
     grid-area: C-1;
     margin-right: 1rem;
-    padding: 2rem 5rem;
+    padding: 2rem 2rem;
   }
   .C-2 {
     grid-area: C-2;
     margin-left: 1rem;
-    padding: 2rem 5rem;
+    padding: 2rem 2rem;
   }
 
   .com-conclusion-img {
@@ -1178,8 +2056,8 @@ margin-bottom:2rem;
   .fly {
     display: flex;
     align-self: center;
-    margin: 2rem 30%;
-    width: 40%;
+    margin: 2rem 32.5%;
+    width: 35%;
   }
 
   .fly-image {
@@ -1345,15 +2223,15 @@ margin-bottom:2rem;
     background-color: #FBF4EC;
   }
 
-  .font1-div {
+.font1-div {
     grid-area: font1;
     padding: 5% 5%;
     display: inline-block;
   }
 
- .font-line {
+  .font-line {
    visibility: hidden;
- }
+  }
 
   .font2-div {
     grid-area: font2;
@@ -1374,7 +2252,7 @@ margin-bottom:2rem;
   .marketing-div {
     display: flex;
     align-self: center;
-    margin: 2rem 15%;
+    margin: 2rem 25%;
     text-align: center;
   }
 
@@ -1392,8 +2270,7 @@ margin-bottom:2rem;
   }
 
   .marketing {
-    width:30%;
-    margin:0 35%;
+    margin:0 30%;
     margin-bottom: 2rem;
     margin-top: 2rem;
   }
@@ -1408,7 +2285,7 @@ margin-bottom:2rem;
     margin:2rem auto;
    }
 
-  .mockup {
+   .mockup {
      width:40%;
      margin:2rem auto;
   }
@@ -1421,7 +2298,7 @@ margin-bottom:2rem;
   .preference-div {
     display: flex;
     align-self: center;
-    margin: 2rem 25%;
+    margin: 2rem 20%;
     text-align: center;
   }
 
@@ -1474,19 +2351,22 @@ margin-bottom:2rem;
   }
 
   .desk {
-    margin: 20% 10%;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 30%;
+    font-size: 2rem;
   }
 
   .desktop-img {
     padding:2% 0;
+    margin-top: 5%;
   }
 
   .hand3 {
-    margin: 5% 0;
     padding: 5% 0;
   }
 
-  .pp {
+.pp {
     display:grid;
     grid-template-columns: 1fr 1fr;
     grid-template-areas:
@@ -1495,14 +2375,14 @@ margin-bottom:2rem;
  .one-two {
    grid-area: one-two;
    margin-right: 1rem;
-   padding:2rem 5rem;
+   padding:2rem 1rem;
    padding-left: 0;
 }
 
 .three-four-five {
   grid-area: three-four-five;
   margin-right: 1rem;
-  padding:2rem 5rem;
+  padding:2rem 1rem;
   padding-right: 0;
 }
 
@@ -1529,6 +2409,10 @@ margin-bottom:2rem;
   .phase {
     width :80%;
     margin: 2rem 10%;
+  }
+
+  .desk1 {
+    font-size: 2rem;
   }
 
 }

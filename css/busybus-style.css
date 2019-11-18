@@ -341,7 +341,6 @@ li {
 .previous-button {
   width:10%;
   margin:5% 2%;
-
 }
 
 .desk {
@@ -359,6 +358,14 @@ li {
 .s-conclusion-img {
   width: 20%;
   margin: 2rem 40%;
+}
+
+.usability {
+  margin: 5% 10%;
+}
+
+.inner-finding2 {
+  padding: 5% 5%;
 }
 
 @media screen and (min-width:768px) {
@@ -426,7 +433,7 @@ li {
   }
 
   .survey-p3 {
-    width: 20%;
+    width: 30%;
     margin:0 0;
     display: inline-block;
     text-align: right;
@@ -710,7 +717,7 @@ li {
   }
 
   .inner-finding {
-    margin-top: 40%;
+    margin-top: 60%;
     margin-bottom: 20%;
   }
 
@@ -735,7 +742,7 @@ li {
   }
 
   .inner-finding {
-    margin-top: 40%;
+    margin-top: 50%;
     margin-bottom: 20%;
   }
 
@@ -1135,7 +1142,7 @@ li {
   .user-story {
     grid-area:user-story;
     align-self: center;
-    margin-right: 1rem;
+    margin-right: 2rem;
   }
 
   .finding {
@@ -1170,6 +1177,12 @@ li {
     padding: 5% 10%;
   }
 
+  .inner-finding2 {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 5% 10%;
+}
+
   .finding-image {
     width:30%;
     margin: 1rem 35%;
@@ -1182,10 +1195,10 @@ li {
     text-align: left;
   }
 
-  .paper {
+  /* .paper {
     padding-left:10%;
     padding-right: 10%;
-  }
+  } */
 
   .pen {
     display: flex;
@@ -1207,7 +1220,7 @@ li {
     padding-top: 2.5rem;
   }
 
-  .penpen {
+  .mobilemobile {
     width:30%;
     margin:0 35%;
     margin-bottom: 2rem;
@@ -1221,7 +1234,7 @@ li {
 
  .visual-design {
     width:40%;
-    margin:2rem auto;
+    margin:2rem 30%;
    }
 
   .mockup {
@@ -1235,7 +1248,8 @@ li {
   }
 
   .tools {
-    width:100%;
+    width:50%;
+    margin: 0 25%;
   }
 
   .iteration-phase {
@@ -1244,16 +1258,9 @@ li {
     margin-bottom: 2rem;
   }
 
-  .hand {
-    background-color: #D7908D;
-    display:grid;
-    grid-template-columns: 1fr 2fr 3fr;
-    grid-template-areas:
-    "hand3 desk desktop-link";
-  }
-
   .desk {
     margin: 20% 10%;
+    font-size: 2rem;
   }
 
   .desktop-img {
@@ -1271,6 +1278,7 @@ li {
   grid-template-areas:
   "one-two three-four-five";
   }
+
  .one-two {
   grid-area: one-two;
   margin-right: 1rem;
