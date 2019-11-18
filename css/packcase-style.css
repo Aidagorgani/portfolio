@@ -20,7 +20,7 @@ h1 {
 }
 
 h2 {
-  font-size: 1.6rem;
+  font-size: 1.8rem;
   font-family: "open Sans";
   font-weight: 600;
 }
@@ -36,9 +36,9 @@ p {
   font-weight: 500;
 }
 
-.overview, .general, .question, .waveform, .lamp, .design-challenge, .Research, .research-understanding, .description, .user-story
+.overview, .general, .question, .waveform, .lamp, .design-challenge, .Research, .description, .user-story, .curves
 , .finding, .pen, .sitemap, .branding, .color, .typeface, .marketing, .wireframe, .mockup, .preference, .iteration, .conclusion, .user-flow, .font
-, .penpen {
+, .penpen, .survey-conclusion, .persona, .Competitive-Analysis {
 
   margin: 4% 10%;
 }
@@ -64,11 +64,9 @@ section {
   "hero";
 }
 
-/* .hand {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-} */
+.sk1, .sk2, .sk3, .sk4 {
+    width:100%;
+  }
 
 .end {
   display: flex;
@@ -189,11 +187,6 @@ li {
   margin: 2rem 20%;
 }
 
-.survey-div2 {
-  width:30%;
-  line-height: 2.5rem;
-  margin: 0 35%;
-}
 
 .s-image {
   width:10%;
@@ -214,9 +207,10 @@ li {
   margin-right: 1rem;
 }
 
-.curve-1-image {
+.curve-1-image, .curve-2-image, .curve-3-image, .curve-4-image, .curve-5-image, .curve-6-image, .curve-7-image, .curve-8-image {
   width:100%;
   margin-bottom: 2rem;
+  padding: 5% 5%;
 }
 
 .line-1-image {
@@ -414,7 +408,6 @@ margin-bottom:2rem;
 .fonts {
    width: 60%;
    margin: 2rem 20%;
-   padding: 0 10%;
  }
 
 .moodboard {
@@ -526,16 +519,10 @@ margin-bottom:2rem;
   margin-top: 2rem;
   margin-bottom:3rem;
   display: block;
-  padding: 5px; // by sina
-  border: 5px; // by sina
 }
 
 .dot:hover, .dot:active {
   background-color: #A95A5D;
-  height: 15px;
-  width: 15px;
-  padding: 0px; // by sina
-  border: 0px; // by sina
 }
 
 .tooltip {
@@ -546,13 +533,11 @@ margin-bottom:2rem;
 .tooltip .tooltiptext {
   visibility: hidden;
   width: 160px;
-  background-color:#BDDFDF;
+  background-color:#A95A5D;
   color: #fff;
   text-align: center;
   border-radius: 6px;
   padding: 4px 0;
-
-  /* Position the tooltip */
   position: absolute;
   z-index: 1;
   right: 3rem;
@@ -567,6 +552,31 @@ margin-bottom:2rem;
   background-color: #636267;
   /* height: 80px; */
 }
+
+.role {
+  margin-left: 2rem;
+  border-left: 5px solid #A95A5D;
+  padding-left: 2rem;
+}
+
+
+.survey-p1 {
+  display: block;
+  margin: 1rem 25%;
+}
+
+.survey-p2 {
+  display: block;
+  display: block;
+  margin: 1rem 25%;
+}
+
+.survey-p3 {
+  display: block;
+  display: block;
+  margin: 1rem 25%;
+}
+
 
 @media screen and (min-width:768px) {
   .hero {
@@ -600,6 +610,12 @@ margin-bottom:2rem;
     margin: auto 10%;
     vertical-align: middle;
   }
+
+  .role {
+    margin-left: 2rem;
+    border-left: 5px solid #A95A5D;
+    padding-left: 2rem;
+  }
 }
 
 @media screen and (min-width:1025px) {
@@ -611,9 +627,6 @@ margin-bottom:2rem;
     grid-template-columns:3fr 9fr;
     grid-template-areas:
     "flex-container top-hand";
-  }
-  .top-hand {
-    width: 35%;
   }
 
   .mobile, .desktop {
@@ -632,6 +645,13 @@ margin-bottom:2rem;
 
   .general {
     vertical-align: middle;
+    align-items: center;
+  }
+
+  .role {
+    margin-left: 2rem;
+    border-left: 5px solid #A95A5D;
+    padding-left: 2rem;
   }
 
   .questions {
@@ -652,7 +672,7 @@ margin-bottom:2rem;
   }
 
   .lamp-p {
-    width: 70%;
+    width: 50%;
     align-self: center;
     margin:5% 2%;
     padding-top: 1%;
@@ -670,7 +690,7 @@ margin-bottom:2rem;
   }
 
   .design-p {
-    width: 60%;
+    width: 40%;
     align-self: center;
     margin: 5% 5%;
   }
@@ -699,28 +719,27 @@ margin-bottom:2rem;
     align-self: center;
   }
 
-  .survey-div2 {
-    margin: 0 0;
-    float: right;
-    width:105%;
-  }
-
   .survey-p1 {
     width:55%;
+    margin:0 0;
     display: inline-block;
     padding: 1.2rem 1rem;
   }
 
   .survey-p2 {
     width:29%;
+    margin:0 0;
     display: inline-block;
     text-align: right;
+    padding: 1.2rem 1rem;
   }
 
   .survey-p3 {
     width: 15%;
+    margin:0 0;
     display: inline-block;
     text-align: right;
+    padding: 1.2rem 1rem;
   }
 
   .curves {
@@ -796,15 +815,16 @@ margin-bottom:2rem;
   }
 
   .s-conclusion-p {
-    width: 60%;
+    width: 50%;
     align-self: center;
-    margin: 5% 5%;
+    margin: 5% 8%;
   }
 
   .s-conclusion-img {
-    width: 10%;
+    width: 5%;
     align-self: center;
-    margin:1% 5%;
+    margin-left: 10%;
+    margin-right: 0.1%;
     text-align: center;
   }
 
@@ -844,6 +864,9 @@ margin-bottom:2rem;
   .persona-p {
     grid-area: persona-p;
     margin: 0 0;
+    width: 90%;
+    padding-left: 2rem;
+    padding-top: 2rem;
   }
 
   .persona-img2 {
@@ -913,6 +936,9 @@ margin-bottom:2rem;
   .comp-p {
     grid-area: persona-p;
     margin: 0 0;
+    width: 90%;
+    padding-left: 2rem;
+    padding-top: 2rem;
   }
 
   .comp-img2 {
@@ -976,19 +1002,19 @@ margin-bottom:2rem;
   }
   .C-1 {
     grid-area: C-1;
-    margin-top: 2rem;
-    margin-right: 6rem;
-
+    margin-right: 1rem;
+    padding: 2rem 5rem;
   }
   .C-2 {
     grid-area: C-2;
-    margin-top: 2rem;
-    margin-left: 6rem;
+    margin-left: 1rem;
+    padding: 2rem 5rem;
   }
 
   .com-conclusion-img {
     display: inline-block;
-    width:10%;
+    width:5%;
+    margin-bottom: 0;
   }
 
   .comp-img {
@@ -1093,7 +1119,7 @@ margin-bottom:2rem;
   .pen {
     display: flex;
     align-self: center;
-    margin: 2rem 20%;
+    margin: 2rem 15%;
   }
 
   .pen-icon {
@@ -1105,13 +1131,14 @@ margin-bottom:2rem;
   .pen-h2 {
     margin: 0 0.1rem;
     width:90%;
-    padding: 1.2rem 0.5rem;
+    padding: 1rem 0.5rem;
     text-align: left;
+    padding-top: 2.1rem;
   }
 
   .penpen {
-    width:40%;
-    margin:0 30%;
+    width:30%;
+    margin:0 35%;
     margin-bottom: 2rem;
     margin-top: 2rem;
   }
@@ -1124,7 +1151,7 @@ margin-bottom:2rem;
   .content-s {
     display: flex;
     align-self: center;
-    margin: 2rem 20%;
+    margin: 2rem 15%;
   }
 
   .horn {
@@ -1138,11 +1165,12 @@ margin-bottom:2rem;
     width:90%;
     padding: 1.2rem 0.5rem;
     text-align: left;
+    padding-top: 2.1rem;
   }
 
   .sitemap {
-    width:40%;
-    margin:0 30%;
+    width:30%;
+    margin:0 35%;
     margin-bottom: 2rem;
     margin-top: 2rem;
   }
@@ -1183,20 +1211,37 @@ margin-bottom:2rem;
   .sk1 {
     grid-area:sk1;
     width: 70%;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    margin-left: 25%;
+    margin-right: 5%;
   }
 
   .sk2 {
     grid-area:sk2;
     width: 70%;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    margin-left: 5%;
+    margin-right: 25%;
   }
 
   .sk3 {
     grid-area:sk3;
     width: 70%;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    margin-left: 25%;
+    margin-right: 5%;
   }
   .sk4 {
     grid-area:sk4;
     width: 70%;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    margin-left: 5%;
+    margin-right: 25%;
+
   }
 
   .Color-Palette {
@@ -1219,8 +1264,8 @@ margin-bottom:2rem;
   }
 
   .color {
-    width:40%;
-    margin:0 30%;
+    width:30%;
+    margin:0 35%;
     margin-bottom: 2rem;
     margin-top: 2rem;
   }
@@ -1329,7 +1374,7 @@ margin-bottom:2rem;
   .marketing-div {
     display: flex;
     align-self: center;
-    margin: 2rem 25%;
+    margin: 2rem 15%;
     text-align: center;
   }
 
@@ -1343,11 +1388,12 @@ margin-bottom:2rem;
     margin: 0 0;
     padding: 1.2rem 2rem;
     text-align: left;
+    padding-top: 2rem;
   }
 
   .marketing {
-    width:40%;
-    margin:0 30%;
+    width:30%;
+    margin:0 35%;
     margin-bottom: 2rem;
     margin-top: 2rem;
   }
@@ -1392,8 +1438,8 @@ margin-bottom:2rem;
   }
 
   .preference {
-    width:40%;
-    margin:0 30%;
+    width:30%;
+    margin:0 35%;
     margin-bottom: 2rem;
     margin-top: 2rem;
   }
@@ -1448,16 +1494,41 @@ margin-bottom:2rem;
   }
  .one-two {
    grid-area: one-two;
-   margin-left: 2rem;
-   margin-right: 8rem;
-   margin-top:2rem;
+   margin-right: 1rem;
+   padding:2rem 5rem;
+   padding-left: 0;
 }
 
 .three-four-five {
   grid-area: three-four-five;
-  margin-left: 2rem;
-  margin-right: 8rem;
-  margin-top:2rem;
+  margin-right: 1rem;
+  padding:2rem 5rem;
+  padding-right: 0;
 }
+
+.research-understanding {
+  margin: 4% 10%;
+}
+ .curves {
+  margin: 0 0;
+ }
+
+ .persona {
+   margin: 0 0;
+ }
+
+ .Competitive-Analysis {
+   margin: 0 0;
+ }
+
+ .fonts {
+    width: 30%;
+    margin: 2rem 35%;
+  }
+
+  .phase {
+    width :80%;
+    margin: 2rem 10%;
+  }
 
 }

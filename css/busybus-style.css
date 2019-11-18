@@ -1,0 +1,1321 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  background-color: #FBF4EC;
+  font-family: "Montserrat";
+  color:#3F3E87;
+}
+
+
+h1 {
+  font-size: 2.4rem;
+  line-height: 4.5rem;
+  font-weight: 600;
+  font-family: "Open Sans";
+}
+
+h2 {
+  font-size: 1.8rem;
+  font-family: "open Sans";
+  font-weight: 600;
+  line-height: 3rem;
+}
+
+p {
+  display:inline;
+  font-family: "Montserrat";
+  font-size: 1.5rem;
+  line-height: 2.5rem;
+}
+
+.role, .duration, .tools {
+  font-weight: 500;
+}
+
+section {
+  margin-top: 1%;
+  margin-bottom: 1%;
+}
+
+.container {
+  /* background-color: white; */
+  display: grid;
+  grid-template-columns: 1fr;
+  /* grid-gap: 1rem; */
+  grid-auto-rows: minmax(20px, auto);
+  grid-template-areas:
+  "hero";
+}
+
+
+.end {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.flex-container {
+  display: flex;
+  justify-content:space-around;
+  flex-direction: row;
+  align-items: center;
+  height: 8rem;
+  font-size: 2rem;
+  font-family: "Open Sans";
+  padding: 1rem;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+}
+
+.hero {
+  grid-area: hero;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+  "flex-container";
+  background-image: url("../../image/busybus.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 0;
+  padding-bottom: 45%;
+}
+
+.overview, .problem, .general, .solution {
+  margin: 10% 10%;
+}
+
+.research-understanding, .user-story-des, .mobilemobile, .visual-design, .mockup {
+  margin: 5% 10%;
+}
+
+a:link {
+ text-decoration: none;
+}
+
+li {
+  align-items: center;
+}
+
+.logo {
+  width:60px;
+}
+
+.visualdesign, .frontend {
+  width:35%;
+  margin:2rem auto;
+  padding: 1rem;
+}
+
+.general {
+  grid-area: general;
+}
+
+.overview {
+  grid-area: overview;
+}
+
+#vertical-nav {
+  position: fixed;
+  right: 2rem;
+  top: 30%;
+  bottom: auto;
+}
+
+.s-image {
+  width:10%;
+  margin-left:45%;
+  margin-right:45%;
+  margin-bottom: 1rem;
+  margin-top: 2rem;
+}
+
+.survey-p {
+  font-size:1.6rem;
+  font-weight:600;
+}
+
+.curves {
+  background-color: white;
+}
+
+.curve-p {
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.curve-1-image, .curve-4-image, .curve-5-image, .curve-6-image, .curve-7-image, .curve-8-image {
+  width:100%;
+  margin-bottom: 2rem;
+  padding: 5% 5%;
+}
+
+.curve-2-image, .curve-3-image {
+  width:75%;
+  margin-bottom: 2rem;
+  padding: 5% 5%;
+  margin-right:12.5%;
+  margin-left: 12.5%;
+}
+
+.survey-conclusion {
+  margin-bottom: 2rem;
+}
+
+.line-1-image {
+  width:85%;
+  margin-bottom: 2rem;
+  margin-left:7.5%;
+  margin-right:7.5%;
+}
+
+.img3 {
+  width:80%;
+  margin:2rem 10%;
+}
+
+.comp-h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.comp-des {
+  background-color:#E5E5E5;
+  padding:5% 5%;
+}
+
+.comp-image {
+  width:10%;
+  margin:2rem 45%;
+}
+
+.comp-img2 {
+  width:70%;
+  margin:2rem 15%;
+}
+
+.com-conclusion-img {
+  width:20%;
+  margin: 2rem 40%;
+}
+
+.user-story {
+  margin-bottom: 2rem;
+}
+
+.user-story-image {
+  width:10%;
+  margin-right: 45%;
+  margin-left: 45%;
+  margin-top:0;
+  margin-bottom: 1rem;
+}
+
+.user-story-h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.finding-image {
+  width:60%;
+  margin:0 20%;
+  }
+
+.finding-h2 {
+  margin-bottom: 1rem;
+}
+
+.mobile-icon {
+  width:10%;
+  margin-left:45%;
+  margin-right:45%;
+  margin-bottom: 1rem;
+  margin-top: 2rem;
+}
+
+.mobile-h2 {
+  text-align: center;
+}
+
+.wireframe-b {
+   width:35%;
+   margin:0 auto;
+   padding:0 1rem;
+ }
+
+ .mockup-b {
+   width:35%;
+   margin:0 auto;
+   padding:0 1rem;
+ }
+
+ .tools {
+   width:50%;
+   margin: 0 25%;
+ }
+
+ .iteration-phase {
+  width:100%;
+  margin-bottom:2rem;
+ }
+
+.dot {
+  background-color: #3F3E87;
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  margin-top: 2rem;
+  margin-bottom:3rem;
+  display: block;
+}
+
+.dot:hover, .dot:active {
+  background-color: #A95A5D;
+}
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 160px;
+  background-color:#A95A5D;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 4px 0;
+  position: absolute;
+  z-index: 1;
+  right: 3rem;
+  top: 30%;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+
+.footer {
+  background-color: #636267;
+}
+
+.role {
+  margin-left: 2rem;
+  border-left: 5px solid #C9994F;
+  padding-left: 2rem;
+}
+
+.survey-p1 {
+  display: block;
+  margin: 1rem 20%;
+}
+
+.survey-p2 {
+  display: block;
+  margin: 1rem 20%;
+}
+
+.survey-p3 {
+  display: block;
+  margin: 1rem 20%;
+}
+
+.inner-finding {
+  padding: 5% 5%;
+}
+
+.busybussolution {
+  width: 50%;
+  margin-left: 25%;
+  margin-right: 25%;
+}
+
+.previous-button {
+  width:10%;
+  margin:5% 2%;
+
+}
+
+.desk {
+  color: white;
+  margin:5% 1%;
+  line-height: 0.1rem;
+  font-size: 1.2rem;
+}
+
+.next-button {
+  width:10%;
+  margin:5% 2%;
+}
+
+.s-conclusion-img {
+  width: 20%;
+  margin: 2rem 40%;
+}
+
+@media screen and (min-width:768px) {
+  .hero {
+    background-color: #FBF4EC;
+    color: #3F3E87;
+    grid-area: hero;
+    display: grid;
+    grid-template-columns:6fr 6fr;
+    grid-template-areas:
+    "flex-container .";
+    background-image: url("../../image/busybus.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 0;
+    padding-bottom: 45%;
+  }
+
+  .busybussolution {
+    width: 40%;
+    margin-left: 30%;
+    margin-right: 30%;
+  }
+
+  .flex-container {
+    display: flex;
+    justify-content:space-around;
+    flex-direction: row;
+    align-items: center;
+    height: 8rem;
+    font-size: 2rem;
+    font-family: "Open Sans";
+    padding: 1rem;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+  }
+
+  .visualdesign, .frontend {
+    width:30%;
+    margin:2rem auto;
+    padding: 1rem;
+  }
+
+  .s-image {
+    width:5%;
+    margin: 0 0;
+    align-self: center;
+  }
+
+  .survey-p1 {
+    width:55%;
+    margin:0 0;
+    display: inline-block;
+    padding: 1.2rem 1rem;
+  }
+
+  .survey-p2 {
+    width:29%;
+    margin:0 0;
+    display: inline-block;
+    text-align: right;
+    padding: 1.2rem 1rem;
+  }
+
+  .survey-p3 {
+    width: 20%;
+    margin:0 0;
+    display: inline-block;
+    text-align: right;
+    padding: 1.2rem 1rem;
+  }
+
+  .survey {
+    display: flex;
+    align-self: center;
+    height: 5rem;
+    margin-top: 2rem;
+  }
+
+  .curves {
+    display: grid;
+    grid-template-columns:1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    column-gap: 2rem;
+    grid-row-gap: 2rem;
+    grid-auto-rows: minmax(20px, auto);
+    grid-template-areas:
+    "curve-1 curve-1 curve-1 curve-1 curve-2 curve-2 curve-2 curve-2"
+    "curve-3 curve-3 curve-3 curve-4 curve-4 curve-4 curve-4 curve-4"
+    "curve-5 curve-5 curve-5 curve-5 curve-5 curve-6 curve-6 curve-6";
+    background-color: #FBF4EC;
+  }
+
+  .line-1-image {
+    visibility: hidden;
+  }
+
+  .curve-1 {
+    grid-area: curve-1;
+    background-color: white;
+    padding: 5% 5%;
+  }
+
+  .curve-2 {
+    grid-area: curve-2;
+    background-color: white;
+    padding: 5% 5%;
+  }
+
+  .curve-3 {
+    grid-area: curve-3;
+    background-color: white;
+    padding: 5% 5%;
+  }
+
+  .curve-4 {
+    grid-area: curve-4;
+    background-color: white;
+    padding: 5% 5%;
+  }
+
+  .curve-5 {
+    grid-area: curve-5;
+    background-color: white;
+    padding: 5% 5%;
+  }
+
+  .curve-6 {
+    grid-area: curve-6;
+    background-color: white;
+    padding: 5% 5%;
+  }
+
+  .curve-7 {
+    grid-area: curve-7;
+    background-color: white;
+    padding: 5% 5%;
+  }
+
+  .curve-8 {
+    grid-area: curve-8;
+    background-color: white;
+    padding: 5% 5%;
+  }
+
+  .curve-1-image, .curve-4-image, .curve-5-image, .curve-6-image, .curve-7-image, .curve-8-image {
+    width:100%;
+    padding: 5% 5%;
+    margin: 0 0;
+  }
+
+  .curve-2-image, .curve-3-image {
+    width:90%;
+    padding: 5% 5%;
+  }
+
+  .description, .survey-conclusion, .mobilemobile, .usability, .visual-design, .phase {
+    margin-left: 20%;
+    margin-right: 20%;
+  }
+
+  .mobilemobile {
+    margin-top: 0;
+    margin-bottom: 2rem;
+  }
+
+  .usability {
+    margin: 5% 10%;
+  }
+
+  .intro {
+    display: grid;
+    grid-template-columns:2fr 2fr;
+    grid-template-areas:
+    "general problem"
+    "overview solution";
+  }
+
+  .role {
+    margin-left: 2rem;
+    border-left: 5px solid #C9994F;
+    padding-left: 2rem;
+  }
+
+  .solution {
+    margin-right: 20%;
+    margin-left:8%;
+    margin-top: 20%;
+    margin-bottom: 20%;
+  }
+
+  .overview {
+    margin-left: 20%;
+    margin-right:8%;
+    margin-top: 2rem;
+    margin-bottom: 4rem;
+  }
+
+  .problem {
+    margin-right: 20%;
+    margin-left:8%;
+    margin-top: 4rem;
+    margin-bottom: 2rem;
+  }
+
+  .general {
+    margin-left: 20%;
+    margin-right: 8%;
+    margin-top: 25%;
+    margin-bottom: 10%;
+  }
+
+  .s-conclusion-img {
+    width:10%;
+    margin: 1rem 45%;
+  }
+
+  .tools {
+    width:50%;
+    margin: 0 25%;
+  }
+
+  .previous-button {
+    width:10%;
+    margin:5% 2%;
+  }
+
+  .desk {
+    color: white;
+    margin:5% 1%;
+    line-height: 0.1rem;
+  }
+
+  .next-button {
+    width:10%;
+    margin:5% 2%;
+  }
+
+  .comp-des {
+    display: grid;
+    align-self: center;
+    grid-template-columns:1fr 1fr;
+    grid-auto-rows: minmax(20px, auto);
+    grid-template-areas:
+    "comp-p comp-img2";
+    padding: 2.5% 2.5%;
+  }
+
+  .comp-p {
+    grid-area: comp-p;
+    margin: 0 0;
+    width: 90%;
+    padding-left: 2rem;
+    padding-top: 2rem;
+  }
+
+  .comp-img2 {
+    grid-area: comp-img2;
+    margin: 0 0;
+    align-self: center;
+    width:70%;
+  }
+  .img3 {
+    margin: 0 0;
+    align-items: center;
+    margin-left: 40%;
+  }
+
+  .comp-group {
+    display: grid;
+    align-self: center;
+    column-gap: 2rem;
+    grid-template-columns:1fr 1fr 1fr 1fr;
+    grid-auto-rows: minmax(20px, auto);
+    grid-template-areas:
+    "com11 com22 com33 com44";
+  }
+
+  .com11 {
+    grid-area: com11;
+  }
+
+  .com22 {
+    grid-area: com22;
+    margin-top: 2rem;
+  }
+
+  .com33 {
+    grid-area: com33;
+  }
+
+  .com44 {
+    grid-area: com44;
+    margin-top: 2rem;
+  }
+
+  .observe-more {
+    text-align: center;
+  }
+
+  .com-conclusion-img {
+    width: 6%;
+    margin: 2rem 47%;
+  }
+
+  .com-conclusion {
+    display: grid;
+    align-self: center;
+    column-gap: 2rem;
+    grid-template-columns:1fr 1fr;
+    grid-auto-rows: minmax(20px, auto);
+    grid-template-areas:
+    "C-1 C-2";
+  }
+  .C-1 {
+    grid-area: C-1;
+    margin-right: 1rem;
+  }
+  .C-2 {
+    grid-area: C-2;
+    margin-left: 1rem;
+  }
+
+  .user-story-des {
+    display: grid;
+    align-self: center;
+    grid-template-columns:1fr 1fr;
+    grid-auto-rows: minmax(20px, auto);
+    grid-template-areas:
+    "description description"
+    "user-story finding";
+  }
+
+  .description {
+    grid-area:description;
+    align-self: center;
+  }
+
+  .user-story {
+    grid-area:user-story;
+    align-self: center;
+    margin-right: 1rem;
+  }
+
+  .finding {
+    grid-area:finding;
+    margin-left: 1rem;
+  }
+
+  .inner-finding {
+    margin-top: 40%;
+    margin-bottom: 20%;
+  }
+
+  .usability {
+    display: grid;
+    align-self: center;
+    grid-template-columns:1fr 1fr;
+    grid-auto-rows: minmax(20px, auto);
+    grid-template-areas:
+    "user-story finding";
+  }
+
+  .user-story {
+    grid-area:user-story;
+    align-self: center;
+    margin-right: 1rem;
+  }
+
+  .finding {
+    grid-area:finding;
+    margin-left: 1rem;
+  }
+
+  .inner-finding {
+    margin-top: 40%;
+    margin-bottom: 20%;
+  }
+
+  .inner-finding2 {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 5% 5%;
+  }
+
+}
+
+@media screen and (min-width:1025px) {
+  .hero {
+    grid-area: hero;
+    display: grid;
+    grid-template-columns:0.33fr;
+    grid-template-areas:
+    "flex-container";
+    background-image: url("../../image/busybus.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 0;
+    padding-bottom: 45%;
+  }
+
+  .flex-container {
+    display: flex;
+    justify-content:space-around;
+    flex-direction: row;
+    align-items: center;
+    height: 8rem;
+    font-size: 2rem;
+    font-family: "Open Sans";
+    padding: 1rem;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+  }
+
+  .s-image {
+    width:5%;
+    margin: 0 0;
+    align-self: center;
+  }
+
+  .survey-p1 {
+    width:55%;
+    margin:0 0;
+    display: inline-block;
+    padding: 1.2rem 1rem;
+  }
+
+  .survey-p2 {
+    width:29%;
+    margin:0 0;
+    display: inline-block;
+    text-align: right;
+    padding: 1.2rem 1rem;
+  }
+
+  .survey-p3 {
+    width: 15%;
+    margin:0 0;
+    display: inline-block;
+    text-align: right;
+    padding: 1.2rem 1rem;
+  }
+
+  .busybussolution {
+    width: 25%;
+    margin-left: 37.5%;
+    margin-right: 37.5%;
+  }
+
+  .solution {
+    margin-right: 20%;
+    margin-left:8%;
+    margin-top: 10%;
+    margin-bottom: 10%;
+  }
+
+  .overview {
+    margin-left: 20%;
+    margin-right:8%;
+    margin-top: 2rem;
+    margin-bottom: 4rem;
+  }
+
+  .problem {
+    margin-right: 20%;
+    margin-left:8%;
+    margin-top: 4rem;
+    margin-bottom: 2rem;
+  }
+
+  .general {
+    margin-left: 20%;
+    margin-right:8%;
+    margin-top: 10%;
+    margin-bottom: 10%;
+  }
+
+  .visualdesign, .frontend {
+    width: 15%;
+    margin:2rem auto;
+    padding: 1rem;
+  }
+
+  .intro {
+    display: grid;
+    grid-template-columns:2fr 2fr;
+    grid-template-areas:
+    "general problem"
+    "overview solution";
+  }
+
+  .role {
+    margin-left: 2rem;
+    border-left: 5px solid #C9994F;
+    padding-left: 2rem;
+  }
+
+  .description {
+    width:40%;
+    margin: 0 30%;
+  }
+
+  .survey {
+    display: flex;
+    align-self: center;
+    height: 5rem;
+    margin-top: 2rem;
+  }
+
+  .tools {
+    width: 30%;
+    margin: 2rem 35%;
+  }
+
+  .s-image {
+    width:5%;
+    margin: 0 0;
+    align-self: center;
+  }
+
+  .survey-p1 {
+    width:55%;
+    margin:0 0;
+    display: inline-block;
+    padding: 1.2rem 1rem;
+  }
+
+  .survey-p2 {
+    width:29%;
+    margin:0 0;
+    display: inline-block;
+    text-align: right;
+    padding: 1.2rem 1rem;
+  }
+
+  .survey-p3 {
+    width: 15%;
+    margin:0 0;
+    display: inline-block;
+    text-align: right;
+    padding: 1.2rem 1rem;
+  }
+
+  .curves {
+    display: grid;
+    grid-template-columns:1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    column-gap: 2rem;
+    grid-row-gap: 2rem;
+    grid-auto-rows: minmax(20px, auto);
+    grid-template-areas:
+    "curve-1 curve-1 curve-1 curve-1 curve-2 curve-2 curve-2 curve-2"
+    "curve-3 curve-3 curve-3 curve-4 curve-4 curve-4 curve-4 curve-4"
+    "curve-5 curve-5 curve-5 curve-5 curve-5 curve-6 curve-6 curve-6";
+    background-color: #FBF4EC;
+  }
+
+  .line-1-image {
+    visibility: hidden;
+  }
+
+  .curve-1 {
+    grid-area: curve-1;
+    background-color: white;
+    padding: 5% 5%;
+  }
+
+  .curve-2 {
+    grid-area: curve-2;
+    background-color: white;
+    padding: 5% 5%;
+  }
+
+  .curve-3 {
+    grid-area: curve-3;
+    background-color: white;
+    padding: 5% 5%;
+  }
+
+  .curve-4 {
+    grid-area: curve-4;
+    background-color: white;
+    padding: 5% 5%;
+  }
+
+  .curve-5 {
+    grid-area: curve-5;
+    background-color: white;
+    padding: 5% 5%;
+  }
+
+  .curve-6 {
+    grid-area: curve-6;
+    background-color: white;
+    padding: 5% 5%;
+  }
+
+  .curve-7 {
+    grid-area: curve-7;
+    background-color: white;
+    padding: 5% 5%;
+  }
+
+  .curve-8 {
+    grid-area: curve-8;
+    background-color: white;
+    padding: 5% 5%;
+  }
+
+  .survey-conclusion{
+    display: flex;
+    margin: 0 10%;
+    align-self: center;
+  }
+
+  .s-conclusion-p {
+    width: 50%;
+    align-self: center;
+    margin: 5% 8%;
+  }
+
+  .s-conclusion-img {
+    width: 5%;
+    align-self: center;
+    margin-left: 10%;
+    margin-right: 0.1%;
+    text-align: center;
+  }
+
+  .img2 {
+    margin: 0 0;
+    align-items: center;
+    padding-left: 22%;
+  }
+
+  .comp.icon {
+    display: flex;
+    align-self: center;
+    height: 5rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  .comp-image {
+    width:5%;
+    margin: 0 0;
+    align-self: center;
+  }
+
+  .comp-h2 {
+    margin: 0 0;
+    width:20%;
+    display: inline-block;
+    padding: 1.2rem 1rem;
+    text-align: left;
+    margin-bottom: 2rem;
+  }
+
+  .comp-des {
+    display: grid;
+    align-self: center;
+    grid-template-columns:1fr 1fr;
+    grid-auto-rows: minmax(20px, auto);
+    grid-template-areas:
+    "comp-p comp-img2";
+    padding: 2.5% 2.5%;
+  }
+
+  .comp-p {
+    grid-area: comp-p;
+    margin: 0 0;
+    width: 90%;
+    padding-left: 2rem;
+    padding-top: 2rem;
+  }
+
+  .comp-img2 {
+    grid-area: comp-img2;
+    margin: 0 0;
+    align-self: center;
+    width:70%;
+  }
+
+  .img2 {
+    margin: 0 0;
+    align-items: center;
+    padding-left: 22%;
+  }
+
+  .img3 {
+    margin: 0 0;
+    align-items: center;
+    margin-left: 40%;
+  }
+
+  .comp-group {
+    display: grid;
+    align-self: center;
+    column-gap: 2rem;
+    grid-template-columns:1fr 1fr 1fr 1fr;
+    grid-auto-rows: minmax(20px, auto);
+    grid-template-areas:
+    "com11 com22 com33 com44";
+  }
+
+  .com11 {
+    grid-area: com11;
+  }
+
+  .com22 {
+    grid-area: com22;
+    margin-top: 2rem;
+  }
+
+  .com33 {
+    grid-area: com33;
+  }
+
+  .com44 {
+    grid-area: com44;
+    margin-top: 2rem;
+  }
+
+  .observe-more {
+    text-align: center;
+  }
+
+  .com-conclusion {
+    display: grid;
+    align-self: center;
+    column-gap: 2rem;
+    grid-template-columns:1fr 1fr;
+    grid-auto-rows: minmax(20px, auto);
+    grid-template-areas:
+    "C-1 C-2";
+  }
+  .C-1 {
+    grid-area: C-1;
+    margin-right: 1rem;
+    padding: 2rem 5rem;
+  }
+  .C-2 {
+    grid-area: C-2;
+    margin-left: 1rem;
+    padding: 2rem 5rem;
+  }
+
+  .com-conclusion-img {
+    display: inline-block;
+    width:5%;
+    margin-bottom: 0;
+  }
+
+  .comp-img {
+    text-align: center;
+  }
+  .user-story-des {
+    display: grid;
+    align-self: center;
+    grid-template-columns:1fr 1fr;
+    grid-auto-rows: minmax(20px, auto);
+    grid-template-areas:
+    "description description"
+    "user-story finding";
+  }
+
+  .description {
+    grid-area:description;
+    align-self: center;
+  }
+
+  .user-story {
+    grid-area:user-story;
+    align-self: center;
+    margin-right: 1rem;
+  }
+
+  .finding {
+    grid-area:finding;
+    margin-left: 1rem;
+  }
+
+  .inner {
+    display: flex;
+    align-self: center;
+    height: 5rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  .user-story-image {
+    width:10%;
+    margin: 0 0;
+    align-self: center;
+  }
+
+  .user-story-h2 {
+    margin: 0 0;
+    width:50%;
+    padding: 1.2rem 1.2rem;
+    text-align: left;
+  }
+
+  .inner-finding {
+    align-self: center;
+    margin-top: 8rem;
+    padding: 5% 10%;
+  }
+
+  .finding-image {
+    width:30%;
+    margin: 1rem 35%;
+    align-self: center;
+  }
+
+  .finding-h2 {
+    margin: 0 0;
+    width:90%;
+    text-align: left;
+  }
+
+  .paper {
+    padding-left:10%;
+    padding-right: 10%;
+  }
+
+  .pen {
+    display: flex;
+    align-self: center;
+    margin: 2rem 22%;
+  }
+
+  .pen-icon {
+    width:15%;
+    margin: 0 0;
+    align-self: center;
+  }
+
+  .pen-h2 {
+    margin: 0 0.1rem;
+    width:90%;
+    padding: 1.2rem 1rem;
+    text-align: left;
+    padding-top: 2.5rem;
+  }
+
+  .penpen {
+    width:30%;
+    margin:0 35%;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+  }
+
+  .wireframe-b {
+    width:15%;
+    margin: 2rem 2rem;
+  }
+
+ .visual-design {
+    width:40%;
+    margin:2rem auto;
+   }
+
+  .mockup {
+     width:40%;
+     margin:2rem auto;
+  }
+
+  .mockup-b {
+    width:15%;
+    margin: 2rem auto;
+  }
+
+  .tools {
+    width:100%;
+  }
+
+  .iteration-phase {
+    padding-left: 10%;
+    padding-right: 10%;
+    margin-bottom: 2rem;
+  }
+
+  .hand {
+    background-color: #D7908D;
+    display:grid;
+    grid-template-columns: 1fr 2fr 3fr;
+    grid-template-areas:
+    "hand3 desk desktop-link";
+  }
+
+  .desk {
+    margin: 20% 10%;
+  }
+
+  .desktop-img {
+    padding:2% 0;
+  }
+
+  .hand3 {
+    margin: 5% 0;
+    padding: 5% 0;
+  }
+
+  .pp {
+  display:grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas:
+  "one-two three-four-five";
+  }
+ .one-two {
+  grid-area: one-two;
+  margin-right: 1rem;
+  padding:2rem 5rem;
+  padding-left: 0;
+}
+
+.three-four-five {
+  grid-area: three-four-five;
+  margin-right: 1rem;
+  padding:2rem 5rem;
+  padding-right: 0;
+}
+
+.research-understanding {
+  margin: 4% 10%;
+}
+ .curves {
+  margin: 0 0;
+ }
+
+
+ .Competitive-Analysis {
+   margin: 0 0;
+ }
+
+.phase {
+  width :80%;
+  margin: 2rem 10%;
+}
+
+.previous-button {
+  width:10%;
+  margin:5% 2%;
+}
+
+.desk {
+  color: white;
+  margin:5% 1%;
+  line-height: 0.1rem;
+}
+
+.next-button {
+  width:10%;
+  margin:5% 2%;
+}
+
+}
