@@ -32,6 +32,89 @@ p {
   line-height: 2.5rem;
 }
 
+a:hover {
+  cursor: pointer;
+}
+
+a {
+  color: #3F3E87;
+}
+
+.link {
+	text-decoration: none;
+  position: relative;
+	z-index: 1;
+	display: inline-flex;
+	padding-bottom: 5px;
+}
+
+.link::before {
+	content: "";
+	width: 100%;
+	height: 20%;
+	background-image: linear-gradient(to top, #3F3E87 5%, rgba(0, 0, 0, 0) 40%);
+	position: absolute;
+	left: 0;
+	bottom: 6px;
+	z-index: -1;
+	will-change: width;
+	transform-origin: left bottom
+}
+
+.link:hover::before {
+	width: 0;
+}
+
+/*
+* animation styles
+*/
+
+.link::before {
+	transition: width .1s ease-out;
+}
+
+.link:hover::before {
+	transition-duration: .15s;
+}
+
+.link2 {
+	font-weight: 700;
+	text-decoration: none;
+  position: relative;
+	z-index: 1;
+	display: inline-flex;
+	padding-bottom: 5px;
+}
+
+.link2::before {
+	content: "";
+	width: 100%;
+	height: 20%;
+	background-image: linear-gradient(to top, #A95A5D 5%, rgba(0, 0, 0, 0) 40%);
+	position: absolute;
+	left: 0;
+	bottom: 6px;
+	z-index: -1;
+	will-change: width;
+	transform-origin: left bottom
+}
+
+.link2:hover::before{
+	width: 0;
+}
+
+/*
+* animation styles
+*/
+
+.link2::before {
+	transition: width .1s ease-out;
+}
+
+.link2:hover::before {
+	transition-duration: .15s;
+}
+
 .role, .duration, .tools {
   font-weight: 500;
 }
@@ -39,7 +122,6 @@ p {
 .overview, .general, .question, .waveform, .lamp, .design-challenge, .Research, .description, .user-story, .curves
 , .finding, .pen, .sitemap, .branding, .color, .typeface, .marketing, .wireframe, .mockup, .preference, .iteration, .conclusion, .user-flow, .font
 , .penpen, .survey-conclusion, .persona, .Competitive-Analysis {
-
   margin: 4% 10%;
 }
 
@@ -119,7 +201,7 @@ li {
   width:60px;
 }
 
-.mobile, .desktop{
+.mobile, .desktop {
   width:35%;
   margin:2rem auto;
   padding: 1rem;
@@ -193,7 +275,7 @@ li {
   margin: 2rem 45%;
 }
 
-.survey-p{
+.survey-p {
   font-size:1.6rem;
   font-weight:600;
 }
@@ -327,6 +409,7 @@ margin-bottom:2rem;
 .sitemapp {
    width:100%;
  }
+
 .horn {
   width:10%;
   margin:2rem 45%;
@@ -359,14 +442,17 @@ margin-bottom:2rem;
   width:100%;
   margin-bottom:2rem;
 }
+
 .logo-z {
   width:10%;
   margin:2rem 45%;
   }
+
 .logo-h2 {
   margin-bottom:2rem;
   text-align: center;
 }
+
 .logos {
   width:100%;
   margin-bottom:2rem;
@@ -395,6 +481,7 @@ margin-bottom:2rem;
   margin-left:7.5%;
   margin-right:7.5%;
 }
+
 .font2 {
    width: 90%;
    margin-left:1rem;
@@ -593,6 +680,7 @@ margin-bottom:2rem;
     grid-template-areas:
     "flex-container top-hand";
   }
+
   .top-hand {
     width: 32%;
   }
@@ -776,7 +864,7 @@ margin-bottom:2rem;
     padding: 5% 5%;
   }
 
-  .survey-conclusion{
+  .survey-conclusion {
     display: flex;
     margin: 0 5%;
     align-self: center;
@@ -1308,15 +1396,15 @@ margin-bottom:2rem;
     background-color: #FBF4EC;
   }
 
-.font1-div {
+  .font1-div {
     grid-area: font1;
     padding: 5% 5%;
     display: inline-block;
   }
 
- .font-line {
+  .font-line {
    visibility: hidden;
- }
+  }
 
   .font2-div {
     grid-area: font2;
@@ -1461,18 +1549,18 @@ margin-bottom:2rem;
    margin-right: 1rem;
    padding:2rem 1rem;
    padding-left: 0;
-}
+ }
 
 .three-four-five {
   grid-area: three-four-five;
   margin-right: 1rem;
   padding:2rem 1rem;
   padding-right: 0;
-}
+  }
 
 .research-understanding {
   margin: 4% 5%;
-}
+  }
  .curves {
   margin: 0 0;
  }
@@ -1686,7 +1774,7 @@ margin-bottom:2rem;
     padding: 5% 5%;
   }
 
-  .survey-conclusion{
+  .survey-conclusion {
     display: flex;
     margin: 0 10%;
     align-self: center;
@@ -1869,7 +1957,7 @@ margin-bottom:2rem;
     text-align: center;
   }
 
-  .com-conclusion{
+  .com-conclusion {
     display: grid;
     align-self: center;
     column-gap: 2rem;
@@ -2377,18 +2465,18 @@ margin-bottom:2rem;
    margin-right: 1rem;
    padding:2rem 1rem;
    padding-left: 0;
-}
+ }
 
 .three-four-five {
   grid-area: three-four-five;
   margin-right: 1rem;
   padding:2rem 1rem;
   padding-right: 0;
-}
+  }
 
 .research-understanding {
   margin: 4% 10%;
-}
+  }
  .curves {
   margin: 0 0;
  }
