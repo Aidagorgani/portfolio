@@ -28,200 +28,207 @@
     <meta name="msapplication-config" content="favicon/browserconfig.xml">
   </head>
   <body>
-    <div class="container">
+    <main>
       <nav id="vertical-nav">
-        <ul style="text-align:right;">
+        <ul>
           <li>
             <div class="tooltip">
-              <a href="#overview" onclick="myFunction1()"><span class="dot"></span></a>
+              <a href="#overview" onclick="ScrollToOverview()"><span class="dot"></span></a>
               <span class="tooltiptext">Project Overview</span>
             </div>
           </li>
           <li>
             <div class="tooltip">
-              <a href="#Research" onclick="myFunction2()"><span class="dot"></span></a>
+              <a href="#Research" onclick="ScrollToResearch()"><span class="dot"></span></a>
               <span class="tooltiptext">Research and Understanding</span>
             </div>
           </li>
           <li>
             <div class="tooltip">
-              <a href="#Branding" onclick="myFunction3()"><span class="dot"></span></a>
+              <a href="#Branding" onclick="ScrollToBranding()"><span class="dot"></span></a>
               <span class="tooltiptext">Branding and Strategy</span>
             </div>
           </li>
           <li>
             <div class="tooltip">
-              <a href="#Wireframe" onclick="myFunction4()"><span class="dot"></span></a>
+              <a href="#Wireframe" onclick="ScrollToWireframe()"><span class="dot"></span></a>
               <span class="tooltiptext">Wireframe Iteration</span>
             </div>
           </li>
           <li>
             <div class="tooltip">
-              <a href="#High fidility mockup" onclick="myFunction5()"><span class="dot"></span></a>
+              <a href="#High fidility mockup" onclick="ScrollToMockup()"><span class="dot"></span></a>
               <span class="tooltiptext">High Fidility Mockup</span>
             </div>
           </li>
           <li>
             <div class="tooltip">
-              <a href="#Conclusion" onclick="myFunction6()"><span class="dot"></span></a>
+              <a href="#Conclusion" onclick="ScrollToConclusion()"><span class="dot"></span></a>
               <span class="tooltiptext">Conclusion</span>
             </div>
           </li>
           <li>
             <div class="tooltip">
-              <a href="#Contact me" onclick="myFunction7()"><span class="dot"></span></a>
+              <a href="#Contact me" onclick="ScrollToContactme()"><span class="dot"></span></a>
               <span class="tooltiptext">Contact me?</span>
             </div>
           </li>
         </ul>
       </nav>
-      <section class="hero" style ="margin-bottom: 25%; margin-top: 0;">
+      <section class="hero">
         <ul class="flex-container">
-          <li class="one">
+          <li class="my-logo">
             <a href="http://127.0.0.1:3000/"><img class="logo" src="image\logo.png" alt="logo"></a>
           </li>
-          <li class="two"><a href="http://127.0.0.1:3000/" style="color: #3F3E87;">Work</a></li>
-          <li class="three"><a href="http://127.0.0.1:3000/bio.html" style="color: #3F3E87;">Bio</a></li>
+          <li class="work"><a href="http://127.0.0.1:3000/">Work</a></li>
+          <li class="bio"><a href="http://127.0.0.1:3000/bio.html">Bio</a></li>
         </ul>
         <img class="top-hand" src="image\hand.png" alt="hand">
       </section>
-      <section style="color: #3F3E87;">
-        <div style = "margin-left:20%; margin-right: 20%; text-align: center;">
-          <h2 style="margin:1rem 0; color: #A95A5D; font-weight: 600;">Pack Cloud Storage</h2>
+      <section class="project-intro">
+        <div class="project-div">
+          <h3 class="project-h3">Pack Cloud Storage</h3>
           <p>A low cost platform for users with personal data</p>
         </div>
-        <div class="buttons" style="text-align: center;">
+        <div class="buttons">
           <a href="https://www.figma.com/proto/hR8w0Kj3fk9re6NpA4aaPc/cloud-storage-high-fidility-mock-up-Mobile-rev-3?node-id=178%3A1&scaling=scale-down"><img class="mobile" src="image\mobile.png" alt="mobile"></a>
           <a href="https://www.figma.com/proto/8KpxkIbJohSgN40lVpGevT/cloud-storage-high-fidility-mock-up-desktop-rev-3?node-id=279%3A53&scaling=min-zoom"><img class="desktop" src="image\desktop.png" alt="desktop"></a>
         </div>
-        <img class="packsolution" src="image\packsolution.png" style="width:100%;" alt="packsolution">
+        <img class="packsolution" src="image\packsolution.png" alt="packsolution">
       </section>
-      <section id="overview" class="intro" style="color:#3F3E87;">
+      <section id="overview" class="intro">
         <div class="overview">
-          <p style = "color:#A95A5D; font-weight:500;">PROJECT OVERVIEW:</p>
-          <p>The available cloud storage platforms in the market are mainly focusing on the businesses. Even with the individual available plans, the users are complaining about the plans cost for their personal data storage. Pack provides a comfortable and user-friendly platform for everyone with personal data at a lower cost. There was a need for a personal easy-to-use platform in the market which I was fortunate to help with the design and development. Pack has a special respect toward the students and offer them a special incentive. This does not mean non-students do not receive any benefits. There is a referral programs for anyone to get free extra storage space.</p>
+          <h4>PROJECT OVERVIEW:</h4>
+          <p class="overview-p">The available cloud storage platforms in the market are mainly focusing on the businesses. Even with the individual available plans, the users are complaining about the plans cost for their personal data storage. Pack provides a comfortable and user-friendly platform for everyone with personal data at a lower cost. There was a need for a personal easy-to-use platform in the market which I was fortunate to help with the design and development. Pack has a special respect toward the students and offer them a special incentive. This does not mean non-students do not receive any benefits. There is a referral programs for anyone to get free extra storage space.</p>
         </div>
-        <div class="general" style="line-height: 3rem; display: inline-block;">
-          <div class="role" style="display: inline-block;">
-            <p><span style = "color:#A95A5D; font-weight:500;">Role</span> Research, Ideate, design and prototype</p><br>
-            <p><span style = "color:#A95A5D; font-weight:500;">Duration</span> 5 weeks</p><br>
-            <p><span style = "color:#A95A5D; font-weight:500;">Tools</span> Figma, Illustrator, Usability Hub</p><br>
+        <div class="general">
+          <div class="role">
+            <h4>Role</h4>
+            <h5> Research, Ideate, design and prototype</h5><br>
+            <h4>Duration</h4>
+            <h5> 5 weeks</h5><br>
+            <h4>Tools</h4>
+            <h5> Figma, Illustrator, Usability Hub</h5><br>
           </div>
         </div>
       </section>
-      <section class="questions" style="background-color: #F3F3F3;">
+      <section class="questions">
         <div class="question1">
-          <h2 style="margin-top:1rem; margin-bottom:1rem; font-weight: 600;"><span style="color: #A95A5D;">I.</span>Why are loud services becoming more popular?</h2>
-          <p style="margin-bottom: 2rem;">Cloud services are becoming popular because they can reduce the cost and complexity of owning and operating computers and physical storages. Growing demand for universal data accessibility, sync technology and security, increases in cloud adoption across industry and society.</p>
+          <h6 class="question-h6"><span class="question-number">I.</span>Why are loud services becoming more popular?</h6>
+          <p>Cloud services are becoming popular because they can reduce the cost and complexity of owning and operating computers and physical storages. Growing demand for universal data accessibility, sync technology and security, increases in cloud adoption across industry and society.</p>
         </div>
         <div class="question2">
-          <h2 style="margin-top:1rem; margin-bottom:1rem; font-weight: 600;"><span style="color: #A95A5D;">II.</span>What percentage of companies use the cloud?</h2>
-          <p style="margin-bottom: 2rem;"><span style="font-weight:bold;">93%</span> of organizations use cloud-based IT services according to <span class="link"><a href="https://www.spiceworks.com/press/releases/2016-03-08/" style="color: #3F3E87;">Spicework Press</a></span>, which is a siginificant percentage. </p>
+          <h6 class="question-h6"><span class="question-number">II.</span>What percentage of companies use the cloud?</h6>
+          <p><span class="percent">93%</span> of organizations use cloud-based IT services according to <span class="link"><a href="https://www.spiceworks.com/press/releases/2016-03-08/">Spicework Press</a></span>, which is a siginificant percentage. </p>
         </div>
         <div class="question3">
-          <h2 style="margin-top:1rem; margin-bottom:1rem; font-weight: 600;"><span style="color: #A95A5D;">III.</span>What percentage of online adult use the cloud?</h2>
-          <p style="margin-bottom: 2rem;">A statistic on <span class="link"><a href="https://www.statista.com/statistics/710972/us-cloud-computing-demographic-age-group/">Statista</a></span> presents information on cloud storage usage among online consumers in the United States, sorted by age group. During the May 2017 survey it was found that 61 percent of online consumers aged 18 to 29 years were using online cloud storage services.</p>
+          <h6 class="question-h6"><span class="question-number">III.</span>What percentage of online adult use the cloud?</h6>
+          <p>A statistic on <span class="link"><a href="https://www.statista.com/statistics/710972/us-cloud-computing-demographic-age-group/">Statista</a></span> presents information on cloud storage usage among online consumers in the United States, sorted by age group. During the May 2017 survey, it was found that 61 percent of online consumers aged 18 to 29 years were using online cloud storage services.</p>
         </div>
         <div class="waveform">
-          <img src="image\wavefom1.png" style="width:100%;" alt="waveform1">
+          <img src="image\wavefom1.png" class="waveform-img" alt="waveform1">
         </div>
         <div class="lamp">
           <img class="lamp-image" src="image\lamp.png" alt="lamp"><br>
           <p class="lamp-p">According to the collected data, the companies are the dominant cloud storage users compared to indivisual users.</p>
         </div>
         <div class="design-challenge">
-          <p class="design-p"><span style="color: #A95A5D;">Design Challenge</span> What are the individuals’ concerns and barriers with cloud storage? How can I help individuals overcome these barriers and create a more genuine and effective platform for them to store their data?</p><br>
+          <p class="design-p"><span class="challenge-title">Design Challenge</span> What are the individuals’ concerns and barriers with cloud storage? How can I help individuals overcome these barriers and create a more genuine and effective platform for them to store their data?</p><br>
           <img class="design-image" src="image\Word Art.png" alt="Word Art">
         </div>
       </section>
       <section id="research" class="research-understanding">
         <div class="description">
-          <h1 style="background-color: white; text-align: center; border-radius:1rem; margin-bottom: 2rem;"><span style="color: #A95A5D;">00 </span>Research & Understanding </h1>
-          <p class="research-p" style="margin-bottom: 5%;">Being aware of cloud storage users was crucial to my understanding of the problem space. I conducted a user survey, evaluating individuals within the cloud storage users on their concerns and preferences.</p>
+          <h1><span class="h1-title">00 </span>Research & Understanding </h1>
+          <p class="research-p">Being aware of cloud storage users was crucial to my understanding of the problem space. I conducted a user survey, evaluating individuals within the cloud storage users on their concerns and preferences.</p>
         </div>
         <section class="survey">
             <img class="s-image" src="image\survey.png" alt="survey logo">
-            <h2 class="survey-p1">User Survey Findings</h2>
-            <h2 class="survey-p2">25-<span style="color:#C9994F;">Questions</span></h2>
-            <h2 class="survey-p3">19-<span style="color:#C9994F;">Participants</span></h2>
+            <h6 class="survey-p1">User Survey Findings</h6>
+            <h6 class="survey-p2">25-<span class="h6-main-p">Questions</span></h6>
+            <h6 class="survey-p3">19-<span class="h6-main-p">Participants</span></h6>
         </section>
-        <div class="curves" style="margin-top:1rem;"><br>
-            <div class="curve-1">
-              <div class="curve-p" style="margin-bottom:2rem;">
+        <ul class="curves"><br>
+            <li class="survey-curve-1">
+              <div class="survey-curve-p">
                 <p>1. How do you maintain, manage and back up your data?</p>
               </div>
-                <img class="curve-1-image" src="image\curve1.png" alt="curve1">
+                <img class="survey-curve-1-image" src="image\curve1.png" alt="curve1">
                 <img class="line-1-image" src="image\Line.png" alt="line">
-            </div>
-            <div class="curve-2">
-              <div class="curve-p" style="margin-bottom:4rem;">
+            </li>
+            <li class="survey-curve-2">
+              <div class="survey-curve-p">
                 <p>2. What cloud storage are you currently using for data storage?</p>
               </div>
-                <img class="curve-2-image" src="image\curve2.png" style="width:100%; margin-bottom: 2rem;" alt="curve2">
+                <img class="survey-curve-2-image" src="image\curve2.png" alt="curve2">
                 <img class="line-1-image" src="image\Line.png" alt="line">
-            </div>
-            <div class="curve-3">
-              <div Class="curve-p" style="margin-bottom:4rem;">
-                <p style="margin-bottom:2rem;">3. What do you use the cloud storage for?</p>
+            </li>
+            <li class="survey-curve-3">
+              <div Class="survey-curve-p">
+                <p>3. What do you use the cloud storage for?</p>
               </div>
-                <img class="curve-3-image" src="image\curve3.png" style="width:100%; margin-bottom: 2rem;" alt="curve3">
+                <img class="survey-curve-3-image" src="image\curve3.png" alt="curve3">
                 <img class="line-1-image" src="image\Line.png" alt="line">
-            </div>
-            <div class="curve-4">
-              <div class="curve-p" style="margin-bottom:4rem;">
-                <p style="margin-bottom:2rem;">4. What was the most important factor to you to select your current cloud storage among the available products in market?</p>
+            </li>
+            <li class="survey-curve-4">
+              <div class="survey-curve-p">
+                <p>4. What was the most important factor to you to select your current cloud storage among the available products in market?</p>
               </div>
-                <img class="curve-4-image" src="image\curve4.png" style="width:100%; margin-bottom: 2rem;" alt="curve4">
+                <img class="survey-curve-4-image" src="image\curve4.png" alt="curve4">
                 <img class="line-1-image" src="image\Line.png" alt="line">
-            </div>
-            <div class="curve-5">
-              <div class="curve-p" style="margin-bottom:4rem;">
-                <p style="margin-bottom:2rem;">5. What type of data would you like to store in cloud storage?</p>
+            </li>
+            <li class="survey-curve-5">
+              <div class="survey-curve-p">
+                <p>5. What type of data would you like to store in cloud storage?</p>
               </div>
-                <img class="curve-5-image" src="image\curve5.png" style="width:100%; margin-bottom: 2rem;" alt="curve5">
+                <img class="survey-curve-5-image" src="image\curve5.png" alt="curve5">
                 <img class="line-1-image" src="image\Line.png" alt="line">
-            </div>
-            <div class="curve-6">
-              <div class="curve-p" style="margin-bottom:4rem;">
-                <p style="margin-bottom:2rem;">6. What are you concerned about using cloud?</p>
+            </li>
+            <li class="survey-curve-6">
+              <div class="survey-curve-p">
+                <p>6. What are you concerned about using cloud?</p>
               </div>
-                <img class="curve-6-image" src="image\curve6.png" style="width:100%; margin-bottom: 2rem;" alt="curve6">
+                <img class="survey-curve-6-image" src="image\curve6.png" alt="curve6">
                 <img class="line-1-image" src="image\Line.png" alt="line">
-            </div>
-            <div class="curve-7">
-              <div class="curve-p" style="margin-bottom:2rem;">
-                <p style="margin-bottom:2rem;">7. What is your profession?</p>
+            </li>
+            <li class="survey-curve-7">
+              <div class="survey-curve-p-2">
+                <p>7. What is your profession?</p>
               </div>
-                <img class="curve-7-image" src="image\curve7.png" style="width:80%; margin-bottom: 2rem;" alt="curve7">
+                <img class="survey-curve-7-image" src="image\curve7.png" alt="curve7">
                 <img class="line-1-image" src="image\Line.png" alt="line">
-            </div>
-            <div class="curve-8">
-              <div class="curve-p" style="margin-bottom:4rem;">
-                <p style="margin-bottom:2rem;">8. What upcoming changes could absorb more users to cloud storage market?</p>
+            </li>
+            <li class="survey-curve-8">
+              <div class="survey-curve-p">
+                <p>8. What upcoming changes could absorb more users to cloud storage market?</p>
               </div>
-                <img class="curve-8-image" src="image\curve8.png" style="width:100%; margin-bottom: 2rem;" alt="curve8">
-            </div>
-        </div>
-        <div style="text-align: center;">
-          <p style="font-size:1.2rem; margin-bottom: 2rem;">See more <span class="link"><a href="https://docs.google.com/forms/d/e/1FAIpQLScdcam26v7x5VCNNpxUlbNA6I6OD5QiVLfA0eMFE-7QUqr5ZA/viewform?usp=sf_link">Questions</a></span> and <span class="link"><a href="https://docs.google.com/document/d/1O6v27O0MvCfaX-qW5NkJau7BFAMjWtG6GLEQQQX121s/edit?usp=sharing">Survey Analysis</a></span>?</p>
+                <img class="survey-curve-8-image" src="image\curve8.png" alt="curve8">
+            </li>
+        </ul>
+        <div class="text-center">
+          <p class="see-more">See more <span class="link"><a href="https://docs.google.com/forms/d/e/1FAIpQLScdcam26v7x5VCNNpxUlbNA6I6OD5QiVLfA0eMFE-7QUqr5ZA/viewform?usp=sf_link">Questions</a></span> and <span class="link"><a href="https://docs.google.com/document/d/1O6v27O0MvCfaX-qW5NkJau7BFAMjWtG6GLEQQQX121s/edit?usp=sharing">Survey Analysis</a></span>?</p>
         </div>
         <div class="survey-conclusion">
           <img class="s-conclusion-img" src="image\hand2.png" alt="hand2"><br>
           <div class="s-conclusion-p">
-            <p><span style="color: #A95A5D; font-weight: bold;">I.</span> The majority of the paticipants are Google Drive users. </p><br><br>
-            <p><span style="color: #A95A5D; font-weight: bold;">II.</span> The majority of the participants like to store their personal data especially videos and photos on the cloud storage.</p><br><br>
-            <p><span style="color: #A95A5D; font-weight: bold;">III.</span> The cost vs storage space is the most important feature to the participants. </p><br><br>
-            <p><span style="color: #A95A5D; font-weight: bold;">IV.</span> The majority of the partcipants were among the students, engineer, and designers.  </p><br><br>
+            <h7>I.</h7>
+            <h8>The majority of the paticipants are Google Drive users.</h8><br><br>
+            <h7>II.</h7>
+            <h8>The majority of the participants like to store their personal data especially videos and photos on the cloud storage.</h8><br><br>
+            <h7>III.</h7>
+            <h8>The cost vs storage space is the most important feature to the participants.</h8><br><br>
+            <h7>IV.</h7>
+            <h8>The majority of the partcipants were among the students, engineer, and designers.</h8><br><br>
           </div>
         </div>
         <div class="persona">
           <div class="persona.icon">
             <img class="persona-image" src="image\personas.png" alt="personas">
-            <h2 class="persona-h">Personas</h2>
+            <h6 class="persona-h">Personas</h6>
           </div>
           <div class="persona-des"><br>
             <div class="persona-p">
-              <p>Based on the survey data, I started determining the target audience. <span style="font-weight:bold;">Who are going to be the users? Who would use this product and why?</span>
+              <p>Based on the survey data, I started determining the target audience. <span class="bold">Who are going to be the users? Who would use this product and why?</span>
               In order to represent the key audience of my product and build empathy with them, I’ve developed two personas. Combining the major findings from the survey and my research, I’ve listed the goals, frustrations and motiviation of my ideal clients.</p>
             </div>
             <div class="persona-img2">
@@ -236,21 +243,21 @@
         <div class="Competitive-Analysis">
           <div class="comp.icon">
             <img class="comp-image" src="image\Competitive Analysis.png" alt="Competitive Analysis">
-            <h2 class="comp-h2">Competitive Analysis</h2>
+            <h6 class="comp-h2">Competitive Analysis</h6>
           </div>
           <div class="comp-des"><br>
             <div class="comp-p">
-              <p><span style="font-weight:bold;">SWOT</span><br>Aside from the user survey, competitive analysis helped me to determine the strengths and weaknesses of the competitors within the market. It provided me to spot opportunities for differentiating my cloud storage. I’ve selected Google Drive, Dropbox and Evernote for analysis.</p>
+              <p><span class="bold">SWOT</span><br>Aside from the user survey, competitive analysis helped me to determine the strengths and weaknesses of the competitors within the market. It provided me to spot opportunities for differentiating my cloud storage. I’ve selected Google Drive, Dropbox and Evernote for analysis.</p>
             </div>
             <div class="comp-img2">
               <img class="img3" src="image\SWOT.png" alt="SWOT">
             </div>
           </div>
           <div class="comp-group">
-            <img class="com11" src="image\com11.png" style="width:80%; margin:2rem 10%;" alt="com11">
-            <img class="com22" src="image\com22.png" style="width:80%; margin:2rem 10%;" alt="com22">
-            <img class="com33" src="image\com33.png" style="width:80%; margin:2rem 10%;" alt="com33">
-            <img class="com44" src="image\com44.png" style="width:80%; margin:2rem 10%;" alt="com44">
+            <img class="com11" src="image\com11.png" alt="com11">
+            <img class="com22" src="image\com22.png" alt="com22">
+            <img class="com33" src="image\com33.png" alt="com33">
+            <img class="com44" src="image\com44.png" alt="com44">
           </div>
           <div class="observe-more">
             <p>To observe the comprehensive findings on SWOT analysis click <span class="link"><a href="https://docs.google.com/document/d/1G84JOXc-XBIaXB6fyKMRrs3YoUZXVr3mknb1yMk_T88/edit?usp=sharing">here</a></span>.</p>
@@ -260,20 +267,20 @@
           </div>
           <div class="com-conclusion">
               <div class="C-1">
-                <p class="p1">Based on the analysis above and survey data, I needed to answer the question of <span style="font-weight:bold;">“How a new competitor enter the marketplace?”</span>.</p><br><br><br>
-                <p class="p2"><span style="color: #A95A5D; font-weight: bold;">I.</span><span style="font-weight:bold;"> Cost vs storage space/data storage space for free version:</span><br> I believe the new competitor needs to provide the same level of services with lower/comparable price. It also needs to provide the users with higher data storage space for free version or add some interesting features to the free version of accounts. (It could be the features on the paid plans of available competitors)
+                <p class="p1">Based on the analysis above and survey data, I needed to answer the question of <span class="bold">“How a new competitor enter the marketplace?”</span>.</p><br><br><br>
+                <p class="p2"><span class="red-bold-p">I.</span><span class="bold"> Cost vs storage space/data storage space for free version:</span><br> I believe the new competitor needs to provide the same level of services with lower/comparable price. It also needs to provide the users with higher data storage space for free version or add some interesting features to the free version of accounts. (It could be the features on the paid plans of available competitors)
                 </p><br><br>
-                <p class="p3" ><span style="color: #A95A5D; font-weight: bold;">II.</span><span style="font-weight:bold;"> Operating systems:</span> <br> My recommendation for the new competitor is to cover the operating system gap existed in the market. So, it could offer a new service to the minority operating system users like windows phone or Linux/Unix users.
+                <p class="p3" ><span class="red-bold-p">II.</span><span class="bold"> Operating systems:</span> <br> My recommendation for the new competitor is to cover the operating system gap existed in the market. So, it could offer a new service to the minority operating system users like windows phone or Linux/Unix users.
                 </p><br><br>
-                <p class="p4"><span style="color: #A95A5D; font-weight: bold;">III.</span><span style="font-weight:bold;"> Data Organization:</span><br>If I could set an automatic and smart data organization feature, it could be an apportunity to enter the product into the market. For example, a user would like to have the videos separated from the images and documents. By adjusting the setting to the file type, the videos go to the specific folder for the videos or the uploaded image goes to the image folder directly right after being uploaded. This could save a few clicks for users.</p><br><br>
-                <p class="p5"><span style="color: #A95A5D; font-weight: bold;">IV.</span><span style="font-weight:bold;">  Integration with other apps in market/ supporting a broad file types:</span><br>To compete with the available products in the market, the new competitor should better have a broad integration with available applications out there. What might be interesting to the users is to customize the cloud platform app integration based on the users’ career or need. </p><br><br>
+                <p class="p4"><span class="red-bold-p">III.</span><span class="bold"> Data Organization:</span><br>If I could set an automatic and smart data organization feature, it could be an apportunity to enter the product into the market. For example, a user would like to have the videos separated from the images and documents. By adjusting the setting to the file type, the videos go to the specific folder for the videos or the uploaded image goes to the image folder directly right after being uploaded. This could save a few clicks for users.</p><br><br>
+                <p class="p5"><span class="red-bold-p">IV.</span><span class="bold">  Integration with other apps in market/ supporting a broad file types:</span><br>To compete with the available products in the market, the new competitor should better have a broad integration with available applications out there. What might be interesting to the users is to customize the cloud platform app integration based on the users’ career or need. </p><br><br>
               </div>
               <div class="C-2">
-                <p class="p6"><span style="color: #A95A5D; font-weight: bold;">V.</span><span style="font-weight:bold;"> Data migration among the cloud platforms:</span><br>If the new competitor provides an easy data migration tool for the users, it’ll help to absorb more users to bring their data into the new cloud storage.</p><br><br>
-                <p class="p7"><span style="color: #A95A5D; font-weight: bold;">VI.</span><span style="font-weight:bold;"> Referral program incentive:</span> <br>My idea for the new competitor is to consider a referral program incentive for the users. They could also offer users free data storage space for migrating their data from any other cloud platform to their platform.</p><br><br>
-                <p class="p8"><span style="color: #A95A5D; font-weight: bold;">VII.</span><span style="font-weight:bold;"> A Combination of useful features in existing cloud storage platforms to the users:</span><br>In order to enter into the market, the new competitor could combine the interesting features of existing platforms. It also could offer users what they really need based on their budget. For example, if it’s important for the user to have a fast sync feature on the platform, the platform could be customized with that feature. The same could happen for the strong search feature.</p><br><br>
-                <p class="p19"><span style="color: #A95A5D; font-weight: bold;">VIII.</span><span style="font-weight:bold;"> The missing features on the mobile app:</span><br>If the new competitor would be able to blame that a user could access to the same level of services using any devices, that’s going to be a unique feature. So, it would be even possible for the user to do all the required tasks just using their cell phone or tablet.</p><br><br>
-                <p class="p10"><span style="color: #A95A5D; font-weight: bold;">IX.</span><span style="font-weight:bold;"> Collaboration features:</span><br>The new competitor collaboration features could be a comprehensive combination of available cloud storage platforms. It also could expand this feature to social media, URL with protection password, to comment on all types file, like/dislike the changes, to send notification if a file is opened/modified, to send a request to do task on the shared file, to receive the task on the shared file is all done, to lock the shared file/folder in case of emergency, and many more.</p><br><br>
+                <p class="p6"><span class="red-bold-p">V.</span><span class="bold"> Data migration among the cloud platforms:</span><br>If the new competitor provides an easy data migration tool for the users, it’ll help to absorb more users to bring their data into the new cloud storage.</p><br><br>
+                <p class="p7"><span class="red-bold-p">VI.</span><span class="bold"> Referral program incentive:</span> <br>My idea for the new competitor is to consider a referral program incentive for the users. They could also offer users free data storage space for migrating their data from any other cloud platform to their platform.</p><br><br>
+                <p class="p8"><span class="red-bold-p">VII.</span><span class="bold"> A Combination of useful features in existing cloud storage platforms to the users:</span><br>In order to enter into the market, the new competitor could combine the interesting features of existing platforms. It also could offer users what they really need based on their budget. For example, if it’s important for the user to have a fast sync feature on the platform, the platform could be customized with that feature. The same could happen for the strong search feature.</p><br><br>
+                <p class="p19"><span class="red-bold-p">VIII.</span><span class="bold"> The missing features on the mobile app:</span><br>If the new competitor would be able to blame that a user could access to the same level of services using any devices, that’s going to be a unique feature. So, it would be even possible for the user to do all the required tasks just using their cell phone or tablet.</p><br><br>
+                <p class="p10"><span class="red-bold-p">IX.</span><span class="bold"> Collaboration features:</span><br>The new competitor collaboration features could be a comprehensive combination of available cloud storage platforms. It also could expand this feature to social media, URL with protection password, to comment on all types file, like/dislike the changes, to send notification if a file is opened/modified, to send a request to do task on the shared file, to receive the task on the shared file is all done, to lock the shared file/folder in case of emergency, and many more.</p><br><br>
               </div>
           </div>
         </div>
@@ -281,98 +288,98 @@
       <section class="com-user-flow">
         <div class="user-flow">
           <div class="user-des">
-            <p><span style="font-weight: bold;">COMPETITORS USER FLOWS</span><br> After Performing a SWOT analysis on each of these competitors, I created user flows documenting the following processes for each competitors:</p><br><br>
-            <p><span style="color: #A95A5D; font-weight: bold;">I. </span>The onboarding process</p>
-            <a href="https://drive.google.com/file/d/1IsmicKwEZu5LEf3ML0JWWP0IZnhzvCHA/view?usp=sharing"><img src="image\Logo_of_Google_Drive.png" style="width:5%; margin: 1% 1%;" alt="Google Drive"></a>
-            <a href="https://drive.google.com/file/d/1-4WSwQE_RyzIjOlI6nvyKiG4wCZMjKd-/view?usp=sharing"><img src="image\dropbox.png" style="width:5%; margin: 1% 1%;" alt="Dropbox"></a>
-            <a href="https://drive.google.com/file/d/1KrWIBxTyr0JpYY5hFPEX7dq1WMcCFhn7/view?usp=sharing"><img src="image\evernote.png" style="width:5%; margin: 1% 1%;" alt="Evernote"></a><br>
-            <p><span style="color: #A95A5D; font-weight: bold;">II. </span>Saving an item</p>
-            <a href="https://drive.google.com/file/d/1Hkwu-zZs1megcw2sgh3c8yGi_-hSp15b/view?usp=sharing"><img src="image\Logo_of_Google_Drive.png" style="width:5%; margin: 1% 1%;" alt="Google Drive"></a>
-            <a href="https://drive.google.com/file/d/1gjKtFwplX6ESGIZ6jfAUf-NbMTnGuPvD/view?usp=sharing"><img src="image\dropbox.png" style="width:5%; margin: 1% 1%;" alt="Dropbox"></a>
-            <a href="https://drive.google.com/file/d/1MI4I7s3WN2ynxCZOW-Gjtr0-mjrerR9K/view?usp=sharing"><img src="image\evernote.png" style="width:5%; margin: 1% 1%;" alt="Evernote"></a><br>
-            <p><span style="color: #A95A5D; font-weight: bold;">III. </span>Organizing an item (into a group or category)</p>
-            <a href="https://drive.google.com/file/d/1AoJu-UAlOy_0zEScs2709Bt2KEXlqM8G/view?usp=sharing"><img src="image\Logo_of_Google_Drive.png" style="width:5%; margin: 1% 1%;" alt="Google Drive"></a>
-            <a href="https://drive.google.com/file/d/1dEkFYHbEh9swe-nLPSn-hVG5vTVvpVeJ/view?usp=sharing"><img src="image\dropbox.png" style="width:5%; margin: 1% 1%;" alt="Dropbox"></a>
-            <a href="https://drive.google.com/file/d/1iBGtAKMK6xk7D29pbLiupXZgMZUalDuA/view?usp=sharing"><img src="image\evernote.png" style="width:5%; margin: 1% 1%;" alt="Evernote"></a><br>
+            <p><span class="bold">COMPETITORS USER FLOWS</span><br><br>After Performing a SWOT analysis on each of these competitors, I created user flows documenting the following processes for each competitors:</p><br><br>
+            <p><span class="red-bold-p">I. </span>The onboarding process</p>
+            <a href="https://drive.google.com/file/d/1IsmicKwEZu5LEf3ML0JWWP0IZnhzvCHA/view?usp=sharing"><img src="image\Logo_of_Google_Drive.png" class="googledrive-dropbox-evernote" alt="Google Drive"></a>
+            <a href="https://drive.google.com/file/d/1-4WSwQE_RyzIjOlI6nvyKiG4wCZMjKd-/view?usp=sharing"><img src="image\dropbox.png" class="googledrive-dropbox-evernote" alt="Dropbox"></a>
+            <a href="https://drive.google.com/file/d/1KrWIBxTyr0JpYY5hFPEX7dq1WMcCFhn7/view?usp=sharing"><img src="image\evernote.png" class="googledrive-dropbox-evernote" alt="Evernote"></a><br>
+            <p><span class="red-bold-p">II. </span>Saving an item</p>
+            <a href="https://drive.google.com/file/d/1Hkwu-zZs1megcw2sgh3c8yGi_-hSp15b/view?usp=sharing"><img src="image\Logo_of_Google_Drive.png" class="googledrive-dropbox-evernote" alt="Google Drive"></a>
+            <a href="https://drive.google.com/file/d/1gjKtFwplX6ESGIZ6jfAUf-NbMTnGuPvD/view?usp=sharing"><img src="image\dropbox.png" class="googledrive-dropbox-evernote" alt="Dropbox"></a>
+            <a href="https://drive.google.com/file/d/1MI4I7s3WN2ynxCZOW-Gjtr0-mjrerR9K/view?usp=sharing"><img src="image\evernote.png" class="googledrive-dropbox-evernote" alt="Evernote"></a><br>
+            <p><span class="red-bold-p">III. </span>Organizing an item (into a group or category)</p>
+            <a href="https://drive.google.com/file/d/1AoJu-UAlOy_0zEScs2709Bt2KEXlqM8G/view?usp=sharing"><img src="image\Logo_of_Google_Drive.png" class="googledrive-dropbox-evernote" alt="Google Drive"></a>
+            <a href="https://drive.google.com/file/d/1dEkFYHbEh9swe-nLPSn-hVG5vTVvpVeJ/view?usp=sharing"><img src="image\dropbox.png" class="googledrive-dropbox-evernote" alt="Dropbox"></a>
+            <a href="https://drive.google.com/file/d/1iBGtAKMK6xk7D29pbLiupXZgMZUalDuA/view?usp=sharing"><img src="image\evernote.png" class="googledrive-dropbox-evernote" alt="Evernote"></a><br>
           </div>
           <div class="user-img">
-            <img src="image\com2-user-flow.png" style="width:90%; margin:2% 5%;" alt="com2-user-flow">
+            <img src="image\com2-user-flow.png" class="user-flow-img-2" alt="com2-user-flow">
           </div>
         </div>
       </section>
-      <section class="user-story-des">
-        <div class="user-story">
+      <ul class="user-story-des">
+        <li class="user-story">
           <div class="inner">
             <img class="user-story-image" src="image\user-story.png" alt="User-story">
-            <h2 class="user-story-h2">User Stories</h2>
+            <h6 class="user-story-h2">User Stories</h6>
           </div>
-          <p class="user-story-p" style="margin-bottom: 2rem;"> Based on the user survey data, a list of user stories was created  and prioritized based on the research I conducted earlier. This list helped me to simplify the description of a mobile app feature requirement for minimum viable product. Please see the full version of user stories in <span class="link"><a href="https://docs.google.com/spreadsheets/d/1IIDmzyZ5HCwVuzfia5TiiaG3Ssx-3svBmv1Y2bZSVuc/edit?usp=sharing">here</a></span>.</p><br>
-        </div>
-        <div class="finding">
+          <p class="user-story-p"> Based on the user survey data, a list of user stories was created  and prioritized based on the research I conducted earlier. This list helped me to simplify the description of a mobile app feature requirement for minimum viable product. Please see the full version of user stories in <span class="link"><a href="https://docs.google.com/spreadsheets/d/1IIDmzyZ5HCwVuzfia5TiiaG3Ssx-3svBmv1Y2bZSVuc/edit?usp=sharing">here</a></span>.</p><br>
+        </li>
+        <li class="finding">
           <div class= "inner-finding">
             <img class= "finding-image" src="image\finding.png" alt="finding">
-            <h2 class= "finding-h2">From research findings to design solution</h2>
+            <h6 class= "finding-h2">From research findings to design solution</h6>
           </div>
-          <p style="margin-bottom:2rem;">Looking backwards, I was able to connect the dots between finding problems and recommending solutions. This step provides me the great value as a UX designer to come up with the initial Minimum Viable Product (MVP).</p><br>
-        </div>
-      </section>
+          <p>Looking backwards, I was able to connect the dots between finding problems and recommending solutions. This step provides me the great value as a UX designer to come up with the initial Minimum Viable Product (MVP).</p><br>
+        </li>
+      </ul>
       <img class="solution-image" src="image\solution.png" alt="solution">
       <section class="penpen">
         <div class="pen">
           <img class="pen-icon" src="image\pen.png" alt="pen">
-          <h2 class="pen-h2">Brainstorming and sketching</h2><br>
+          <h6 class="pen-h2">Brainstorming and sketching</h6><br>
         </div>
-        <p style="margin-bottom:2rem;"> At this step, I created user flows mapping out all the high-priority user stories I planed to include in my project and eventually test with users later on. Where possible, I looked for opportunities to also include medium or even low priority user stories in my user flows to make up my MVP for this project. Please see the original user flow in <span class="link"><a href="https://drive.google.com/file/d/1GZv7e2eh2S8PU-ENP851JSMZkBKTUmQF/view?usp=sharing">here</a></span>.</p><br>
+        <p> At this step, I created user flows mapping out all the high-priority user stories I planed to include in my project and eventually test with users later on. Where possible, I looked for opportunities to also include medium or even low priority user stories in my user flows to make up my MVP for this project. Please see the original user flow in <span class="link"><a href="https://drive.google.com/file/d/1GZv7e2eh2S8PU-ENP851JSMZkBKTUmQF/view?usp=sharing">here</a></span>.</p><br>
       </section>
-      <img class="paper" src="image\pack-paper-p.png" style="width:100%;" alt="paper-p">
+      <img class="paper" src="image\pack-paper-p.png" alt="paper-p">
       <section class="sitemap">
         <div class="content-s">
           <img class="horn" src="image\horn.png" alt="horn"><br>
-          <h2 class="horn-h2">Sitemap and content strategy</h2>
+          <h6 class="horn-h2">Sitemap and content strategy</h6>
         </div>
-        <p style="margin-bottom:2rem;"> Based on the user stories and user flows, a sitemap has been created for the product. Each destination in the user flows is represented in the sitemap. Using the sitemap, A <span class="link"><a href="https://drive.google.com/file/d/1GZv7e2eh2S8PU-ENP851JSMZkBKTUmQF/view?usp=sharing">Content Strategy</a></span> was created for each part of the sitemap. The sitemap should Include the text and images I might use in my designs.</p><br>
+        <p> Based on the user stories and user flows, a sitemap has been created for the product. Each destination in the user flows is represented in the sitemap. Using the sitemap, A <span class="link"><a href="https://drive.google.com/file/d/1GZv7e2eh2S8PU-ENP851JSMZkBKTUmQF/view?usp=sharing">Content Strategy</a></span> was created for each part of the sitemap. The sitemap should Include the text and images I might use in my designs.</p><br>
       </section>
       <img class="sitemapp" src="image\Sitemaps.png" alt="sitemap">
       <section id="branding" class="branding">
         <div class="description">
-          <h1 style="text-align: center; background-color: white; border-radius: 1rem;"><span style="color: #A95A5D;">01 </span>Branding and Strategy</h1>
+          <h1><span class="h1-title">01 </span>Branding and Strategy</h1>
         </div>
         <div class="fly">
           <img class="fly-image" src="image\fly.png" alt="pen"><br>
-          <h2 class="fly-h2"> Brainstorming, sketching, and <span class="link"><a href="https://docs.google.com/document/d/1s-jotfqNU7UsTdUofOcqSz21oaX0Pzg8WRhsbZ6jqFs/edit?usp=sharing">Research</a></span>.</h2><br>
+          <h6 class="fly-h2"> Brainstorming, sketching, and <span class="link"><a href="https://docs.google.com/document/d/1s-jotfqNU7UsTdUofOcqSz21oaX0Pzg8WRhsbZ6jqFs/edit?usp=sharing">Research</a></span>.</h6><br>
         </div>
       </section>
       <section class="sketch">
-        <img class="sk1" src="image\sketch1.png" style="margin-bottom:2rem;" alt="sketch1">
-        <img class="sk2" src="image\sketch2.png" style="margin-bottom:2rem;" alt="sketch2">
-        <img class="sk3" src="image\sketch3.png" style="margin-bottom:2rem;" alt="sketch3">
-        <img class="sk4" src="image\sketch4.png" style="margin-bottom:2rem;" alt="sketch4">
+        <img class="sk1" src="image\sketch1.png" alt="sketch1">
+        <img class="sk2" src="image\sketch2.png" alt="sketch2">
+        <img class="sk3" src="image\sketch3.png" alt="sketch3">
+        <img class="sk4" src="image\sketch4.png" alt="sketch4">
         </section>
       <section class="color">
         <div class="Color-Palette">
           <img class="color-img" src="image\color.png" alt="color"><br>
-          <h2 class="color-h2">Color Palette</h2><br>
+          <h6 class="color-h2">Color Palette</h6><br>
         </div>
-        <p style="margin-bottom:2rem;">Since I’m designing a platform for personal data for any internet and computer users, I was thinking to use orange which is the color of energy. I used beige as a symbol of simplicity, grey as a symbol of security, and blue as a symbol of trust.</p>
+        <p>Since I’m designing a platform for personal data for any internet and computer users, I was thinking to use orange which is the color of energy. I used beige as a symbol of simplicity, grey as a symbol of security, and blue as a symbol of trust.</p>
       </section>
       <img class="colors" src="image\colors.png" alt="colors">
       <section class="logo-design">
         <div class="logo-it">
           <img class="logo-z" src="image\logo-z.png" alt="logo-z"><br>
-          <h2 class="logo-h2">Logo design iteration</h2><br>
+          <h6 class="logo-h2">Logo design iteration</h6><br>
         </div>
       </section>
       <img class="logos" src="image\logos.png" alt="logos">
       <section class="typeface">
         <div class="typeface-select">
           <img class="pen2" src="image\pen2.png" alt="color"><br>
-          <h2 class="pen2-h2">The Potential Typefaces</h2><br>
+          <h6 class="pen2-h2">The Potential Typefaces</h6><br>
         </div>
         <div class="fonts">
-          <p><span style="color: #A95A5D; font-weight: bold;">I. </span>Roboto & Roboto Slab</p><img src="image\tik.png" style="width:5%; margin-left:1rem; padding-bottom:1rem;" alt="tik"><br><br>
-          <p><span style="color: #A95A5D; font-weight: bold;">II. </span>Avenir & Avenir</p><br><br>
-          <p><span style="color: #A95A5D; font-weight: bold;">III. </span>Gilroy & Playfair Display</p><br><br>
-          <p><span style="color: #A95A5D; font-weight: bold;">IV. </span>Canela & Aktiv Grotesk</p><br><br>
+          <p><span class="red-bold-p">I. </span>Roboto & Roboto Slab</p><img src="image\tik.png" class="tik" alt="tik"><br><br>
+          <p><span class="red-bold-p">II. </span>Avenir & Avenir</p><br><br>
+          <p><span class="red-bold-p">III. </span>Gilroy & Playfair Display</p><br><br>
+          <p><span class="red-bold-p">IV. </span>Canela & Aktiv Grotesk</p><br><br>
         </div>
       </section>
         <div class="font">
@@ -384,67 +391,67 @@
             <img class="font2" src="image\font2.png" alt="font2">
           </div>
         </div>
-      <div class="buttons" style="text-align: center;">
+      <div class="buttons">
         <a href="https://www.figma.com/proto/1WUM3McVxcjgJwKD0aEGdQ/PACK-STYLE-GUIDE-2?node-id=181%3A99&scaling=min-zoom"><img class="styleguide" src="image\styleguide.png" alt="styleguide"></a>
         <a href="https://app.milanote.com/1HPV7O1YUOtj77"><img class="moodboard" src="image\moodboard.png" alt="moodboard"></a>
       </div>
       <section class="marketing">
         <div class="marketing-div">
           <img class="speaker" src="image\speaker.png" alt="speaker"><br>
-          <h2 class="speaker-h2">Marketing Strategy</h2>
+          <h6 class="speaker-h2">Marketing Strategy</h6>
         </div>
-        <p style="margin-bottom:2rem;"> According to the survey, the users are mainly complaining about the available plans cost in the market. I tried to consider this as one of the main goals of the product. As a result, I considered a few incentive programs for everyone to be able to get double initial free storage. It’s also obvious that the initial storage of the platform should not be less than 15GB which is already being provided by Google Drive. My product should be at a level to be able to compete with the available platforms in the market. I believed setting a special discount program for students is going to draw many users attention.
+        <p> According to the survey, the users are mainly complaining about the available plans cost in the market. I tried to consider this as one of the main goals of the product. As a result, I considered a few incentive programs for everyone to be able to get double initial free storage. It’s also obvious that the initial storage of the platform should not be less than 15GB which is already being provided by Google Drive. My product should be at a level to be able to compete with the available platforms in the market. I believed setting a special discount program for students is going to draw many users attention.
         Since the majority of the students need the cloud storage platforms to store their school files while they cannot afford the current cloud storage monthly payment.</p><br>
       </section>
       <section id="wireframe" class="wireframe">
         <div class="phase">
-          <h1 style="text-align: center; background-color: white; border-radius: 1rem; margin-bottom: 2rem;"><span style="color: #A95A5D;">02 </span>Wireframes Iteration & Clickable Prototype</h1>
-          <p><span style="color: #A95A5D; font-weight: bold;">I. Initial Design: </span>Based on the paper prototype and user research, an intial wireframe has been designed for the product.</p><br><br>
-          <p><span style="color: #A95A5D;" class="link2"><a href="https://docs.google.com/document/d/1Wsnj8m_r-XHVa_6fw4SIu2Z3Ktp57q7XgQF-S2UhYt0/edit?usp=sharing" style="color: #A95A5D;">II. Usability test - round one: </a></span> Then, the initial wireframe has been tested on two local and one remote users.</p><br><br>
+          <h1><span class="h1-title">02 </span>Wireframes Iteration & Clickable Prototype</h1>
+          <p><span class="red-bold-p">I. Initial Design: </span>Based on the paper prototype and user research, an intial wireframe has been designed for the product.</p><br><br>
+          <p><span class="link2"><a href="https://docs.google.com/document/d/1Wsnj8m_r-XHVa_6fw4SIu2Z3Ktp57q7XgQF-S2UhYt0/edit?usp=sharing" class="red-bold-p">II. Usability test - round one: </a></span> Then, the initial wireframe has been tested on two local and one remote users.</p><br><br>
         </div>
       </section>
       <div class="box">
-        <img src="image\image1.png" style="width:100%; min-width: 100%;" alt="image1">
-        <img src="image\image2.png" style="width:100%; min-width: 100%;" alt="image2">
-        <img src="image\image3.png" style="width:100%; min-width: 100%;" alt="image3">
+        <img class="img-box-wireframe" src="image\image1.png" alt="image1">
+        <img class="img-box-wireframe" src="image\image2.png" alt="image2">
+        <img class="img-box-wireframe" src="image\image3.png" alt="image3">
       </div>
-      <div class="buttons-2" style="text-align: center;">
+      <div class="buttons-2">
         <a href="https://www.figma.com/proto/0Apb2nY3ECgduioKDH1oC8/Cloud-Storage-Wireframes-Iphone-8-Second-edition-based-on-usability-test?node-id=1024%3A103&scaling=scale-down"><img class="wireframe-b" src="image\wireframe.png" alt="wireframe-b"></a>
       </div>
       <section id="mockup" class="mockup">
         <div class="phase">
-          <h1 style="text-align: center; background-color: white; border-radius: 1rem; margin-bottom: 2rem;"><span style="color: #A95A5D;">03 </span>High fidility mockups iterations</h1>
-          <p><span style="color: #A95A5D; font-weight: bold;">I. Initial Design: </span>Based on the wireframe design and branding, an intial high fidility mockup has been designed for the product.</p><br><br>
-          <p><span style="color: #A95A5D; font-weight: bold; color: #A95A5D;">II. Expert evaluation: </a></span>Based on Bloc program professional designers, the mockup has been modified to second iteration. </p><br><br>
-          <p><span style="color: #A95A5D;" class="link2"><a href="https://docs.google.com/document/d/15HYyNMpkXGwIxufkmd3OF_EimwAQQmUSrTdv0_y0ZxM/edit?usp=sharing" style="color: #A95A5D;">III. Usability test - round two: </a></span> Then, the second iteration mockup has been tested on two remote and one local users. </p><br><br>
+          <h1><span class="h1-title">03 </span>High fidility mockups iterations</h1>
+          <p><span class="red-bold-p">I. Initial Design: </span>Based on the wireframe design and branding, an intial high fidility mockup has been designed for the product.</p><br><br>
+          <p><span class="red-bold-p">II. Expert evaluation: </a></span>Based on Bloc program professional designers, the mockup has been modified to second iteration. </p><br><br>
+          <p><span class="link2"><a href="https://docs.google.com/document/d/15HYyNMpkXGwIxufkmd3OF_EimwAQQmUSrTdv0_y0ZxM/edit?usp=sharing" class="red-bold-p">III. Usability test - round two: </a></span> Then, the second iteration mockup has been tested on two remote and one local users. </p><br><br>
         </div>
       </section>
       <div class="box">
-        <img src="image\image4.png" style="width:100%; min-width: 100%;" alt="image4">
-        <img src="image\image5.png" style="width:100%; min-width: 100%;" alt="image5">
-        <img src="image\image6.png" style="width:100%; min-width: 100%;" alt="image6">
+        <img class="img-box-mockup" src="image\image4.png" alt="image4">
+        <img class="img-box-mockup" src="image\image5.png" alt="image5">
+        <img class="img-box-mockup" src="image\image6.png" alt="image6">
       </div>
-      <div class="buttons" style="text-align: center;">
+      <div class="buttons">
         <a href="https://www.figma.com/proto/hR8w0Kj3fk9re6NpA4aaPc/cloud-storage-high-fidility-mock-up-Mobile-rev-3?node-id=178%3A1&scaling=scale-down"><img class="mockup-b" src="image\mockup.png" alt="mockup"></a>
       </div>
       <section class="preference">
         <div class="preference-div">
           <img class="smile" src="image\smile.png" alt="smile"><br>
-          <h2 class="smile-h2">Preference Testing</h2>
+          <h6 class="smile-h2">Preference Testing</h6>
         </div>
         <p> At this design step, I've found three different elements where I considered more than one potential style. Then, I created at least two variations of each element, and conducted preference tests on all three.</p><br><br>
       </section>
-      <h2 style="color: #61AAB1; text-align:center; font-weight: bold;"> 29 Total participants</h2>
-      <img src="image\pre1.png" class="pre1" style="width:100%; margin-bottom:2rem;" alt="pre1">
-      <h2 style="color: #61AAB1; text-align:center; font-weight: bold;"> 18 Total participants</h2>
-      <img src="image\pre2.png" class="pre2" style="width:100%; margin-bottom:2rem;" alt="pre2">
-      <h2 style="color: #61AAB1; text-align:center; font-weight: bold;"> 26 Total participants</h2>
-      <img src="image\pre3.png" class="pre3" style="width:100%; margin-bottom:2rem;" alt="pre3">
+      <h3 class="preference-h"> 29 Total participants</h3>
+      <img src="image\pre1.png" class="pre1" alt="pre1">
+      <h3 class="preference-h"> 18 Total participants</h3>
+      <img src="image\pre2.png" class="pre2" alt="pre2">
+      <h3 class="preference-h"> 26 Total participants</h3>
+      <img src="image\pre3.png" class="pre3" alt="pre3">
       <div class="iteration">
-        <h2 style="text-align: center; margin-bottom: 2rem;">And that’s how the iterative design approach works for my product...</h2>
+        <h2 class="iteration-p">And that’s how the iterative design approach works for my product...</h2>
       </div>
       <img src="image\iteration.png" class="iteration-phase" alt="iteration">
-      <div class="desktop-version" style="background-color: #D7908D;">
+      <div class="desktop-version">
         <div class= "hand">
           <img class="hand3" src="image\hand3.png" alt="hand3">
           <p class="desk">PACK DESKTOP <br><br>
@@ -452,74 +459,75 @@
           <a class="desktop-link" href="https://www.figma.com/proto/8KpxkIbJohSgN40lVpGevT/cloud-storage-high-fidility-mock-up-desktop-rev-3?node-id=279%3A53&scaling=min-zoom"><img class="desktop-img" src="image\desktop-version.png" alt="desktop-version"></a>
         </div>
       </div>
-      <section id="conclusion" class="conclusion">
-        <div class="phase">
-          <h1 style="text-align: center; background-color: white; border-radius: 1rem; margin-bottom: 2rem;"><span style="color: #A95A5D;">04 </span>Conclusion</h1>
+      <ul id="conclusion" class="conclusion">
+        <li class="phase">
+          <h1><span class="h1-title">04 </span>Conclusion</h1>
           <div class="pp">
             <div class="one-two">
-              <p><span style="color: #A95A5D; font-weight: bold;">I. Achievement: </span> I’ve gone through a comprehensive and completed user research to come up with the current platform for mobile and desktop. I was able to accomplish and perform most of the high priority tasks collected from the user survey as well as a few medium and low priority tasks in the product.</p><br><br> <br>
-              <p><span style="color: #A95A5D; font-weight: bold;">II. Design Challenges: </span> Regarding the uncommitted high priority tasks, I am still doing research on how to make sure the users data is all secure and private or how to provide the user with advanced smart data sharing and management features. Is it going to be my responsibility as an UX designer or it’s going to be on the front-end developers team. How can I design it in a way to convey the required information to the developers or shall I need to communicate this subject verbally to them. Going through all the obstacles and confusions on a few high priority tasks requested by the users, I tried my best to include all the user stories in the cloud storage platform design.</p><br><br> <br>
+              <p><span class="red-bold-p">I. Achievement: </span> I’ve gone through a comprehensive and completed user research to come up with the current platform for mobile and desktop. I was able to accomplish and perform most of the high priority tasks collected from the user survey as well as a few medium and low priority tasks in the product.</p><br><br> <br>
+              <p><span class="red-bold-p">II. Design Challenges: </span> Regarding the uncommitted high priority tasks, I am still doing research on how to make sure the users data is all secure and private or how to provide the user with advanced smart data sharing and management features. Is it going to be my responsibility as an UX designer or it’s going to be on the front-end developers team. How can I design it in a way to convey the required information to the developers or shall I need to communicate this subject verbally to them. Going through all the obstacles and confusions on a few high priority tasks requested by the users, I tried my best to include all the user stories in the cloud storage platform design.</p><br><br> <br>
             </div>
             <div class="three-four-five">
-              <p><span style="color: #A95A5D; font-weight: bold;">III. What I’ve learned: </span>  I designed the product for any individual with personal data. The available business-related platforms in the market are really strong and I thought it’s a better idea to start this product for any individual with personal data.
+              <p><span class="red-bold-p">III. What I’ve learned: </span>  I designed the product for any individual with personal data. The available business-related platforms in the market are really strong and I thought it’s a better idea to start this product for any individual with personal data.
               </p><br><br> <br>
-              <p><span style="color: #A95A5D; font-weight: bold;">IV. Future work: </span> If I would have more time for this project, I would have talked and asked more questions from the client at each step of the process to make sure they are completely involved in the process and giving me the required feedback for the next steps. The project request from the client was limited to an email which was unclear of what problem they are trying to solve. I tried to focus on the client's main goals which was to enter the product into the market. Also, I wish I had more time to go through more usability tests and make the platform more robust for the users. Another thing that I would have considered if I had more time was to add business plans to the platform. </p><br><br> <br>
+              <p><span class="red-bold-p">IV. Future work: </span> If I would have more time for this project, I would have talked and asked more questions from the client at each step of the process to make sure they are completely involved in the process and giving me the required feedback for the next steps. The project request from the client was limited to an email which was unclear of what problem they are trying to solve. I tried to focus on the client's main goals which was to enter the product into the market. Also, I wish I had more time to go through more usability tests and make the platform more robust for the users. Another thing that I would have considered if I had more time was to add business plans to the platform. </p><br><br> <br>
             </div>
           </div>
+        </li>
+      </ul>
+      <div class= "end">
+        <div class="previous">
+          <img class="previous-button" src="image\previous.png" alt="previous">
+          <p class="desk1">PREVIOUS PROJECT</p>
         </div>
-      </section>
-      <div class= "end" style="display:flex;">
-        <div class="previous" style="width:50%; background-color: #C1BFBF;">
-          <img class="previous-button" src="image\previous.png" style="width:10%; margin:5% 2%;" alt="previous">
-          <p class="desk1" style="color: white; line-height: 0.1rem;">PREVIOUS PROJECT</p>
-        </div>
-        <div class="next" style="width:50%; background-color: #62AAB1; text-align: right;">
-          <a href="http://127.0.0.1:3000/busybuscasestudy.html"><p class="desk1" style="color: white; line-height: 0.1rem;">NEXT PROJECT</p></a>
-          <a href="http://127.0.0.1:3000/busybuscasestudy.html"><img class="next-button" src="image\next.png" style="width:10%; margin:5% 2%;" alt="next"></a>
+        <div class="next">
+          <a href="http://127.0.0.1:3000/busybuscasestudy.html"><p class="desk1">NEXT PROJECT</p></a>
+          <a href="http://127.0.0.1:3000/busybuscasestudy.html"><img class="next-button" src="image\next.png" alt="next"></a>
         </div>
       </div>
-      <section id="contact-me" class= "footer" style="margin-top:0; margin-bottom:0;">
-        <div style="text-align: center;">
-          <a href="mailto:aida.gorgani@gmail.com"><p style="color: white; font-size: 10px;">GET IN TOUCH?</p></a>
+      <footer id="contact-me">
+        <div class="email">
+          <a href="mailto:aida.gorgani@gmail.com"><p class="get-in-touch">GET IN TOUCH?</p></a>
         </div>
-        <div style="display:inline;">
-          <div style="text-align: center;">
-            <a href="https://www.linkedin.com/in/aidagorgani/"><img class="logo1" src="image\linkedin.png" style="width:15px; margin:0.5rem 0.5rem;" alt="Linkedin"></a>
-            <a href="https://github.com/Aidagorgani"><img class="logo2" src="image\github.png" style="width:15px; margin:0.5rem 0.5rem;" alt="Github"></a>
-            <a href="https://www.instagram.com/artworkbyaida/"><img class="logo3" src="image\instagram.png" style="width:15px; margin:0.5rem 0.5rem;" alt="Instagram"></a>
-            <a href="https://www.pinterest.com/aida_gorgani/"><img class="logo4" src="image\pinterest.png" style="width:15px; margin:0.5rem 0.5rem;" alt="Pinterest"></a>
-          </div>
+        <div class="ul-social">
+          <ul id="ul-social-media">
+            <li><a href="https://www.linkedin.com/in/aidagorgani/"><img class="logo1" src="image\linkedin.png" alt="Linkedin"></a></li>
+            <li><a href="https://github.com/Aidagorgani"><img class="logo2" src="image\github.png" alt="Github"></a></li>
+            <li><a href="https://www.instagram.com/artworkbyaida/"><img class="logo3" src="image\instagram.png" alt="Instagram"></a></li>
+            <li><a href="https://www.pinterest.com/aida_gorgani/"><img class="logo4" src="image\pinterest.png" alt="Pinterest"></a></li>
+          </ul>
         </div>
-        <div style="text-align: center;">
-          <p style="color: white; font-size: 10px; margin-bottom: 1%;">2019, Aida Gorgani, Made in the USA</p>
+        <div class="made-in-usa">
+          <p class="made-in-usa-p">2019, Aida Gorgani, Made in the USA</p>
         </div>
-      </section>
+      </footer>
+    </main>
       <script>
-        function myFunction1() {
+        function ScrollToOverview() {
           var elmnt = document.getElementById("overview");
           elmnt.scrollIntoView();
         }
-        function myFunction2() {
+        function ScrollToResearch() {
           var elmnt = document.getElementById("research");
           elmnt.scrollIntoView();
         }
-        function myFunction3() {
+        function ScrollToBranding() {
           var elmnt = document.getElementById("branding");
           elmnt.scrollIntoView();
         }
-        function myFunction4() {
+        function ScrollToWireframe() {
           var elmnt = document.getElementById("wireframe");
           elmnt.scrollIntoView();
         }
-        function myFunction5() {
+        function ScrollToMockup() {
           var elmnt = document.getElementById("mockup");
           elmnt.scrollIntoView();
         }
-        function myFunction6() {
+        function ScrollToConclusion() {
           var elmnt = document.getElementById("conclusion");
           elmnt.scrollIntoView();
         }
-        function myFunction7() {
+        function ScrollToContactme() {
           var elmnt = document.getElementById("contact-me");
           elmnt.scrollIntoView();
         }

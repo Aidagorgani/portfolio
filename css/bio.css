@@ -26,7 +26,7 @@ font-size: 2rem;
 font-family: "Open Sans";
 }
 
-.container {
+main {
   background-color: white;
   display: grid;
   grid-template-columns: 1fr;
@@ -58,11 +58,13 @@ font-family: "Open Sans";
   grid-area: main-illustrator;
 }
 
-.footer {
+footer {
   background-color: #636267;
   grid-area: footer;
   display: block;
   height: 80px;
+  margin-top:0;
+  margin-bottom:0;
 }
 
 .about {
@@ -121,6 +123,7 @@ font-family: "Open Sans";
     float: left;
     margin-right: 10%;
     margin-bottom: 2rem;
+    display: block;
   }
 
   .p3 {
@@ -205,11 +208,62 @@ font-family: "Open Sans";
     width:90%;
     margin-left: 5%;
     margin-right: 5%;
+    margin-top: 24%;
+  }
+
+  .bio, .work {
+    color: white;
+  }
+
+  .bold {
+    font-weight:bold;
+  }
+
+  .main-illustrator {
+    background-color: #FBF4EC;
+  }
+
+  .email {
+    text-align: center;
+  }
+
+  .get-in-touch {
+    color: white;
+    font-size: 10px;
+  }
+
+  .logo1, .logo2, .logo3, .logo4 {
+    width:15px;
+    margin:0.5rem 0.5rem;
+  }
+
+  ul#ul-social-media li {
+    display: inline;
+  }
+
+  .ul-social {
+    display: table;   /* Allow the centering to work */
+  	margin: 0 auto;
+  }
+
+  .made-in-usa {
+    text-align: center;
+  }
+
+  .made-in-usa-p {
+    color: white;
+    font-size: 10px;
+    line-height: 2.5rem;
+  }
+
+  footer {
+    margin-top: 0;
+    margin-bottom: 0;
   }
 
 
 @media screen and (min-width:768px) {
-  .container{
+  main {
     /* background-color: red; */
     grid-template-columns: 6fr 6fr;
     grid-template-areas:
@@ -370,7 +424,7 @@ font-family: "Open Sans";
 }
 
 @media screen and (min-width:1025px) {
-  .container{
+  main {
     /* background-color: yellow; */
     grid-template-columns: 3fr 9fr;
     grid-template-areas:
@@ -527,7 +581,6 @@ font-family: "Open Sans";
     float: left;
     margin-left: 5%;
     width: 45%;
-    margin-top:28rem;
     margin-bottom: 0;
   }
 
