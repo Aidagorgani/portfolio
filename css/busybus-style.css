@@ -119,6 +119,9 @@ p {
 
 .buttons {
   text-align: center;
+  display:flex;
+  justify-content:space-around;
+  margin: 0 10%;
 }
 
 .link {
@@ -247,9 +250,13 @@ ul li {
 }
 
 .visualdesign, .frontend {
-  width:35%;
+  width:47%;
   margin:2rem auto;
-  padding: 1rem;
+  border: 1.5px solid #3F3E87;
+  border-radius: 5rem;
+  font-weight: 600;
+  padding: 1rem 0.5rem;
+  font-size: 1.2rem;
 }
 
 .general {
@@ -385,9 +392,14 @@ ul li {
   margin-bottom: 2rem;
 }
 
-.finding-image {
-  width:60%;
-  margin:0 20%;
+.user-stories-complete, .finding-b {
+  width:80%;
+  margin:0 10%;
+  border: 1.5px solid #3F3E87;
+  border-radius: 5rem;
+  font-weight: 600;
+  padding: 1.2rem 0;
+  margin-bottom: 2rem;
 }
 
 .finding-h2 {
@@ -409,19 +421,6 @@ ul li {
 .mobile-h2 {
   text-align: center;
 }
-
-.wireframe-b {
-   width:35%;
-   margin:0 auto;
-   padding:0 1rem;
- }
-
- .mockup-b {
-   width:35%;
-   margin:0 auto;
-   padding:0 1rem;
- }
-
  .tools {
    width:50%;
    margin: 0 25%;
@@ -609,6 +608,11 @@ footer {
   margin-bottom: 1%;
 }
 
+.single-button-div {
+  text-align: center;
+  display: flex;
+}
+
 @media screen and (min-width:768px) {
   .hero {
     background-color: #FBF4EC;
@@ -651,10 +655,18 @@ footer {
     z-index: 1;
   }
 
-  .visualdesign, .frontend {
-    width:30%;
-    margin:2rem auto;
-    padding: 1rem;
+  .visualdesign {
+    width: 30%;
+    margin-left: 18%;
+    padding: 1.5rem;
+    font-size: 1.6rem;
+  }
+
+  .frontend {
+    width: 30%;
+    margin-right: 18%;
+    padding: 1.5rem;
+    font-size: 1.6rem;
   }
 
   .s-image {
@@ -999,6 +1011,13 @@ footer {
     padding: 5% 5%;
   }
 
+  .user-stories-complete, .finding-b {
+    width:70%;
+    margin: 2rem 15%;
+    padding: 1.5rem;
+    font-size: 1.6rem;
+  }
+
 }
 
 @media screen and (min-width:1025px) {
@@ -1093,10 +1112,16 @@ footer {
     margin-bottom: 10%;
   }
 
-  .visualdesign, .frontend {
-    width: 15%;
-    margin:2rem auto;
-    padding: 1rem;
+  .visualdesign {
+    width: 20%;
+    margin-left: 29%;
+    padding: 1.5rem;
+  }
+
+  .frontend {
+    width: 20%;
+    margin-right: 29%;
+    padding: 1.5rem;
   }
 
   .intro {
@@ -1420,7 +1445,6 @@ footer {
     text-align: left;
   }
 
-
   .mobile {
     display: flex;
     align-self: center;
@@ -1452,36 +1476,10 @@ footer {
     padding: 10% 10%;
 }
 
-  .finding-image {
-    width:30%;
-    margin: 1rem 35%;
-    align-self: center;
-  }
-
   .finding-h2 {
     margin: 0 0;
     width:90%;
     text-align: left;
-  }
-
-  .pen {
-    display: flex;
-    align-self: center;
-    margin: 2rem 22%;
-  }
-
-  .pen-icon {
-    width:15%;
-    margin: 0 0;
-    align-self: center;
-  }
-
-  .pen-h2 {
-    margin: 0 0.1rem;
-    width:90%;
-    padding: 1.2rem 1rem;
-    text-align: left;
-    padding-top: 2.5rem;
   }
 
   .mobilemobile {
@@ -1491,70 +1489,20 @@ footer {
     margin-top: 2rem;
   }
 
-  .wireframe-b {
-    width:15%;
-    margin: 2rem 2rem;
-  }
-
  .visual-design {
     width:40%;
     margin:2rem 30%;
    }
-
-  .mockup {
-     width:40%;
-     margin:2rem auto;
-  }
-
-  .mockup-b {
-    width:15%;
-    margin: 2rem auto;
-  }
 
   .tools {
     width:50%;
     margin: 0 25%;
   }
 
-  .iteration-phase {
-    padding-left: 10%;
-    padding-right: 10%;
-    margin-bottom: 2rem;
-  }
-
-  .desk {
-    margin: 20% 10%;
-    font-size: 2rem;
-  }
-
-  .desktop-img {
-    padding:2% 0;
-  }
-
-  .hand3 {
-    margin: 5% 0;
-    padding: 5% 0;
-  }
-
-  .pp {
-  display:grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-areas:
-  "one-two three-four-five";
-  }
-
- .one-two {
-  grid-area: one-two;
-  margin-right: 1rem;
-  padding:2rem 5rem;
-  padding-left: 0;
-}
-
-.three-four-five {
-  grid-area: three-four-five;
-  margin-right: 1rem;
-  padding:2rem 5rem;
-  padding-right: 0;
+.iteration-phase {
+  padding-left: 10%;
+  padding-right: 10%;
+  margin-bottom: 2rem;
 }
 
 .research-understanding {
@@ -1589,5 +1537,11 @@ footer {
   width:10%;
   margin:5% 2%;
 }
+
+.user-stories-complete, .finding-b {
+  width:50%;
+  margin: 2rem 25%;
+  padding: 1.5rem;
+ }
 
 }

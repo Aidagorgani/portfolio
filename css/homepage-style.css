@@ -26,6 +26,9 @@ p {
   font-size: 1.8rem;
   line-height: 3rem;
   font-family: "Montserrat";
+}
+
+.about {
   margin-left: 10%;
   margin-right: 10%;
 }
@@ -172,29 +175,13 @@ a {
   color: white;
 }
 
-.project1-h2 {
-  margin:1rem 20%;
-  width:60%;
-}
-
-.project1-p {
-  margin:1rem 20%;
-  width:60%;
-}
-
 .case-button {
-  margin:2rem 25%;
-  width:50%;
-}
+  margin:3rem auto;
+  border: 1.5px solid #3F3E87;
+  border-radius: 5rem;
+  font-weight: 600;
+  padding: 1.2rem 20%;
 
-.project2-h2 {
-  margin:1rem 20%;
-  width:60%;
-}
-
-.project2-p {
-  margin:1rem 20%;
-  width:60%;
 }
 
 .footer-p {
@@ -202,7 +189,6 @@ a {
   font-size: 10px;
   margin-top: 30px;
 }
-
 
 .flex-container {
   display: flex;
@@ -249,6 +235,25 @@ li {
 
 a:link {
   text-decoration: none;
+}
+
+.project2-info, .project1-info {
+  margin: auto 10%;
+}
+
+.button {
+  text-align: center;
+  margin-top: 3rem;
+  font-size: 1.6rem;
+  margin-bottom: 5rem;
+}
+
+.project2-h2, .project1-h2 {
+  margin-bottom: 2rem;
+}
+
+.project1-p, .project2-p {
+  margin-bottom: 4rem;
 }
 
 @media screen and (min-width:768px) {
@@ -305,6 +310,25 @@ a:link {
   .project1 {
     color: white;
   }
+
+  .button {
+    text-align: center;
+    margin-bottom: 6rem;
+    margin-top: 4rem;
+    font-size: 1.6rem;
+  }
+
+  .project2-info, .project1-info {
+    margin: auto 10%;
+  }
+
+  .project2-h2, .project1-h2 {
+    margin-bottom: 2rem;
+  }
+
+  .project1-p, .project2-p {
+    margin-bottom: 4rem;
+  }
 }
 
 @media screen and (min-width:1025px) {
@@ -358,5 +382,24 @@ a:link {
 
   .project1 {
     color: white;
+  }
+
+  .project2-info, .project1-info {
+    margin: auto 18%;
+  }
+
+
+  .button {
+    text-align: center;
+    margin-top: 5rem;
+    font-size: 1.6rem;
+  }
+
+  .project2-h2, .project1-h2 {
+    margin-bottom: 2rem;
+  }
+
+  .project1-p, .project2-p {
+    margin-bottom: 4rem;
   }
 }
