@@ -39,7 +39,7 @@ h3 {
 
 h4 {
   color:#A95A5D;
-  font-weight:500;
+  font-weight:600;
   font-size: 1.5rem;
   display: inline;
   font-family: "Montserrat";
@@ -265,6 +265,7 @@ main {
   text-align: center;
   position: relative;
   z-index: 1;
+  font-weight: 600;
 }
 
 .hero {
@@ -2356,6 +2357,11 @@ ul li {
     margin-top: 2rem;
   }
 
+  .com11, .com22, .com33, .com44 {
+    width:80%;
+    margin:2rem 10%;
+  }
+
   .observe-more {
     text-align: center;
   }
@@ -2520,7 +2526,7 @@ ul li {
   .content-s {
     display: flex;
     align-self: center;
-    margin: 2rem 15%;
+    margin: 2rem 1%;
   }
 
   .horn {
@@ -2616,7 +2622,7 @@ ul li {
   .Color-Palette {
     display: flex;
     align-self: center;
-    margin: 2rem 30%;
+    margin: 2rem 15%;
     text-align: center;
   }
 
@@ -2685,7 +2691,7 @@ ul li {
   .typeface-select {
     display: flex;
     align-self: center;
-    margin: 2rem 30%;
+    margin: 2rem 25%;
     text-align: center;
   }
 
@@ -2798,7 +2804,7 @@ ul li {
   .preference-div {
     display: flex;
     align-self: center;
-    margin: 2rem 15%;
+    margin: 2rem 10%;
     text-align: center;
   }
 
@@ -2902,7 +2908,6 @@ ul li {
  }
 
  .fonts {
-    width: 30%;
     margin: 2rem 35%;
   }
 

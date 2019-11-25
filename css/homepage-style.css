@@ -20,6 +20,7 @@ h1 {
 h2 {
   font-size: 2rem;
   font-family: "Open Sans";
+  font-weight: 600;
 }
 
 p {
@@ -184,6 +185,18 @@ a {
 
 }
 
+.hello-button {
+  margin:3rem auto;
+  border: 1.5px solid #61AAB1;
+  border-radius: 5rem;
+  font-weight: 600;
+  padding: 1.2rem 14%;
+  background-color: #61AAB1;
+  color: white;
+  font-size: 1.8rem;
+
+}
+
 .footer-p {
   color: white;
   font-size: 10px;
@@ -199,6 +212,7 @@ a {
   font-size: 2rem;
   text-align: center;
   font-family: "Open Sans";
+  font-weight: 600;
 }
 
 ul li {
@@ -230,7 +244,8 @@ li {
 
 .CTA {
   margin-left: 10%;
-  margin-bottom: 2rem;
+  margin-top: 2rem;
+  margin-bottom: 4rem;
 }
 
 a:link {

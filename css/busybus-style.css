@@ -199,6 +199,7 @@ main {
   text-align: center;
   position: relative;
   z-index: 1;
+  font-weight: 600;
 }
 
 .hero {
@@ -1151,8 +1152,8 @@ footer {
   }
 
   .tools {
-    width: 30%;
-    margin: 2rem 35%;
+    width: 50%;
+    margin: 2rem 25%;
   }
 
   .s-image {
@@ -1489,15 +1490,10 @@ footer {
     margin-top: 2rem;
   }
 
- .visual-design {
+ .visual-design, .mockup {
     width:40%;
     margin:2rem 30%;
    }
-
-  .tools {
-    width:50%;
-    margin: 0 25%;
-  }
 
 .iteration-phase {
   padding-left: 10%;
