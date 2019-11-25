@@ -2917,7 +2917,7 @@ ul li {
 
 }
 
-@media screen and (min-width:1200px) {
+@media screen and (min-width:1441px) {
   /* .intro, .questions, .research-understanding, .user-flow, .user-story-des,
   .solution-image, .penpen, .paper, .sitemap, .sitemapp, .color,
   .colors, .logo-design, .logos, .typeface, .font, .phase, .preference, .mockup,
@@ -2931,6 +2931,6 @@ ul li {
   }
 
   .top-hand {
-    width: 30%;
+    width: 20%;
   }
 }
