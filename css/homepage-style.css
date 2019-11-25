@@ -256,6 +256,10 @@ a:link {
   margin-bottom: 4rem;
 }
 
+.approach-img {
+  width:100%;
+}
+
 @media screen and (min-width:768px) {
   main {
     background-color: red;
@@ -329,6 +333,7 @@ a:link {
   .project1-p, .project2-p {
     margin-bottom: 4rem;
   }
+
 }
 
 @media screen and (min-width:1025px) {
@@ -402,4 +407,5 @@ a:link {
   .project1-p, .project2-p {
     margin-bottom: 4rem;
   }
+
 }

@@ -76,7 +76,12 @@
         </div>
       </section>
       <section class="approach">
-        <img class="approach" src="image\approach.png" alt="design-approach">
+        <picture>
+          <source media="(min-width: 1025px)" srcset="image\desktop-approach.png">
+          <source media="(min-width: 768px)" srcset="image\tablet-approach.png">
+          <img class="approach-img" style="width:100%;" src="image\mobile-approach.png" alt="IfItDoesntMatchAnyMedia">
+        </picture>
+        <!-- <img class="approach" id="main-img" src="image\desktop-approach.png" alt="design-approach"> -->
       </section>
       <footer>
         <p class="footer-p">2019, Aida Gorgani, Made in the USA</p>

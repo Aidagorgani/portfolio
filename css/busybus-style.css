@@ -272,7 +272,7 @@ ul li {
 #vertical-nav {
   position: fixed;
   right: 2rem;
-  top: 10%;
+  top: 30%;
   bottom: auto;
 }
 
@@ -1547,5 +1547,20 @@ footer {
  .desk {
    font-size: 2rem;
  }
+
+}
+
+@media screen and (min-width:1200px) {
+  /* .intro, .questions, .research-understanding, .user-flow, .user-story-des,
+  .solution-image, .penpen, .paper, .sitemap, .sitemapp, .color,
+  .colors, .logo-design, .logos, .typeface, .font, .phase, .preference, .mockup,
+  .pre1, .pre2, .pre3, .iteration-phase, .conclusion, .desktop-version, .sketch, .box, .marketi{
+    max-width: 1200px;
+    margin: 2rem auto;
+  } */
+  main {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
 
 }
