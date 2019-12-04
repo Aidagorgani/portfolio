@@ -781,7 +781,7 @@ footer {
 
   .survey-curve-2-image, .survey-curve-3-image {
     width:90%;
-    padding: 5% 5%;
+    margin: 0 5%;
   }
 
   .description, .survey-conclusion, .mobilemobile, .usability, .visual-design, .phase {
@@ -1237,7 +1237,7 @@ footer {
   .survey-curve-6 {
     grid-area: survey-curve-6;
     background-color: white;
-    padding: 5% 5%;
+    padding: 10% 5%;
   }
 
   .survey-curve-7 {
@@ -1250,6 +1250,12 @@ footer {
     grid-area: survey-curve-8;
     background-color: white;
     padding: 5% 5%;
+  }
+
+  .survey-curve-2-image {
+    width: 70%;
+    margin-left: 15%;
+    margin-right: 15%;
   }
 
   .survey-conclusion{

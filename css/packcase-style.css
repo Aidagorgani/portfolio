@@ -1871,7 +1871,7 @@ ul li {
     margin: 0 0;
     padding: 1.2rem 2rem;
     text-align: left;
-    padding-top: 2.1rem;
+    padding-top: 3rem;
   }
 
   .preference {
@@ -2176,6 +2176,12 @@ ul li {
     grid-area: survey-curve-8;
     background-color: #E5E5E5;
     padding: 5% 5%;
+  }
+
+  .survey-curve-7-image {
+    width:70%;
+    margin-left: 15%;
+    margin-right: 15%;
   }
 
   .survey-conclusion {
