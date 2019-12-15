@@ -143,8 +143,9 @@ footer {
   text-align: center;
 }
 
-.work, .bio {
+.work-font, .bio-font {
   color: #3F3E87;
+  font-size: 2rem;
 }
 
 .social-logo-1 {

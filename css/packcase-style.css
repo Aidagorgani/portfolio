@@ -184,6 +184,10 @@ li {
   align-items: center;
 }
 
+.work-font, .bio-font {
+  font-size: 2rem;
+}
+
 .work :hover {
   font-size: larger;
   text-shadow: 0 0 1px #3F3E87;
