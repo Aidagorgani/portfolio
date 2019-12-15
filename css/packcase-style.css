@@ -94,13 +94,13 @@ a {
   color: #3F3E87;
 }
 
-ul {
+/* ul {
   text-align:right;
-}
+} */
 
 .h1-title {
   color: #A95A5D;
-  }
+}
 
 .link {
 	text-decoration: none;
@@ -126,10 +126,6 @@ ul {
 .link:hover::before {
 	width: 0;
 }
-
-/*
-* animation styles
-*/
 
 .link::before {
 	transition: width .1s ease-out;
@@ -166,16 +162,51 @@ ul {
 	width: 0;
 }
 
-/*
-* animation styles
-*/
-
 .link2::before {
 	transition: width .1s ease-out;
 }
 
 .link2:hover::before {
 	transition-duration: .15s;
+}
+
+.my-logo:hover {
+  transform: scale(1.2, 1.2);
+}
+
+#flex-container li {
+  display: inline;
+  width:24%;
+  text-align: center;
+}
+
+li {
+  align-items: center;
+}
+
+.work :hover {
+  font-size: larger;
+  text-shadow: 0 0 1px #3F3E87;
+}
+
+.bio :hover {
+  font-size: larger;
+  text-shadow: 0 0 1px #3F3E87;
+}
+
+.mobile-button:hover, .desktop-button:hover, .styleguide-button:hover, .moodboard-button:hover, .wireframe-b:hover, .mockup-b:hover {
+ /* text-shadow: 0px 0px 6px rgba(255, 255, 255, 1); */
+ -webkit-box-shadow: 0px 5px 40px -10px rgba(63, 62, 135,1);
+ -moz-box-shadow: 0px 5px 40px -10px rgba(63, 62, 135,1);
+ transition: all 0.4s ease 0s;
+}
+
+.next-button:hover {
+  transform: scale(1.2,1.2);
+}
+
+.desk:hover {
+  text-shadow: 0 0 10px white;
 }
 
 .role, .duration, .tools {
@@ -191,6 +222,7 @@ ul {
 , .penpen, .survey-conclusion, .persona {
   margin: 4% 10%;
 }
+
 
 section {
   margin-top: 1%;
@@ -215,13 +247,8 @@ section {
 
 .buttons {
   text-align: center;
-  display:flex;
   justify-content:space-around;
   margin: 0 10%;
-}
-
-.packsolution {
-  width:100%;
 }
 
 .overview-p {
@@ -266,6 +293,7 @@ main {
   position: relative;
   z-index: 1;
   font-weight: 600;
+  padding: 1rem
 }
 
 .hero {
@@ -278,19 +306,18 @@ main {
   "flex-container";
   margin-bottom: 25%;
   margin-top: 0;
-}
-
-.top-hand {
-  width: 35%;
-  position: absolute;
-  margin-left: auto;
-  margin-right: auto;
-  left: 0;
-  right: 0;
+  background-image: url("../../image/packsolution.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 0;
+  padding-bottom: 80%;
+  margin-bottom: 0;
 }
 
 a:link {
  text-decoration: none;
+ font-size: 16px;
 }
 
 li {
@@ -301,8 +328,8 @@ li {
   width:60px;
 }
 
-.mobile, .desktop {
-  width:45%;
+.mobile-button, .desktop-button {
+  width:80%;
   margin:2rem auto;
   border: 1.5px solid #3F3E87;
   border-radius: 5rem;
@@ -371,8 +398,12 @@ li {
 #vertical-nav {
   position: fixed;
   right: 2rem;
-  top: 30%;
+  top: 10%;
   bottom: auto;
+}
+
+#vertical-nav ul li a {
+  width:5%;
 }
 
 .lamp-p {
@@ -400,8 +431,13 @@ li {
 }
 
 .s-image {
-  width:10%;
-  margin: 2rem 45%;
+  width:20%;
+  margin: 2rem 40%;
+}
+
+.survey {
+  margin-left: 10%;
+  margin-right: 10%;
 }
 
 .survey-p {
@@ -411,11 +447,6 @@ li {
 
 .h6-main-p {
   color:#C9994F;
-}
-
-.curves {
-  background-color: #E5E5E5;
-  margin-top:1rem;
 }
 
 .survey-curve-p {
@@ -460,7 +491,10 @@ li {
 
 .s-conclusion-img {
   width:20%;
-  margin: 2rem 40%;
+  /* margin: 2rem 40%; */
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  text-align: center;
 }
 
 .persona-h {
@@ -469,8 +503,8 @@ li {
 }
 
 .persona-image {
-  width:10%;
-  margin:2rem 45%;
+  width:20%;
+  margin:2rem 40%;
 }
 
 .persona-des {
@@ -535,11 +569,13 @@ li {
 .engineer-main-persona-p {
   grid-area: engineer-main-persona-p;
   margin: 0 10%;
+  margin-bottom: 3rem;
 }
 
 .student-main-persona-p {
   grid-area: student-main-persona-p;
   margin: 0 10%;
+  margin-bottom: 3rem;
 }
 
 .persona-engineer-p {
@@ -573,8 +609,8 @@ li {
 }
 
 .comp-image {
-  width:10%;
-  margin:2rem 45%;
+  width:20%;
+  margin:2rem 40%;
 }
 
 .comp-img2 {
@@ -582,9 +618,20 @@ li {
   margin:2rem 10%;
 }
 
+.comp-img {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
 .com-conclusion-img {
   width:20%;
-  margin: 2rem 40%;
+  margin-left: 0;
+  margin-bottom: 2rem;
+  align-self: center;
+}
+
+.com-conclusion {
+  margin-top: 5%;
 }
 
 .com11, .com22, .com33, .com44 {
@@ -603,8 +650,8 @@ li {
 }
 
 .user-story-image {
-  width:10%;
-  margin:2rem 45%;
+  width:20%;
+  margin:2rem 40%;
 }
 
 .user-story-h2 {
@@ -613,8 +660,8 @@ li {
 }
 
 .finding-image {
-  width:10%;
-  margin:2rem 45%;
+  width:20%;
+  margin:2rem 40%;
 }
 
 .finding-h2 {
@@ -622,12 +669,9 @@ li {
   margin-bottom: 2rem;
 }
 
-.solution-image {
-  width:100%;
-}
 .pen-icon {
-  width:10%;
-  margin:2rem 45%;
+  width:20%;
+  margin:2rem 40%;
  }
 
 .pen-h2 {
@@ -635,13 +679,10 @@ li {
    margin-bottom: 2rem;
   }
 
-.sitemapp {
-   width:100%;
- }
 
 .horn {
-  width:10%;
-  margin:2rem 45%;
+  width:20%;
+  margin:2rem 40%;
 }
 
 .horn-h2 {
@@ -650,8 +691,8 @@ li {
 }
 
 .fly-image {
-  width:10%;
-  margin:2rem 45%;
+  width:20%;
+  margin:2rem 40%;
 }
 
 .fly-h2 {
@@ -660,8 +701,8 @@ li {
 }
 
 .color-img {
-  width:10%;
-  margin:2rem 45%;
+  width:20%;
+  margin:2rem 40%;
 }
 .color-h2 {
   margin-bottom:2rem;
@@ -689,8 +730,8 @@ li {
 }
 
 .pen2 {
-   width:10%;
-   margin:2rem 45%;
+   width:20%;
+   margin:2rem 40%;
  }
 
 .pen2-h2 {
@@ -723,8 +764,8 @@ li {
  }
 
 .fonts {
-   width: 70%;
-   margin: 2rem 15%;
+   width: 80%;
+   margin: 2rem 10%;
  }
 
  .tik {
@@ -733,8 +774,8 @@ li {
    padding-bottom:1rem;
  }
 
-.moodboard {
-  width:45%;
+.moodboard-button {
+  width:80%;
   margin:2rem auto;
   border: 1.5px solid #3F3E87;
   border-radius: 5rem;
@@ -742,8 +783,8 @@ li {
   padding: 1.5rem 0;
 }
 
-.styleguide {
-  width:45%;
+.styleguide-button {
+  width:80%;
   margin:2rem auto;
   border: 1.5px solid #3F3E87;
   border-radius: 5rem;
@@ -752,18 +793,13 @@ li {
 }
 
 .speaker {
-  width:10%;
-  margin:2rem 45%;
+  width:20%;
+  margin:2rem 40%;
 }
 
 .speaker-h2 {
   text-align: center;
   margin-bottom: 2rem;
-}
-
-.img-box-wireframe, .img-box-mockup {
-  width:100%;
-  min-width: 100%;
 }
 
 .buttons-2 {
@@ -792,8 +828,8 @@ li {
  }
 
  .smile {
-   width:10%;
-   margin:2rem 45%;
+   width:20%;
+   margin:2rem 40%;
  }
 
   .smile-h2 {
@@ -826,7 +862,7 @@ li {
    display:grid;
    grid-template-columns: 1fr 2fr;
    grid-template-areas:
-   "hand3 desk"
+   "hand3 desk-platform"
    "desktop-link desktop-link";
  }
 
@@ -836,8 +872,8 @@ li {
    margin:25% 0;
  }
 
- .desk {
-   grid-area: desk;
+ .desk-platform {
+   grid-area: desk-platform;
    width:100%;
    color: white;
    padding: 5% 5%;
@@ -864,14 +900,16 @@ li {
   background-color: #3F3E87;
   height: 10px;
   width: 10px;
-  border-radius: 50%;
+  border-radius: 90%;
   margin-top: 2rem;
   margin-bottom:3rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
   display: block;
 }
 
 .dot:hover, .dot:active {
-  background-color: #A95A5D;
+  transform: scale(1.7, 1.7);
 }
 
 .tooltip {
@@ -886,10 +924,10 @@ li {
   color: #fff;
   text-align: center;
   border-radius: 6px;
-  padding: 4px 0;
+  padding: 5px 0;
   position: absolute;
   z-index: 1;
-  right: 3rem;
+  right: 4rem;
   top: 30%;
 }
 
@@ -905,7 +943,6 @@ li {
 }
 
 .role {
-  margin-left: 2rem;
   border-left: 5px solid #A95A5D;
   padding-left: 2rem;
 }
@@ -913,26 +950,26 @@ li {
 
 .survey-p1 {
   display: block;
-  margin: 1rem 25%;
+  margin: 1rem 11%;
 }
 
 .survey-p2 {
   display: block;
   display: block;
-  margin: 1rem 25%;
+  margin: 1rem 20%;
 }
 
 .survey-p3 {
   display: block;
   display: block;
-  margin: 1rem 25%;
+  margin: 1rem 20%;
 }
 
-.desk1 {
-  font-size: 1.2rem;
+.desk, .desk1 {
   color: white;
+  margin: 5% 1%;
   line-height: 0.1rem;
-  color: white;
+  font-size: 0.9rem;
 }
 
 .sk1, .sk2, .sk3, .sk4 {
@@ -971,15 +1008,21 @@ li {
 
 .email {
   text-align: center;
+  margin-top:1rem;
 }
 
 .get-in-touch {
   color: white;
-  font-size: 10px;
+  font-size: 15px;
 }
 
-ul#ul-social-media li {
+.get-in-touch:hover {
+  text-shadow: 0 0 10px white;
+}
+
+#ul-social-media li {
   display: inline;
+  width:20%;
 }
 
 ul li {
@@ -991,8 +1034,12 @@ ul li {
 	margin: 0 auto;
 }
 
+.social-logo:hover {
+  transform: scale(1.5, 1.5);
+}
+
 .social-logo {
-  width:15px;
+  width:25px;
   margin:0.5rem 0.5rem;
 }
 
@@ -1010,18 +1057,93 @@ ul li {
   margin-bottom: 2rem;
 }
 
-.googledrive-dropbox-evernote {
+.googledrive-dropbox-evernote1, .googledrive-dropbox-evernote2, .googledrive-dropbox-evernote3 {
   width:5%;
   margin: 1% 1%;
-  }
+}
+
+#onboarding li {
+  display: inline;
+  width:24%;
+}
+
+#onboarding {
+  display: inline;
+}
+
+.googledrive-dropbox-evernote1:hover, .googledrive-dropbox-evernote2:hover, .googledrive-dropbox-evernote3:hover  {
+  transform: scale(1.5, 1.5);
+}
 
 .user-flow-img-2 {
   width:90%;
   margin:2% 5%;
 }
 
-.paper {
-  width:100%;
+@media (max-width:767px) {
+  img.paper {
+    display: none;
+  }
+  img.sitemapp {
+    display: none;
+  }
+  .desktop-button {
+    display: none;
+  }
+  .survey-curve-1, .survey-curve-2, .survey-curve-3, .survey-curve-4,.survey-curve-5, .survey-curve-6, .survey-curve-7, .survey-curve-8 {
+    display: none;
+  }
+  .curves::after {
+    content: 'Important: Please check the results waveforms in bigger resolution:-)';
+    font-size: 1.8rem;
+    line-height: 3rem;
+    font-weight: 600;
+    background-color: white;
+  }
+  .img-box-wireframe, .img-box-mockup {
+    display: none;
+  }
+  .phase::after {
+    content: 'Important: Please check the design iterations in bigger resolution:-)';
+    font-size: 1.8rem;
+    font-weight: 600;
+    line-height: 3rem;
+    background-color: white;
+  }
+  .finding::after {
+    content: 'Important: Please check how the user stories are connected to the solutions in bigger resolution:-)';
+    font-size: 1.8rem;
+    font-weight: 600;
+    line-height: 3rem;
+    background-color: white;
+  }
+  .preference-images {
+    display: none;
+  }
+  .preference::after {
+    content: 'Important: Please check the preference test results in bigger resolution:-)';
+    font-size: 1.8rem;
+    font-weight: 600;
+    line-height: 3rem;
+    background-color: white;
+  }
+  .solution-image {
+    display: none;
+  }
+  .penpen::after {
+    content: 'Important: Please check the userflow sketches in bigger resolution:-)';
+    font-size: 1.8rem;
+    font-weight: 600;
+    line-height: 3rem;
+    background-color: white;
+  }
+  .sitemap::after {
+    content: 'Important: Please check the sitemap illustration in bigger resolution:-)';
+    font-size: 1.8rem;
+    font-weight: 600;
+    line-height: 3rem;
+    background-color: white;
+  }
 }
 
 .preference-h {
@@ -1029,6 +1151,33 @@ ul li {
   text-align:center;
   font-weight: bold;
 }
+
+.questions {
+  background-color: white;
+}
+
+.pre-title {
+  margin: 0 20%;
+  margin-top: 6rem;
+}
+
+.Competitive-Analysis {
+  margin-top: 10%;
+}
+
+.survey-result {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.desktop-platform {
+   font-size: 1.5rem;
+   color: white;
+   margin-top: 15%;
+   margin-left: 2rem;
+   margin-right: 1rem;
+   margin-bottom: 4rem;
+ }
 
 
 @media screen and (min-width:768px) {
@@ -1038,24 +1187,39 @@ ul li {
     color: #3F3E87;
     grid-area: hero;
     display: grid;
-    grid-template-columns:6fr 6fr;
+    grid-template-columns:1fr 2fr;
     grid-template-areas:
-    "flex-container top-hand";
+    "flex-container .";
     margin-bottom: 25%;
     margin-top: 0;
+    background-image: url("../../image/packsolution.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 0;
+    padding-bottom: 80%;
+    margin-bottom: 0;
   }
 
-  .top-hand {
-    width: 32%;
+  .desk, .desk1 {
+    color: white;
+    margin: 5% 1%;
+    line-height: 0.1rem;
+    font-size: 2rem;
   }
 
-  .mobile {
+  .flex-container {
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+
+  .mobile-button {
     width: 35%;
     margin-left: 13%;
     padding: 1.5rem;
   }
 
- .desktop {
+ .desktop-button {
     width: 35%;
     margin-right: 13%;
     padding: 1.5rem;
@@ -1063,6 +1227,7 @@ ul li {
 
   .buttons, .buttons-2  {
     font-size: 1.6rem;
+    display: flex;
   }
 
   .intro {
@@ -1087,6 +1252,11 @@ ul li {
     padding-left: 2rem;
   }
 
+  .pre-title {
+    margin: 0 30%;
+    margin-top: 4rem;
+  }
+
   .questions {
     display: grid;
     grid-template-columns:2fr 2fr;
@@ -1097,7 +1267,7 @@ ul li {
     "lamp lamp"
     "design-challenge design-challenge";
     margin: 0 5%;
-    background-color: #F3F3F3;
+    background-color: white;
   }
 
   .lamp {
@@ -1137,7 +1307,7 @@ ul li {
   }
 
   .description {
-    margin: 0 30%;
+    margin: 0 25%;
   }
 
   .survey {
@@ -1145,6 +1315,8 @@ ul li {
     align-self: center;
     height: 5rem;
     margin-top: 2rem;
+    margin-left: 0;
+    margin-right: 0;
   }
 
   .s-image {
@@ -1169,7 +1341,7 @@ ul li {
   }
 
   .survey-p3 {
-    width: 20%;
+    width: 30%;
     margin:0 0;
     display: inline-block;
     text-align: right;
@@ -1243,23 +1415,27 @@ ul li {
   }
 
   .survey-conclusion {
-    display: flex;
-    margin: 0 5%;
+    margin: 0 20%;
     align-self: center;
   }
 
-  .s-conclusion-p {
-    width: 50%;
-    align-self: center;
-    margin: 5% 8%;
+  .survey-result {
+    display: flex;
+    margin-top: 5%;
+    margin-bottom: 1rem;
+    margin-left: 20%;
   }
 
   .s-conclusion-img {
-    width: 5%;
+    width: 10%;
     align-self: center;
-    margin-left: 10%;
-    margin-right: 0.1%;
-    text-align: center;
+    /* margin-left: 10%;
+    margin-right: 0.1%; */
+  }
+
+  .survey-h6 {
+    padding-top: 4rem;
+    padding-left: 2rem;
   }
 
   .persona.icon {
@@ -1350,7 +1526,7 @@ ul li {
 
   .comp-h2 {
     margin: 0 0;
-    width:20%;
+    width:30%;
     display: inline-block;
     padding: 1.2rem 1rem;
     text-align: left;
@@ -1425,6 +1601,11 @@ ul li {
     text-align: center;
   }
 
+  .market-h6 {
+    padding-left: 2rem;
+    padding-top: 3.2rem;
+  }
+
   .com-conclusion{
     display: grid;
     align-self: center;
@@ -1447,12 +1628,15 @@ ul li {
 
   .com-conclusion-img {
     display: inline-block;
-    width:5%;
     margin-bottom: 0;
+    width: 12%;
+    align-self: center;
   }
 
   .comp-img {
     text-align: center;
+    display: flex;
+    margin-bottom: 1rem;
   }
 
   .user-flow {
@@ -1541,6 +1725,7 @@ ul li {
   .solution-image {
     padding-left:5%;
     padding-right: 5%;
+    width:100%;
   }
 
   .paper {
@@ -1578,6 +1763,7 @@ ul li {
   .sitemapp {
     padding-left:5%;
     padding-right: 5%;
+    width: 100%;
   }
 
   .content-s {
@@ -1609,7 +1795,7 @@ ul li {
   .fly {
     display: flex;
     align-self: center;
-    margin: 2rem 25%;
+    margin: 2rem 15%;
     width: 70%;
   }
 
@@ -1672,7 +1858,6 @@ ul li {
     margin-bottom: 2rem;
     margin-left: 5%;
     margin-right: 5%;
-
   }
 
   .Color-Palette {
@@ -1703,12 +1888,15 @@ ul li {
   .colors {
     padding-left:5%;
     padding-right: 5%;
+    position: relative;
+    bottom: 15rem;
+    margin-bottom: -15rem;
   }
 
   .logo-it {
     display: flex;
     align-self: center;
-    margin: 2rem 20%;
+    margin: 2rem 15%;
     text-align: center;
   }
 
@@ -1734,6 +1922,9 @@ ul li {
   .logos {
     padding-left:5%;
     padding-right: 5%;
+    position: relative;
+    bottom: 10rem;
+    margin-bottom: -5rem;
   }
 
   .typeface {
@@ -1794,13 +1985,13 @@ ul li {
     background-color: #e5e5e5;
   }
 
-  .styleguide {
+  .styleguide-button {
     width: 30%;
     margin-left: 18%;
     padding: 1.5rem;
   }
 
-  .moodboard {
+  .moodboard-button {
     width: 30%;
     margin-right: 18%;
     padding: 1.5rem;
@@ -1809,7 +2000,7 @@ ul li {
   .marketing-div {
     display: flex;
     align-self: center;
-    margin: 2rem 15%;
+    margin: 2rem 5%;
     text-align: center;
   }
 
@@ -1827,9 +2018,14 @@ ul li {
   }
 
   .marketing {
-    margin:0 25%;
+    margin:0 30%;
     margin-bottom: 2rem;
     margin-top: 2rem;
+  }
+
+  .img-box-wireframe, .img-box-mockup {
+    width:100%;
+    min-width: 100%;
   }
 
   .wireframe-b {
@@ -1839,12 +2035,12 @@ ul li {
   }
 
  .wireframe {
-    width:40%;
+    width:50%;
     margin:2rem auto;
    }
 
  .mockup {
-     width:40%;
+     width:50%;
      margin:2rem auto;
   }
 
@@ -1912,10 +2108,10 @@ ul li {
     display:grid;
     grid-template-columns: 1fr 2fr 3fr;
     grid-template-areas:
-    "hand3 desk desktop-link";
+    "hand3 desktop-platform desktop-link";
   }
 
-  .desk {
+  .desk, .desk1 {
     padding: 0 1rem;
     margin-top: 20%;
   }
@@ -1962,16 +2158,20 @@ ul li {
    margin: 0 0;
  }
 
- .Competitive-Analysis {
-   margin: 0 0;
- }
-
  .fonts {
     margin: 2rem 30%;
   }
 
-  .desk1 {
+ .desktop-platform {
     font-size: 1.5rem;
+    color: white;
+    margin-top: 15%;
+    margin-left: 2rem;
+  }
+
+  .social-logo {
+    width:25px;
+    margin:0.5rem 0.5rem;
   }
 
 }
@@ -1985,18 +2185,28 @@ ul li {
     display: grid;
     grid-template-columns:3fr 9fr;
     grid-template-areas:
-    "flex-container top-hand";
-    margin-bottom: 25%;
-    margin-top: 0;
+    "flex-container .";
+    background-image: url("../../image/packsolution.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 0;
+    padding-bottom: 80%;
+    margin-bottom: 0;
   }
 
-  .mobile {
+ .flex-container {
+   margin-left: 5%;
+   margin-right: 5%;
+  }
+
+  .mobile-button {
     width: 25%;
     margin-left: 24%;
     padding: 1.5rem;
   }
 
-  .desktop {
+  .desktop-button {
     width: 25%;
     margin-right: 24%;
     padding: 1.5rem;
@@ -2081,6 +2291,8 @@ ul li {
     align-self: center;
     height: 5rem;
     margin-top: 2rem;
+    margin-left: 0;
+    margin-right: 0;
   }
 
   .s-image {
@@ -2185,23 +2397,35 @@ ul li {
   }
 
   .survey-conclusion {
-    display: flex;
-    margin: 0 10%;
+    margin: 0 30%;
     align-self: center;
+    margin-bottom: 10%;
   }
 
-  .s-conclusion-p {
+  /* .s-conclusion-p {
     width: 50%;
     align-self: center;
     margin: 5% 8%;
-  }
+  } */
 
   .s-conclusion-img {
-    width: 5%;
+    width: 15%;
+    margin-bottom: 2rem;
     align-self: center;
-    margin-left: 10%;
-    margin-right: 0.1%;
+    /* margin-left: 10%; */
+    /* margin-right: 0.1%; */
     text-align: center;
+  }
+
+  .survey-result {
+    display: flex;
+    margin-top: 5%;
+    margin-left: 25%;
+  }
+
+  .survey-h6 {
+    padding-top: 5rem;
+    padding-left: 2rem;
   }
 
   .persona.icon {
@@ -2394,12 +2618,19 @@ ul li {
 
   .com-conclusion-img {
     display: inline-block;
-    width:5%;
-    margin-bottom: 0;
+    margin-bottom: 2rem;
+    width: 10%;
+    align-self: center;
   }
 
   .comp-img {
-    text-align: center;
+    display: flex;
+    align-self: center;
+  }
+
+  .market-h6 {
+    padding-left: 2rem;
+    padding-top: 3.2rem;
   }
 
   .user-flow {
@@ -2490,17 +2721,19 @@ ul li {
   .solution-image {
     padding-left:10%;
     padding-right: 10%;
+    width: 100%;
   }
 
   .paper {
     padding-left:10%;
     padding-right: 10%;
+    width: 100%;
   }
 
   .pen {
     display: flex;
     align-self: center;
-    margin: 2rem 15%;
+    margin: 2rem 11%;
   }
 
   .pen-icon {
@@ -2510,8 +2743,7 @@ ul li {
   }
 
   .pen-h2 {
-    margin: 0 0.1rem;
-    width:90%;
+    margin: 0 1rem;
     /* padding: 1rem 0.5rem; */
     text-align: left;
     padding-top: 2.1rem;
@@ -2527,6 +2759,7 @@ ul li {
   .sitemapp {
     padding-left:10%;
     padding-right: 10%;
+    width: 100%;
   }
 
   .content-s {
@@ -2559,8 +2792,8 @@ ul li {
   .fly {
     display: flex;
     align-self: center;
-    margin: 2rem 32.5%;
-    width: 35%;
+    margin: 2rem 30%;
+    width: 40%;
   }
 
   .fly-image {
@@ -2648,12 +2881,15 @@ ul li {
     width:30%;
     margin:0 35%;
     margin-bottom: 2rem;
-    margin-top: 2rem;
+    margin-top: 10rem;
   }
 
   .colors {
     padding-left:10%;
     padding-right: 10%;
+    position: relative;
+    bottom: 25rem;
+    margin-bottom: -20rem;
   }
 
   .logo-it {
@@ -2685,6 +2921,9 @@ ul li {
   .logos {
     padding-left:10%;
     padding-right: 10%;
+    position: relative;
+    bottom: 10rem;
+    margin-bottom: -5rem;
   }
 
   .typeface {
@@ -2725,7 +2964,7 @@ ul li {
     background-color: #FBF4EC;
   }
 
-.font1-div {
+  .font1-div {
     grid-area: font1;
     padding: 5% 5%;
     display: inline-block;
@@ -2745,14 +2984,14 @@ ul li {
     background-color: #e5e5e5;
   }
 
- .styleguide {
+ .styleguide-button {
    width: 25%;
    margin-left: 24%;
    padding: 1.2rem;
    margin-top: 0;
   }
 
-  .moodboard {
+  .moodboard-button {
     width: 25%;
     margin-right: 24%;
     padding: 1.2rem;
@@ -2791,13 +3030,18 @@ ul li {
     padding: 1.5rem;
   }
 
+  .img-box-wireframe, .img-box-mockup {
+    width:100%;
+    min-width: 100%;
+  }
+
  .wireframe {
-    width:40%;
+    width:50%;
     margin:2rem auto;
    }
 
   .mockup {
-    width:40%;
+    width:50%;
     margin:2rem auto;
   }
 
@@ -2859,15 +3103,15 @@ ul li {
     display:grid;
     grid-template-columns: 1fr 2fr 3fr;
     grid-template-areas:
-    "hand3 desk desktop-link";
+    "hand3 desktop-platform desktop-link";
   }
 
-  .desk {
-    margin-left: 10%;
-    margin-right: 10%;
+  .desktop-platform {
     margin-top: 30%;
     font-size: 2rem;
     line-height: 3rem;
+    color: white;
+    margin-left: 2rem;
   }
 
   .desktop-img {
@@ -2910,10 +3154,6 @@ ul li {
    margin: 0 0;
  }
 
- .Competitive-Analysis {
-   margin: 0 0;
- }
-
  .fonts {
     margin: 2rem 35%;
   }
@@ -2923,9 +3163,18 @@ ul li {
     margin: 2rem 10%;
   }
 
-  .desk1 {
-    font-size: 2rem;
+  .social-logo {
+    width:25px;
+    margin:0.5rem 0.5rem;
   }
+
+  .desk, .desk1 {
+    color: white;
+    margin: 5% 1%;
+    line-height: 0.1rem;
+    font-size: 2rem;
+    padding: 0;
+ }
 
 }
 
@@ -2942,7 +3191,4 @@ ul li {
     margin: 0 auto;
   }
 
-  .top-hand {
-    width: 20%;
-  }
 }

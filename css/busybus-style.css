@@ -105,12 +105,51 @@ p {
   font-weight:bold;
 }
 
-.bio, .work {
+.work-font, .bio-font {
   color: white;
 }
 
 .research-p {
   margin-bottom: 5%;
+}
+
+.my-logo:hover {
+  transform: scale(1.2, 1.2);
+}
+
+#flex-container li {
+  display: inline;
+  width:24%;
+  text-align: center;
+}
+
+li {
+  align-items: center;
+}
+
+.work :hover {
+  font-size: larger;
+  text-shadow: 0 0 1px #3F3E87;
+}
+
+.bio :hover {
+  font-size: larger;
+  text-shadow: 0 0 1px #3F3E87;
+}
+
+.visualdesign-button:hover, .frontend-button:hover, .finding-b:hover, .user-stories-complete:hover {
+ /* text-shadow: 0px 0px 6px rgba(255, 255, 255, 1); */
+ -webkit-box-shadow: 0px 5px 40px -10px rgba(63, 62, 135,1);
+ -moz-box-shadow: 0px 5px 40px -10px rgba(63, 62, 135,1);
+ transition: all 0.4s ease 0s;
+}
+
+.previous-button:hover {
+  transform: scale(1.2,1.2);
+}
+
+.desk1:hover {
+  text-shadow: 0 0 10px white;
 }
 
 .h6-main-p {
@@ -119,8 +158,6 @@ p {
 
 .buttons {
   text-align: center;
-  display:flex;
-  justify-content:space-around;
   margin: 0 10%;
 }
 
@@ -227,14 +264,20 @@ main {
 
 a:link {
  text-decoration: none;
+ font-size: 16px;
 }
 
 li {
   align-items: center;
 }
 
-ul#ul-social-media li {
+.get-in-touch:hover {
+  text-shadow: 0 0 10px white;
+}
+
+#ul-social-media li {
   display: inline;
+  width:20%;
 }
 
 ul li {
@@ -246,12 +289,16 @@ ul li {
 	margin: 0 auto;
 }
 
+.social-logo:hover {
+  transform: scale(1.5, 1.5);
+}
+
 .logo {
   width:60px;
 }
 
-.visualdesign, .frontend {
-  width:47%;
+.visualdesign-button, .frontend-button {
+  width: 80%;
   margin:2rem auto;
   border: 1.5px solid #3F3E87;
   border-radius: 5rem;
@@ -273,16 +320,17 @@ ul li {
 #vertical-nav {
   position: fixed;
   right: 2rem;
-  top: 30%;
+  top: 10%;
   bottom: auto;
 }
 
+#vertical-nav ul li a {
+  width:5%;
+}
+
 .s-image {
-  width:10%;
-  margin-left:45%;
-  margin-right:45%;
-  margin-bottom: 1rem;
-  margin-top: 2rem;
+  width: 20%;
+  margin: 2rem 40%;
 }
 
 .survey-p {
@@ -292,7 +340,8 @@ ul li {
 
 .curves {
   background-color: white;
-  margin-top:1rem;
+  margin-top:2rem;
+  margin-bottom: 2rem;
 }
 
 .survey-curve-p2 {
@@ -366,6 +415,11 @@ ul li {
   margin:2rem 45%;
 }
 
+.comp-img {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
 .comp-img2 {
   width:70%;
   margin:2rem 15%;
@@ -373,7 +427,9 @@ ul li {
 
 .com-conclusion-img {
   width:20%;
-  margin: 2rem 40%;
+  margin-left: 0;
+  margin-bottom: 2rem;
+  align-self: center;
 }
 
 .user-story {
@@ -381,11 +437,8 @@ ul li {
 }
 
 .user-story-image {
-  width:10%;
-  margin-right: 45%;
-  margin-left: 45%;
-  margin-top:0;
-  margin-bottom: 1rem;
+  width: 20%;
+  margin: 2rem 40%;
 }
 
 .user-story-h2 {
@@ -412,11 +465,8 @@ ul li {
 }
 
 .mobile-icon {
-  width:10%;
-  margin-left:45%;
-  margin-right:45%;
-  margin-bottom: 1rem;
-  margin-top: 2rem;
+  width: 20%;
+ margin: 2rem 40%;
 }
 
 .mobile-h2 {
@@ -432,19 +482,21 @@ ul li {
   margin-bottom:2rem;
  }
 
-.dot {
-  background-color: #3F3E87;
-  height: 10px;
-  width: 10px;
-  border-radius: 50%;
-  margin-top: 2rem;
-  margin-bottom:3rem;
-  display: block;
-}
+ .dot {
+   background-color: #3F3E87;
+   height: 10px;
+   width: 10px;
+   border-radius: 90%;
+   margin-top: 2rem;
+   margin-bottom:3rem;
+   margin-left: 1rem;
+   margin-right: 1rem;
+   display: block;
+ }
 
-.dot:hover, .dot:active {
-  background-color: #A95A5D;
-}
+ .dot:hover, .dot:active {
+   transform: scale(1.7, 1.7);
+ }
 
 .tooltip {
   position: relative;
@@ -458,10 +510,10 @@ ul li {
   color: #fff;
   text-align: center;
   border-radius: 6px;
-  padding: 4px 0;
+  padding: 5px 0;
   position: absolute;
   z-index: 1;
-  right: 3rem;
+  right: 4rem;
   top: 30%;
 }
 
@@ -476,7 +528,6 @@ footer {
 }
 
 .role {
-  margin-left: 2rem;
   border-left: 5px solid #C9994F;
   padding-left: 2rem;
   display: inline-block;
@@ -484,7 +535,7 @@ footer {
 
 .survey-p1 {
   display: block;
-  margin: 1rem 20%;
+  margin: 1rem 11%;
 }
 
 .survey-p2 {
@@ -503,7 +554,7 @@ footer {
 }
 
 .inner-finding2 {
-  background-color: #F3F3F3;
+  background-color: #E5E5E5;
 }
 
 .busybussolution {
@@ -533,11 +584,11 @@ footer {
   margin:5% 2%;
 }
 
-.desk {
+.desk, .desk1 {
   color: white;
   margin:5% 1%;
   line-height: 0.1rem;
-  font-size: 1.2rem;
+  font-size: 0.9rem;
 }
 
 .next {
@@ -553,8 +604,12 @@ footer {
 
 .s-conclusion-img {
   width: 20%;
-  margin: 2rem 40%;
+  /* margin: 2rem 40%; */
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  text-align: center;
 }
+
 .usability {
   margin: 5% 10%;
 }
@@ -589,16 +644,17 @@ footer {
 
 .get-in-touch {
   color: white;
-  font-size: 10px;
+  font-size: 15px;
 }
 
 .social-logo {
-  width:15px;
+  width:25px;
   margin:0.5rem 0.5rem;
 }
 
 .email {
   text-align: center;
+  margin-top: 1rem;
 }
 
 .made-in-usa {
@@ -616,13 +672,85 @@ footer {
   display: flex;
 }
 
+.survey-result {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+@media (max-width:629px) {
+  /* img.paper {
+    display: none;
+  }
+  img.sitemapp {
+    display: none;
+  }
+  .desktop-button {
+    display: none;
+  } */
+  .survey-curve-1, .survey-curve-2, .survey-curve-3, .survey-curve-4,.survey-curve-5, .survey-curve-6, .survey-curve-7, .survey-curve-8 {
+    display: none;
+  }
+  .curves::after {
+    content: 'Important: Please check the results waveforms in bigger resolution:-)';
+    font-size: 1.8rem;
+    line-height: 3rem;
+    font-weight: 600;
+    background-color: white;
+  }
+  /* .img-box-wireframe, .img-box-mockup {
+    display: none;
+  }
+  .phase::after {
+    content: 'Please check the design iterations in bigger resolution:-)';
+    font-size: 1.8rem;
+    font-weight: 600;
+    line-height: 3rem;
+    background-color: white;
+  }
+  .finding::after {
+    content: 'Please check how the user stories are connected to the solutions in bigger resolution:-)';
+    font-size: 1.8rem;
+    font-weight: 600;
+    line-height: 3rem;
+    background-color: white;
+  }
+  .preference-images {
+    display: none;
+  }
+  .preference::after {
+    content: 'Please check the preference test results in bigger resolution:-)';
+    font-size: 1.8rem;
+    font-weight: 600;
+    line-height: 3rem;
+    background-color: white;
+  }
+  .solution-image {
+    display: none;
+  }
+  .penpen::after {
+    content: 'Please check the userflow sketches in bigger resolution:-)';
+    font-size: 1.8rem;
+    font-weight: 600;
+    line-height: 3rem;
+    background-color: white;
+  }
+  .sitemap::after {
+    content: 'Please check the sitemap illustration in bigger resolution:-)';
+    font-size: 1.8rem;
+    font-weight: 600;
+    line-height: 3rem;
+    background-color: white;
+  } */
+}
+
+
 @media screen and (min-width:768px) {
   .hero {
     background-color: #FBF4EC;
     color: #3F3E87;
     grid-area: hero;
     display: grid;
-    grid-template-columns:6fr 6fr;
+    grid-template-columns:1fr 2fr;
     grid-template-areas:
     "flex-container .";
     background-image: url("../../image/busybus.png");
@@ -656,20 +784,29 @@ footer {
     text-align: center;
     position: relative;
     z-index: 1;
+    margin-left: 5%;
+    margin-right: 5%;
   }
 
-  .visualdesign {
+  .visualdesign-button {
     width: 30%;
     margin-left: 18%;
     padding: 1.5rem;
     font-size: 1.6rem;
   }
 
-  .frontend {
+  .frontend-button {
     width: 30%;
     margin-right: 18%;
     padding: 1.5rem;
     font-size: 1.6rem;
+  }
+
+  .buttons {
+    text-align: center;
+    display:flex;
+    justify-content:space-around;
+    margin: 0 10%;
   }
 
   .s-image {
@@ -784,7 +921,7 @@ footer {
     margin: 0 5%;
   }
 
-  .description, .survey-conclusion, .mobilemobile, .usability, .visual-design, .phase {
+  .description, .survey-conclusion, .mobilemobile, .usability, .phase {
     margin-left: 20%;
     margin-right: 20%;
   }
@@ -841,8 +978,15 @@ footer {
   }
 
   .s-conclusion-img {
-    width:10%;
-    margin: 1rem 45%;
+    width:12%;
+    align-self: center;
+  }
+
+  .survey-result {
+    display: flex;
+    margin-top: 5%;
+    margin-bottom: 1rem;
+    margin-left: 20%;
   }
 
   .tools {
@@ -855,10 +999,11 @@ footer {
     margin:5% 2%;
   }
 
-  .desk {
+  .desk, .desk1 {
     color: white;
     margin:5% 1%;
     line-height: 0.1rem;
+    font-size: 2rem;
   }
 
   .next-button {
@@ -882,6 +1027,12 @@ footer {
     width: 90%;
     padding-left: 2rem;
     padding-top: 2rem;
+  }
+
+  .comp-img {
+    text-align: center;
+    display: flex;
+    margin-bottom: 2rem;
   }
 
   .comp-img2 {
@@ -928,9 +1079,16 @@ footer {
     text-align: center;
   }
 
+  .market-h6 {
+    padding-left: 2rem;
+    padding-top: 3.2rem;
+  }
+
   .com-conclusion-img {
-    width: 6%;
-    margin: 2rem 47%;
+    display: inline-block;
+    margin-bottom: 0;
+    width: 12%;
+    align-self: center;
   }
 
   .com-conclusion {
@@ -941,7 +1099,9 @@ footer {
     grid-auto-rows: minmax(20px, auto);
     grid-template-areas:
     "C-1 C-2";
+    margin-top: 5%;
   }
+
   .C-1 {
     grid-area: C-1;
     margin-right: 1rem;
@@ -950,6 +1110,14 @@ footer {
     grid-area: C-2;
     margin-left: 1rem;
   }
+
+  .user-story-image {
+    width: 20%;
+    margin-right: 40%;
+    margin-left: 40%;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+ }
 
   .user-story-des {
     display: grid;
@@ -966,20 +1134,9 @@ footer {
     align-self: center;
   }
 
-  .user-story {
-    grid-area:user-story;
-    align-self: center;
-    margin-right: 1rem;
-  }
-
   .finding {
     grid-area:finding;
     margin-left: 1rem;
-  }
-
-  .inner-finding {
-    margin-top: 60%;
-    margin-bottom: 20%;
   }
 
   .usability {
@@ -989,13 +1146,14 @@ footer {
     grid-auto-rows: minmax(20px, auto);
     grid-template-areas:
     "user-story finding";
-    margin-top: 2rem
+    margin-top: 5%;
   }
 
   .user-story {
     grid-area:user-story;
     align-self: center;
-    margin-right: 4rem;
+    margin-right: 2rem;
+    margin-top: 0;
   }
 
   .finding {
@@ -1004,7 +1162,7 @@ footer {
   }
 
   .inner-finding {
-    margin-top: 50%;
+    margin-top: 30%;
     margin-bottom: 20%;
   }
 
@@ -1019,6 +1177,11 @@ footer {
     margin: 2rem 15%;
     padding: 1.5rem;
     font-size: 1.6rem;
+  }
+
+  .survey-h6 {
+    padding-top: 4rem;
+    padding-left: 2rem;
   }
 
 }
@@ -1050,6 +1213,13 @@ footer {
     text-align: center;
     position: relative;
     z-index: 1;
+  }
+
+  .buttons {
+    text-align: center;
+    display:flex;
+    justify-content:space-around;
+    margin: 0 10%;
   }
 
   .s-image {
@@ -1115,13 +1285,13 @@ footer {
     margin-bottom: 10%;
   }
 
-  .visualdesign {
+  .visualdesign-button {
     width: 20%;
     margin-left: 29%;
     padding: 1.5rem;
   }
 
-  .frontend {
+  .frontend-button {
     width: 20%;
     margin-right: 29%;
     padding: 1.5rem;
@@ -1259,23 +1429,36 @@ footer {
   }
 
   .survey-conclusion{
-    display: flex;
-    margin: 0 10%;
+    margin: 0 30%;
     align-self: center;
+    margin-bottom: 10%;
   }
 
-  .s-conclusion-p {
+  .survey-result {
+    display: flex;
+    margin-top: 5%;
+    margin-left: 25%;
+  }
+
+  /* .s-conclusion-p {
     width: 50%;
     align-self: center;
     margin: 5% 8%;
-  }
+  } */
 
   .s-conclusion-img {
-    width: 5%;
+    width: 15%;
+    margin-bottom: 2rem;
     align-self: center;
-    margin-left: 10%;
-    margin-right: 0.1%;
+    /* margin-left: 10%; */
+    /* margin-right: 0.1%; */
     text-align: center;
+  }
+
+
+  .survey-h6 {
+    padding-top: 5rem;
+    padding-left: 2rem;
   }
 
   .img2 {
@@ -1376,6 +1559,11 @@ footer {
     text-align: center;
   }
 
+  .market-h6 {
+    padding-left: 2rem;
+    padding-top: 3.2rem;
+  }
+
   .com-conclusion {
     display: grid;
     align-self: center;
@@ -1384,27 +1572,31 @@ footer {
     grid-auto-rows: minmax(20px, auto);
     grid-template-areas:
     "C-1 C-2";
+    margin-top: 5%;
   }
   .C-1 {
     grid-area: C-1;
     margin-right: 1rem;
-    padding: 2rem 5rem;
+    padding: 2rem 1rem;
   }
   .C-2 {
     grid-area: C-2;
     margin-left: 1rem;
-    padding: 2rem 5rem;
+    padding: 2rem 1rem;
   }
 
   .com-conclusion-img {
     display: inline-block;
-    width:5%;
-    margin-bottom: 0;
+    width:20%;
+    margin-bottom:0;
+    align-self: center;
   }
 
   .comp-img {
     text-align: center;
+    display: flex;
   }
+
   .user-story-des {
     display: grid;
     align-self: center;
@@ -1531,7 +1723,7 @@ footer {
   margin:5% 2%;
 }
 
-.desk {
+.desk,.desk1 {
   color: white;
   margin:5% 1%;
   line-height: 0.1rem;
@@ -1548,8 +1740,9 @@ footer {
   padding: 1.5rem;
  }
 
- .desk {
-   font-size: 2rem;
+ .social-logo {
+   width:25px;
+   margin:0.5rem 0.5rem;
  }
 
 }

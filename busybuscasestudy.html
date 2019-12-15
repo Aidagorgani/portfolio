@@ -77,12 +77,12 @@
         </ul>
       </nav>
       <section class="hero">
-            <ul class="flex-container">
+            <ul id="flex-container" class="flex-container">
               <li class="my-logo">
                 <a href="/"><img class="logo" src="image/logo-white.png" alt="logo"></a>
               </li>
-              <li><a href="/" class="work" >Work</a></li>
-              <li><a href="./bio.html" class="bio" >Bio</a></li>
+              <li class="work"><a class="work-font" href="/">Work</a></li>
+              <li class="bio"><a class="bio-font" href="./bio.html">Bio</a></li>
             </ul>
       </section>
       <section class="busysolution">
@@ -91,8 +91,12 @@
             <p>A platform to help the bus riders a comfortable bus commute</p>
           </div>
           <div class="buttons">
-            <a class="visualdesign" href="https://www.figma.com/proto/m1TpVE1h2FyPjTJ86YNBHH/Visual-Challenge-history?node-id=18193%3A4350&scaling=scale-down">Visual Design</a>
-            <a class="frontend" href="https://aidagorgani.github.io/BusyBus-App-Main-Screen/">Front-end</a>
+            <div class="visualdesign-button">
+              <a class="visualdesign" href="https://www.figma.com/proto/m1TpVE1h2FyPjTJ86YNBHH/Visual-Challenge-history?node-id=18193%3A4350&scaling=scale-down" target="_blank">Visual Design</a>
+            </div>
+            <div class="frontend-button">
+              <a class="frontend" href="https://aidagorgani.github.io/BusyBus-App-Main-Screen/" target="_blank">Front-end</a>
+            </div>
           </div>
         <img class="busybussolution" src="image/busybussolution.png" alt="busybussolution">
       </section>
@@ -174,10 +178,13 @@
             </li>
         </ul>
         <div class="text-center">
-          <p class="see-more">See more <span class="link"><a href="https://docs.google.com/forms/d/e/1FAIpQLSf-g5_n6bgHLgZjCp97DWLiTJY7w88shoo2J7PCXWkiFAmIAQ/viewform?usp=sf_link">Questions</a></span> and <span class="link"><a href="https://docs.google.com/document/d/1LoQm8_hya1ugxqOgQEcmn_K60bDlvX5eLzBmkQcfpRQ/edit?usp=sharing">Survey Analysis</a></span>?</p>
+          <p class="see-more">See more <span class="link"><a href="https://docs.google.com/forms/d/e/1FAIpQLSf-g5_n6bgHLgZjCp97DWLiTJY7w88shoo2J7PCXWkiFAmIAQ/viewform?usp=sf_link" target="_blank">Questions</a></span> and <span class="link"><a href="https://docs.google.com/document/d/1LoQm8_hya1ugxqOgQEcmn_K60bDlvX5eLzBmkQcfpRQ/edit?usp=sharing">Survey Analysis</a></span>?</p>
         </div>
         <div class="survey-conclusion">
-          <img class="s-conclusion-img" src="image/hand2.png" alt="hand2"><br>
+          <div class="survey-result">
+            <img class="s-conclusion-img" src="image/hand2.png" alt="hand2">
+            <h6 class="survey-h6">Survey results</h6>
+          </div>
           <div class="s-conclusion-p">
             <p><span class="red-bold-p">I.</span> 85.7% of the bus riders found the public transit mobile app beneficial for their daily commute.</p><br><br>
             <p><span class="red-bold-p">II.</span> 85.7% of the participants use the buses for reduced traffic congestion and 71.4% of the participants use the buses for saving money.</p><br><br>
@@ -202,13 +209,14 @@
             <img class="com44" src="image/moovitfeature.png" alt="moovitfeature">
           </div>
           <div class="observe-more">
-            <p>To observe the comprehensive findings on SWOT analysis click <span class="link"><a href="https://docs.google.com/document/d/1Jwg0pWILuc7FtTYi0l4CxjQrCItGhX8qAtnYR-c8Qyw/edit?usp=sharing">here</a></span>.</p>
-          </div>
-          <div class="comp-img">
-            <img class="com-conclusion-img" src="image/hand2.png" alt="hand2">
+            <p>To observe the comprehensive findings on SWOT analysis click <span class="link"><a href="https://docs.google.com/document/d/1Jwg0pWILuc7FtTYi0l4CxjQrCItGhX8qAtnYR-c8Qyw/edit?usp=sharing" target="_blank">here</a></span>.</p>
           </div>
           <div class="com-conclusion">
               <div class="C-1">
+                <div class="comp-img">
+                  <img class="com-conclusion-img" src="image/hand2.png" alt="hand2">
+                  <h6 class="market-h6">Market entry strategy</h6>
+                </div>
                 <p class="p1"> Based on the analysis,  I was able to answer<span class="bold"> “How a new competitor enter the marketplace?”</span>.</p><br><br><br>
                 <p class="p2"><span class="red-bold-p">I.</span><span class="bold"> Fees:</span><br> Since the google map provides a comprehensive services for free, it’s a fierce competitor for any new navigation app. Unless the new app provides very new and interesting information which cannot be found on google maps.</p><br><br>
                 <p class="p3" ><span class="red-bold-p">II.</span><span class="bold"> Live Alert:</span> <br>My recommendation for the  new competitor is to provide the users with a variety of alerts feature including get-on alerts, get-off alert, arrival time update alert, etc. The users need to be provided with enable/disable feature for the alerts just in case they do not like receiving information.</p><br><br>
@@ -245,7 +253,7 @@
             <p class="red-bold-p">.</p> <br>
             <p class="red-bold-p">.</p> <br>
             <div class="single-button-div">
-              <a class="user-stories-complete"href="https://docs.google.com/spreadsheets/d/1Afbc-j3DQEC_0j7NXowa9-aiq4HJh5FxRfsosL0dOjs/edit?usp=sharing">User Stories</a>
+              <a class="user-stories-complete" href="https://docs.google.com/spreadsheets/d/1Afbc-j3DQEC_0j7NXowa9-aiq4HJh5FxRfsosL0dOjs/edit?usp=sharing" target="_blank">User Stories</a>
             </div>
           </div>
         </div>
@@ -264,7 +272,7 @@
             <img class="user-story-image" src="image/coffee.png" alt="User-story">
             <h6 class="user-story-h2">Usuability Test</h6>
           </div>
-          <p class="user-story-p">The created three-screen paper prototype of the proposed application was tested with three potential users. Based on a <span class="link"><a href="https://docs.google.com/document/d/1isApBH5JcSM1xqi-N0DJr4mzuOk9KX5NEWWGHehNuLY/edit?usp=sharing">usability test script</a></span>, the paper prototype has been tested and modified based on the findings and feedbacks from the users.</p><br><br>
+          <p class="user-story-p">The created three-screen paper prototype of the proposed application was tested with three potential users. Based on a <span class="link"><a href="https://docs.google.com/document/d/1isApBH5JcSM1xqi-N0DJr4mzuOk9KX5NEWWGHehNuLY/edit?usp=sharing" target="_blank">usability test script</a></span>, the paper prototype has been tested and modified based on the findings and feedbacks from the users.</p><br><br>
         </div>
         <div class="finding">
           <div class= "inner-finding2">
@@ -276,7 +284,7 @@
             <p class="red-bold-p">.</p> <br>
             <p class="red-bold-p">.</p> <br>
             <div class= "single-button-div">
-              <a class= "finding-b" href="https://docs.google.com/document/d/1pLcvAmvD3UvYux52jRWWL8EWpvKo5bau8PWMVX-PGoc/edit?usp=sharing">More Findings</a>
+              <a class= "finding-b" href="https://docs.google.com/document/d/1pLcvAmvD3UvYux52jRWWL8EWpvKo5bau8PWMVX-PGoc/edit?usp=sharing" target="_blank">More Findings</a>
             </div>
           </div>
         </div>
@@ -303,7 +311,7 @@
       <div class= "end">
         <div class="previous">
           <a href="./packcasestudy.html"><img class="previous-button" src="image/previous.png" alt="previous-project"></a>
-          <a href="./packcasestudy.html"><p class="desk">PREVIOUS PROJECT</p></a>
+          <a href="./packcasestudy.html"><p class="desk1">PREVIOUS PROJECT</p></a>
         </div>
         <div class="next">
           <p class="desk">NEXT PROJECT</p>
@@ -316,10 +324,10 @@
         </div>
         <div class="ul-social">
           <div id="ul-social-media">
-            <a href="https://www.linkedin.com/in/aidagorgani/"><img class="social-logo" src="image/linkedin.png" alt="Linkedin"></a>
-            <a href="https://github.com/Aidagorgani"><img class="social-logo" src="image/github.png" alt="Github"></a>
-            <a href="https://www.instagram.com/artworkbyaida/"><img class="social-logo" src="image/instagram.png" alt="Instagram"></a>
-            <a href="https://www.pinterest.com/aida_gorgani/"><img class="social-logo" src="image/pinterest.png" alt="Pinterest"></a>
+            <a href="https://www.linkedin.com/in/aidagorgani/" target="_blank"><img class="social-logo" src="image/linkedin.png" alt="Linkedin"></a>
+            <a href="https://github.com/Aidagorgani" target="_blank"><img class="social-logo" src="image/github.png" alt="Github"></a>
+            <a href="https://www.instagram.com/artworkbyaida/" target="_blank"><img class="social-logo" src="image/instagram.png" alt="Instagram"></a>
+            <a href="https://www.pinterest.com/aida_gorgani/" target="_blank"><img class="social-logo" src="image/pinterest.png" alt="Pinterest"></a>
           </div>
         </div>
         <div class="made-in-usa">

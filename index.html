@@ -31,7 +31,7 @@
   <body>
     <main>
       <section class="hero">
-        <ul class="flex-container">
+        <ul id="flex-container" class="flex-container">
           <li class="my-logo">
             <a href="/"><img class="logo" src="image/logo.png" alt="logo"></a>
           </li>
@@ -45,21 +45,21 @@
         <section class="main-title">
           <h1>A Designer, </br> Engineer, <br> Dreamer. </h1>
         </section>
-        <p class="about">Hi there, I'm Aida - an UX/UI designer with an engineering perspective and a creative research approach. Please check out my <span class="link"><a href="https://drive.google.com/file/d/13ZfVkegjlLyNSOz-TwM8d44cnSFHKbLl/view?usp=sharing">resume</a></span> to find out more about me.</p>
-        <ul class="social-media">
-          <li><a href="https://www.linkedin.com/in/aidagorgani/"><img class="social-logo" src="image/linkedin.png" alt="Linkedin"></a></li>
-          <li><a href="https://github.com/Aidagorgani"><img class="social-logo" src="image/github.png" alt="Github"></a></li>
-          <li><a href="https://www.instagram.com/artworkbyaida/"><img class="social-logo" src="image/instagram.png" alt="Instagram"></a></li>
-          <li><a href="https://www.pinterest.com/aida_gorgani/"><img class="social-logo" src="image/pinterest.png" alt="Pinterest"></a></li>
+        <p class="about">Hi there, I'm Aida - an UX/UI designer with an engineering perspective and a creative research approach. Please check out my <span class="link"><a href="https://drive.google.com/file/d/13ZfVkegjlLyNSOz-TwM8d44cnSFHKbLl/view?usp=sharing" target="_blank">resume</a></span> to find out more about me.</p>
+        <ul id="social-media" class="social-media">
+          <li><a href="https://www.linkedin.com/in/aidagorgani/" target="_blank"><img class="social-logo-1" src="image/linkedin.png" alt="Linkedin"></a></li>
+          <li><a href="https://github.com/Aidagorgani" target="_blank"><img class="social-logo-2" src="image/github.png" alt="Github"></a></li>
+          <li><a href="https://www.instagram.com/artworkbyaida/" target="_blank"><img class="social-logo-3" src="image/instagram.png" alt="Instagram"></a></li>
+          <li><a href="https://www.pinterest.com/aida_gorgani/" target="_blank"><img class="social-logo-4" src="image/pinterest.png" alt="Pinterest"></a></li>
         </ul>
-        <section class="CTA">
+        <div class="CTA">
           <a class="hello-button" href="mailto:aida.gorgani@gmail.com">Say Hello!</a>
-        </section>
+        </div>
       </section>
       <section class="project1">
         <img class="project1-image" src="image/project1.png" alt="Pack-mobile-desktop">
         <div class="project1-info">
-          <h2 class="project1-h2">I. PACK</h2>
+          <h2 class="project1-h2">PACK</h2>
           <p class="project1-p">Pack provides a comfortable and user friendly platform for everyone with personal data at a lower cost.</p>
           <div class="button">
             <a class="case-button" href="./packcasestudy.html">View Case Study</a>
@@ -69,20 +69,23 @@
       <section class="project2">
         <img class="project2-image" src="image/project2.png" alt="Pack-mobile-desktop">
         <div class="project2-info">
-          <h2 class="project2-h2">II. BusyBus</h2>
+          <h2 class="project2-h2">BusyBus</h2>
           <p class="project2-p">BusyBus helps the bus riders to know what the next arriving bus is and how much time they have to get to the bus stop.</p>
-          <div class="button">
+          <div class="button2">
             <a class="case-button" href="./busybuscasestudy.html">View Case Study</a>
           </div>
         </div>
       </section>
       <section class="approach">
-        <picture>
-          <source media="(min-width: 1025px)" srcset="image/desktop-approach.png">
+        <h2 class="approach-h">My Design Approach</h2>
+        <img class="approach-image-1" src="image/bike1-desktop.png" alt="bike1-image">
+        <img class="approach-image-2" src="image/bike2-desktop.png" alt="bike2-image">
+        <img class="approach-image-3" src="image/bike3-desktop.png" alt="bike3-image">
+        <!-- <picture>
+          <source media="(min-width: 1025px)" class="approach-image-1" srcset="image/bike1-desktop.png, image/bike2-desktop.png, image/bike3-desktop.png " alt="bike1-image">
           <source media="(min-width: 768px)" srcset="image/tablet-approach.png">
           <img class="approach-img" style="width:100%;" src="image/mobile-approach.png" alt="IfItDoesntMatchAnyMedia">
-        </picture>
-        <!-- <img class="approach" id="main-img" src="image/desktop-approach.png" alt="design-approach"> -->
+        </picture> -->
       </section>
       <footer>
         <p class="footer-p">2019, Aida Gorgani, Made in the USA</p>

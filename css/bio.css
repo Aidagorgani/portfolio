@@ -12,7 +12,7 @@ html {
 
 body {
   background-color: #FBF4EC;
-  font-family: "Montserrat"
+  font-family: "Montserrat";
 }
 
 h1 {
@@ -40,15 +40,74 @@ main {
   "footer";
 }
 
-.hero {
-  background-image: url("../../image/meme.png");
-  background-size: cover;
-  background-repeat: no-repeat;
-  height: 864.75px;
-  /* background-color:#FBF4EC; */
-  color: #3F3E87;
-  grid-area: hero;
+@media (max-width:350px) {
+  .hero {
+    background-image: url("../../image/meme-mobile1.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width:100%;
+    height: 0;
+    padding-bottom: 310%;
+    /* background-color:#FBF4EC; */
+    color: #3F3E87;
+    grid-area: hero;
+  }
+  .about {
+    font-size: 1.5rem;
+    margin-top: 2%;
+    padding-left: 10%;
+    padding-right: 10%;
+    color: white;
+    letter-spacing: 0.5px;
+  }
 }
+
+@media (max-width:500px) and (min-width:350px) {
+  .hero {
+    background-image: url("../../image/meme-mobile2.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width:100%;
+    height: 0;
+    padding-bottom: 240%;
+    /* background-color:#FBF4EC; */
+    color: #3F3E87;
+    grid-area: hero;
+  }
+  .about {
+    font-size: 1.5rem;
+    margin-top: 2%;
+    padding-left: 10%;
+    padding-right: 10%;
+    color: white;
+    letter-spacing: 0.5px;
+  }
+}
+
+@media (max-width:768px) and (min-width:500px) {
+  .hero {
+    background-image: url("../../image/meme-mobile3.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width:100%;
+    height: 0;
+    padding-bottom: 220%;
+    /* background-color:#FBF4EC; */
+    color: #3F3E87;
+    grid-area: hero;
+  }
+
+  .about {
+    font-size: 2rem;
+    margin-top: 10%;
+    padding-left: 10%;
+    padding-right: 10%;
+    color: white;
+    line-height: 3.5rem;
+    letter-spacing: 0.5px;
+  }
+}
+
 
 .two {
   color: white;
@@ -62,18 +121,17 @@ footer {
   background-color: #636267;
   grid-area: footer;
   display: block;
-  height: 80px;
   margin-top:0;
   margin-bottom:0;
 }
 
-.about {
+/* .about {
   font-size: 1.5rem;
   padding-left: 10%;
   padding-right: 10%;
-  margin-top:1rem;
+  margin-top:2%;
   color: white;
-}
+} */
 
 .illustrator1 {
   width:90%;
@@ -208,7 +266,6 @@ footer {
     width:90%;
     margin-left: 5%;
     margin-right: 5%;
-    margin-top: 24%;
   }
 
   .bio, .work {
@@ -229,15 +286,15 @@ footer {
 
   .get-in-touch {
     color: white;
-    font-size: 10px;
+    font-size: 15px;
   }
 
   .social-logo {
-    width:15px;
-    margin:0.5rem 0.5rem;
+    width: 25px;
+    margin: 0.5rem 0.5rem;
   }
 
-  ul#ul-social-media li {
+  #ul-social-media li {
     display: inline;
   }
 
@@ -256,33 +313,146 @@ footer {
     line-height: 2.5rem;
   }
 
-  footer {
-    margin-top: 0;
-    margin-bottom: 0;
+  .my-logo:hover {
+    transform: scale(1.2, 1.2);
+  }
+
+  #flex-container li {
+    display: inline;
+    width:24%;
+    text-align: center;
+  }
+
+  li {
+    align-items: center;
+  }
+
+  .work:hover {
+    font-size: larger;
+    text-shadow: 0 0 1px #3F3E87;
+  }
+
+  .bio:hover {
+    font-size: larger;
+    text-shadow: 0 0 1px #3F3E87;
+  }
+
+  .get-in-touch:hover {
+    text-shadow: 0 0 10px white;
+  }
+
+  #ul-social-media li {
+    display: inline;
+    width:20%;
   }
 
 
+  .ul-social {
+    display: table;   /* Allow the centering to work */
+  	margin: 0 auto;
+  }
+
+  .social-logo:hover {
+    transform: scale(1.5, 1.5);
+  }
+
 @media screen and (min-width:768px) {
+
   main {
     /* background-color: red; */
-    grid-template-columns: 6fr 6fr;
+    grid-template-columns: 2fr 2fr;
     grid-template-areas:
     "hero main-illustrator"
     "hero main-illustrator"
     "hero main-illustrator"
     "hero footer";
   }
+
+  @media (max-width:1024px) and (min-width:768px) {
+
+    .hero {
+      background-image: url("../../image/meme-tablet2.jpg");
+      background-size: cover;
+      background-repeat: no-repeat;
+      /* height: 864.75px; */
+      /* background-color:#FBF4EC; */
+      width: 100%;
+      color: #3F3E87;
+      grid-area: hero;
+      background-position: 0 -300px;
+    }
+
+    .about {
+      font-size: 1.5rem;
+      padding-left: 10%;
+      padding-right: 10%;
+      color: white;
+      line-height: 2.8rem
+    }
+  }
+
+  @media (min-width:1023px) and (max-width:1024px) {
+    .hero {
+      background-image: url("../../image/meme-tablet2.jpg");
+      background-size: cover;
+      background-repeat: no-repeat;
+      /* height: 864.75px; */
+      /* background-color:#FBF4EC; */
+      width: 100%;
+      color: #3F3E87;
+      grid-area: hero;
+      background-position: 0 -650px;
+    }
+
+    .about {
+      font-size: 2.8rem;
+      padding-left: 10%;
+      padding-right: 10%;
+      color: white;
+      line-height: 5rem;
+      margin-top: 10%;
+    }
+}
+
+  @media (min-width:799px) and (max-width:801px) {
+
+    .about {
+      font-size: 2.8rem;
+      padding-left: 10%;
+      padding-right: 10%;
+      color: white;
+      line-height: 5rem;
+      margin-top: 10%;
+    }
+
+}
+
+  @media (min-width:767px) and (max-width:768px) {
+
+    .hero {
+      background-image: url("../../image/meme-tablet2.jpg");
+      background-size: cover;
+      background-repeat: no-repeat;
+      /* height: 864.75px; */
+      /* background-color:#FBF4EC; */
+      width: 100%;
+      color: #3F3E87;
+      grid-area: hero;
+      background-position: 0 -650px;
+    }
+  }
+
   .hero {
     position: fixed;
     width: 50%;
     height:100%;
   }
 
-  .about {
+  /* .about {
     padding-left: 10%;
     padding-right: 10%;
     margin-top: 4rem;
-  }
+  } */
 
   .main-illustrator {
     grid-area: main-illustrator;
@@ -421,26 +591,59 @@ footer {
       margin-left: 5%;
       margin-right: 5%;
     }
+
+    .flex-container {
+      margin-left: 5%;
+      margin-right: 5%;
+    }
 }
 
 @media screen and (min-width:1025px) {
   main {
     /* background-color: yellow; */
-    grid-template-columns: 3fr 9fr;
+    grid-template-columns: 2fr 6fr;
     grid-template-areas:
     "hero main-illustrator"
     "hero main-illustrator"
     "hero main-illustrator"
     "hero footer";
   }
+
+@media (min-width:1279px) and (max-width:1441px) {
+    .hero {
+      background-image: url("../../image/meme-no-resize.jpg");
+      background-size: cover;
+      background-repeat: no-repeat;
+      /* height: 864.75px; */
+      /* background-color:#FBF4EC; */
+      width: 100%;
+      color: #3F3E87;
+      grid-area: hero;
+      background-position: -20px 0;
+    }
+}
+
   .hero {
     position: fixed;
     width: 25%;
     height:100%;
   }
+
+  .hero {
+    background-image: url("../../image/meme-no-resize.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* height: 864.75px; */
+    /* background-color:#FBF4EC; */
+    color: #3F3E87;
+    grid-area: hero;
+  }
+
   .about {
     padding-left: 10%;
     padding-right: 10%;
+    margin-top: 5%;
+    color: white;
   }
 
   .main-illustrator {
@@ -584,6 +787,11 @@ footer {
     margin-bottom: 0;
   }
 
+  .flex-container {
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+
 }
 
 .flex-container {
@@ -593,7 +801,7 @@ footer {
   align-items: center;
   height: 8rem;
   font-size: 2rem;
-  /* padding: 1rem; */
+  padding: 1rem;
   text-align: center;
   font-family: "open Sans";
   font-weight: 600;

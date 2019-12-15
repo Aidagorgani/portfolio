@@ -77,14 +77,13 @@
         </ul>
       </nav>
       <section class="hero">
-        <ul class="flex-container">
+        <ul id="flex-container" class="flex-container">
           <li class="my-logo">
             <a href="/"><img class="logo" src="image/logo.png" alt="logo"></a>
           </li>
           <li class="work"><a href="/">Work</a></li>
           <li class="bio"><a href="./bio.html">Bio</a></li>
         </ul>
-        <img class="top-hand" src="image/hand.png" alt="hand">
       </section>
       <section class="project-intro">
         <div class="project-div">
@@ -92,10 +91,13 @@
           <p>A low cost platform for users with personal data</p>
         </div>
         <div class="buttons">
-          <a class="mobile" href="https://www.figma.com/proto/hR8w0Kj3fk9re6NpA4aaPc/cloud-storage-high-fidility-mock-up-Mobile-rev-3?node-id=178%3A1&scaling=scale-down">Mobile Prototype</a>
-          <a class="desktop" href="https://www.figma.com/proto/8KpxkIbJohSgN40lVpGevT/cloud-storage-high-fidility-mock-up-desktop-rev-3?node-id=279%3A53&scaling=min-zoom">Desktop Prototype</a>
+          <div class="mobile-button">
+            <a class="mobile" href="https://www.figma.com/proto/hR8w0Kj3fk9re6NpA4aaPc/cloud-storage-high-fidility-mock-up-Mobile-rev-3?node-id=178%3A1&scaling=scale-down" target="_blank">Mobile Prototype</a>
+          </div>
+          <div class="desktop-button">
+            <a class="desktop" href="https://www.figma.com/proto/8KpxkIbJohSgN40lVpGevT/cloud-storage-high-fidility-mock-up-desktop-rev-3?node-id=279%3A53&scaling=min-zoom" target="_blank">Desktop Prototype</a>
+          </div>
         </div>
-        <img class="packsolution" src="image/packsolution.png" alt="packsolution">
       </section>
       <section id="overview" class="intro">
         <div class="overview">
@@ -113,18 +115,21 @@
           </div>
         </div>
       </section>
+      <div class="pre-title">
+          <h1>000 Pre-Research & Questions</h1>
+      </div>
       <section class="questions">
         <div class="question1">
-          <h6 class="question-h6"><span class="question-number">I. </span>Why are loud services becoming more popular?</h6>
+          <h6 class="question-h6"><span class="question-number">I. </span>Why are cloud services becoming more popular?</h6>
           <p>Cloud services are becoming popular because they can reduce the cost and complexity of owning and operating computers and physical storages. Growing demand for universal data accessibility, sync technology and security, increases in cloud adoption across industry and society.</p>
         </div>
         <div class="question2">
           <h6 class="question-h6"><span class="question-number">II. </span>What percentage of companies use the cloud?</h6>
-          <p><span class="percent">93%</span> of organizations use cloud-based IT services according to <span class="link"><a href="https://www.spiceworks.com/press/releases/2016-03-08/">Spicework Press</a></span>, which is a siginificant percentage. </p>
+          <p><span class="percent">93%</span> of organizations use cloud-based IT services according to <span class="link"><a href="https://www.spiceworks.com/press/releases/2016-03-08/" target="_blank">Spicework Press</a></span>, which is a siginificant percentage. </p>
         </div>
         <div class="question3">
           <h6 class="question-h6"><span class="question-number">III. </span>What percentage of online adult use the cloud?</h6>
-          <p>A statistic on <span class="link"><a href="https://www.statista.com/statistics/710972/us-cloud-computing-demographic-age-group/">Statista</a></span> presents information on cloud storage usage among online consumers in the United States, sorted by age group. During the May 2017 survey, it was found that 61 percent of online consumers aged 18 to 29 years were using online cloud storage services.</p>
+          <p>A statistic on <span class="link"><a href="https://www.statista.com/statistics/710972/us-cloud-computing-demographic-age-group/" target="_blank">Statista</a></span> presents information on cloud storage usage among online consumers in the United States, sorted by age group. During the May 2017 survey, it was found that 61 percent of online consumers aged 18 to 29 years were using online cloud storage services.</p>
         </div>
         <div class="waveform">
           <img src="image/wavefom1.png" class="waveform-img" alt="waveform1">
@@ -207,10 +212,13 @@
             </li>
         </ul>
         <div class="text-center">
-          <p class="see-more">See more <span class="link"><a href="https://docs.google.com/forms/d/e/1FAIpQLScdcam26v7x5VCNNpxUlbNA6I6OD5QiVLfA0eMFE-7QUqr5ZA/viewform?usp=sf_link">Questions</a></span> and <span class="link"><a href="https://docs.google.com/document/d/1O6v27O0MvCfaX-qW5NkJau7BFAMjWtG6GLEQQQX121s/edit?usp=sharing">Survey Analysis</a></span>?</p>
+          <p class="see-more">See more <span class="link"><a href="https://docs.google.com/forms/d/e/1FAIpQLScdcam26v7x5VCNNpxUlbNA6I6OD5QiVLfA0eMFE-7QUqr5ZA/viewform?usp=sf_link" target="_blank">Questions</a></span> and <span class="link"><a href="https://docs.google.com/document/d/1O6v27O0MvCfaX-qW5NkJau7BFAMjWtG6GLEQQQX121s/edit?usp=sharing" target="_blank">Survey Analysis</a></span>?</p>
         </div>
         <div class="survey-conclusion">
-          <img class="s-conclusion-img" src="image/hand2.png" alt="hand2"><br>
+          <div class="survey-result">
+            <img class="s-conclusion-img" src="image/hand2.png" alt="hand2"><br>
+            <h6 class="survey-h6">Survey results</h6>
+          </div>
           <div class="s-conclusion-p">
             <h7>I.</h7>
             <h8>The majority of the paticipants are Google Drive users.</h8><br><br>
@@ -296,28 +304,29 @@
             <img class="com44" src="image/com44.png" alt="com44">
           </div>
           <div class="observe-more">
-            <p>To observe the comprehensive findings on SWOT analysis click <span class="link"><a href="https://docs.google.com/document/d/1G84JOXc-XBIaXB6fyKMRrs3YoUZXVr3mknb1yMk_T88/edit?usp=sharing">here</a></span>.</p>
-          </div>
-          <div class="comp-img">
-            <img class="com-conclusion-img" src="image/hand2.png" alt="hand2">
+            <p>To observe the comprehensive findings on SWOT analysis click <span class="link"><a href="https://docs.google.com/document/d/1G84JOXc-XBIaXB6fyKMRrs3YoUZXVr3mknb1yMk_T88/edit?usp=sharing" target="_blank">here</a></span>.</p>
           </div>
           <div class="com-conclusion">
-              <div class="C-1">
-                <p class="p1">Based on the analysis above and survey data, I needed to answer the question of <span class="bold">“How a new competitor enter the marketplace?”</span>.</p><br><br><br>
-                <p class="p2"><span class="red-bold-p">I.</span><span class="bold"> Cost vs storage space/data storage space for free version:</span><br> I believe the new competitor needs to provide the same level of services with lower/comparable price. It also needs to provide the users with higher data storage space for free version or add some interesting features to the free version of accounts. (It could be the features on the paid plans of available competitors)
-                </p><br><br>
-                <p class="p3" ><span class="red-bold-p">II.</span><span class="bold"> Operating systems:</span> <br> My recommendation for the new competitor is to cover the operating system gap existed in the market. So, it could offer a new service to the minority operating system users like windows phone or Linux/Unix users.
-                </p><br><br>
-                <p class="p4"><span class="red-bold-p">III.</span><span class="bold"> Data Organization:</span><br>If I could set an automatic and smart data organization feature, it could be an apportunity to enter the product into the market. For example, a user would like to have the videos separated from the images and documents. By adjusting the setting to the file type, the videos go to the specific folder for the videos or the uploaded image goes to the image folder directly right after being uploaded. This could save a few clicks for users.</p><br><br>
-                <p class="p5"><span class="red-bold-p">IV.</span><span class="bold">  Integration with other apps in market/ supporting a broad file types:</span><br>To compete with the available products in the market, the new competitor should better have a broad integration with available applications out there. What might be interesting to the users is to customize the cloud platform app integration based on the users’ career or need. </p><br><br>
+            <div class="C-1">
+              <div class="comp-img">
+                <img class="com-conclusion-img" src="image/hand2.png" alt="hand2">
+                <h6 class="market-h6">Market entry strategy</h6>
               </div>
-              <div class="C-2">
-                <p class="p6"><span class="red-bold-p">V.</span><span class="bold"> Data migration among the cloud platforms:</span><br>If the new competitor provides an easy data migration tool for the users, it’ll help to absorb more users to bring their data into the new cloud storage.</p><br><br>
-                <p class="p7"><span class="red-bold-p">VI.</span><span class="bold"> Referral program incentive:</span> <br>My idea for the new competitor is to consider a referral program incentive for the users. They could also offer users free data storage space for migrating their data from any other cloud platform to their platform.</p><br><br>
-                <p class="p8"><span class="red-bold-p">VII.</span><span class="bold"> A Combination of useful features in existing cloud storage platforms to the users:</span><br>In order to enter into the market, the new competitor could combine the interesting features of existing platforms. It also could offer users what they really need based on their budget. For example, if it’s important for the user to have a fast sync feature on the platform, the platform could be customized with that feature. The same could happen for the strong search feature.</p><br><br>
-                <p class="p19"><span class="red-bold-p">VIII.</span><span class="bold"> The missing features on the mobile app:</span><br>If the new competitor would be able to blame that a user could access to the same level of services using any devices, that’s going to be a unique feature. So, it would be even possible for the user to do all the required tasks just using their cell phone or tablet.</p><br><br>
-                <p class="p10"><span class="red-bold-p">IX.</span><span class="bold"> Collaboration features:</span><br>The new competitor collaboration features could be a comprehensive combination of available cloud storage platforms. It also could expand this feature to social media, URL with protection password, to comment on all types file, like/dislike the changes, to send notification if a file is opened/modified, to send a request to do task on the shared file, to receive the task on the shared file is all done, to lock the shared file/folder in case of emergency, and many more.</p><br><br>
-              </div>
+              <p class="p1">Based on the analysis above and survey data, I needed to answer the question of <span class="bold">“How a new competitor enter the marketplace?”</span>.</p><br><br><br>
+              <p class="p2"><span class="red-bold-p">I.</span><span class="bold"> Cost vs storage space/data storage space for free version:</span><br> I believe the new competitor needs to provide the same level of services with lower/comparable price. It also needs to provide the users with higher data storage space for free version or add some interesting features to the free version of accounts. (It could be the features on the paid plans of available competitors)
+              </p><br><br>
+              <p class="p3" ><span class="red-bold-p">II.</span><span class="bold"> Operating systems:</span> <br> My recommendation for the new competitor is to cover the operating system gap existed in the market. So, it could offer a new service to the minority operating system users like windows phone or Linux/Unix users.
+              </p><br><br>
+              <p class="p4"><span class="red-bold-p">III.</span><span class="bold"> Data Organization:</span><br>If I could set an automatic and smart data organization feature, it could be an apportunity to enter the product into the market. For example, a user would like to have the videos separated from the images and documents. By adjusting the setting to the file type, the videos go to the specific folder for the videos or the uploaded image goes to the image folder directly right after being uploaded. This could save a few clicks for users.</p><br><br>
+              <p class="p5"><span class="red-bold-p">IV.</span><span class="bold">  Integration with other apps in market/ supporting a broad file types:</span><br>To compete with the available products in the market, the new competitor should better have a broad integration with available applications out there. What might be interesting to the users is to customize the cloud platform app integration based on the users’ career or need. </p><br><br>
+            </div>
+            <div class="C-2">
+              <p class="p6"><span class="red-bold-p">V.</span><span class="bold"> Data migration among the cloud platforms:</span><br>If the new competitor provides an easy data migration tool for the users, it’ll help to absorb more users to bring their data into the new cloud storage.</p><br><br>
+              <p class="p7"><span class="red-bold-p">VI.</span><span class="bold"> Referral program incentive:</span> <br>My idea for the new competitor is to consider a referral program incentive for the users. They could also offer users free data storage space for migrating their data from any other cloud platform to their platform.</p><br><br>
+              <p class="p8"><span class="red-bold-p">VII.</span><span class="bold"> A Combination of useful features in existing cloud storage platforms to the users:</span><br>In order to enter into the market, the new competitor could combine the interesting features of existing platforms. It also could offer users what they really need based on their budget. For example, if it’s important for the user to have a fast sync feature on the platform, the platform could be customized with that feature. The same could happen for the strong search feature.</p><br><br>
+              <p class="p19"><span class="red-bold-p">VIII.</span><span class="bold"> The missing features on the mobile app:</span><br>If the new competitor would be able to blame that a user could access to the same level of services using any devices, that’s going to be a unique feature. So, it would be even possible for the user to do all the required tasks just using their cell phone or tablet.</p><br><br>
+              <p class="p10"><span class="red-bold-p">IX.</span><span class="bold"> Collaboration features:</span><br>The new competitor collaboration features could be a comprehensive combination of available cloud storage platforms. It also could expand this feature to social media, URL with protection password, to comment on all types file, like/dislike the changes, to send notification if a file is opened/modified, to send a request to do task on the shared file, to receive the task on the shared file is all done, to lock the shared file/folder in case of emergency, and many more.</p><br><br>
+            </div>
           </div>
         </div>
       </section>
@@ -326,17 +335,23 @@
           <div class="user-des">
             <p><span class="bold">COMPETITORS USER FLOWS</span><br><br>After Performing a SWOT analysis on each of these competitors, I created user flows documenting the following processes for each competitors:</p><br><br>
             <p><span class="red-bold-p">I. </span>The onboarding process</p>
-            <a href="https://drive.google.com/file/d/1IsmicKwEZu5LEf3ML0JWWP0IZnhzvCHA/view?usp=sharing"><img src="image/Logo_of_Google_Drive.png" class="googledrive-dropbox-evernote" alt="Google Drive"></a>
-            <a href="https://drive.google.com/file/d/1-4WSwQE_RyzIjOlI6nvyKiG4wCZMjKd-/view?usp=sharing"><img src="image/dropbox.png" class="googledrive-dropbox-evernote" alt="Dropbox"></a>
-            <a href="https://drive.google.com/file/d/1KrWIBxTyr0JpYY5hFPEX7dq1WMcCFhn7/view?usp=sharing"><img src="image/evernote.png" class="googledrive-dropbox-evernote" alt="Evernote"></a><br>
+            <ul id="onboarding">
+              <li><a href="https://drive.google.com/file/d/1IsmicKwEZu5LEf3ML0JWWP0IZnhzvCHA/view?usp=sharing" target="_blank"><img src="image/Logo_of_Google_Drive.png" class="googledrive-dropbox-evernote1" alt="Google Drive"></a></li>
+              <li><a href="https://drive.google.com/file/d/1-4WSwQE_RyzIjOlI6nvyKiG4wCZMjKd-/view?usp=sharing" target="_blank"><img src="image/dropbox.png" class="googledrive-dropbox-evernote2" alt="Dropbox"></a></li>
+              <li><a href="https://drive.google.com/file/d/1KrWIBxTyr0JpYY5hFPEX7dq1WMcCFhn7/view?usp=sharing" target="_blank"><img src="image/evernote.png" class="googledrive-dropbox-evernote3" alt="Evernote"></a><br></li>
+            </ul> <br>
             <p><span class="red-bold-p">II. </span>Saving an item</p>
-            <a href="https://drive.google.com/file/d/1Hkwu-zZs1megcw2sgh3c8yGi_-hSp15b/view?usp=sharing"><img src="image/Logo_of_Google_Drive.png" class="googledrive-dropbox-evernote" alt="Google Drive"></a>
-            <a href="https://drive.google.com/file/d/1gjKtFwplX6ESGIZ6jfAUf-NbMTnGuPvD/view?usp=sharing"><img src="image/dropbox.png" class="googledrive-dropbox-evernote" alt="Dropbox"></a>
-            <a href="https://drive.google.com/file/d/1MI4I7s3WN2ynxCZOW-Gjtr0-mjrerR9K/view?usp=sharing"><img src="image/evernote.png" class="googledrive-dropbox-evernote" alt="Evernote"></a><br>
+            <ul id="onboarding">
+              <a href="https://drive.google.com/file/d/1Hkwu-zZs1megcw2sgh3c8yGi_-hSp15b/view?usp=sharing" target="_blank"><img src="image/Logo_of_Google_Drive.png" class="googledrive-dropbox-evernote1" alt="Google Drive"></a>
+              <a href="https://drive.google.com/file/d/1gjKtFwplX6ESGIZ6jfAUf-NbMTnGuPvD/view?usp=sharing" target="_blank"><img src="image/dropbox.png" class="googledrive-dropbox-evernote2" alt="Dropbox"></a>
+              <a href="https://drive.google.com/file/d/1MI4I7s3WN2ynxCZOW-Gjtr0-mjrerR9K/view?usp=sharing" target="_blank"><img src="image/evernote.png" class="googledrive-dropbox-evernote3" alt="Evernote"></a><br>
+            </ul> <br>
             <p><span class="red-bold-p">III. </span>Organizing an item (into a group or category)</p>
-            <a href="https://drive.google.com/file/d/1AoJu-UAlOy_0zEScs2709Bt2KEXlqM8G/view?usp=sharing"><img src="image/Logo_of_Google_Drive.png" class="googledrive-dropbox-evernote" alt="Google Drive"></a>
-            <a href="https://drive.google.com/file/d/1dEkFYHbEh9swe-nLPSn-hVG5vTVvpVeJ/view?usp=sharing"><img src="image/dropbox.png" class="googledrive-dropbox-evernote" alt="Dropbox"></a>
-            <a href="https://drive.google.com/file/d/1iBGtAKMK6xk7D29pbLiupXZgMZUalDuA/view?usp=sharing"><img src="image/evernote.png" class="googledrive-dropbox-evernote" alt="Evernote"></a><br>
+            <ul id="onboarding">
+              <a href="https://drive.google.com/file/d/1AoJu-UAlOy_0zEScs2709Bt2KEXlqM8G/view?usp=sharing" target="_blank"><img src="image/Logo_of_Google_Drive.png" class="googledrive-dropbox-evernote1" alt="Google Drive"></a>
+              <a href="https://drive.google.com/file/d/1dEkFYHbEh9swe-nLPSn-hVG5vTVvpVeJ/view?usp=sharing" target="_blank"><img src="image/dropbox.png" class="googledrive-dropbox-evernote2" alt="Dropbox"></a>
+              <a href="https://drive.google.com/file/d/1iBGtAKMK6xk7D29pbLiupXZgMZUalDuA/view?usp=sharing" target="_blank"><img src="image/evernote.png" class="googledrive-dropbox-evernote3" alt="Evernote"></a><br>
+            </ul>
           </div>
           <div class="user-img">
             <img src="image/com2-user-flow.png" class="user-flow-img-2" alt="com2-user-flow">
@@ -349,14 +364,14 @@
             <img class="user-story-image" src="image/user-story.png" alt="User-story">
             <h6 class="user-story-h2">User Stories</h6>
           </div>
-          <p class="user-story-p"> Based on the user survey data, a list of user stories was created  and prioritized based on the research I conducted earlier. This list helped me to simplify the description of a mobile app feature requirement for minimum viable product. Please see the full version of user stories in <span class="link"><a href="https://docs.google.com/spreadsheets/d/1IIDmzyZ5HCwVuzfia5TiiaG3Ssx-3svBmv1Y2bZSVuc/edit?usp=sharing">here</a></span>.</p><br>
+          <p class="user-story-p"> Based on the user survey data, a list of user stories was created  and prioritized based on the research I conducted earlier. This list helped me to simplify the description of a mobile app feature requirement for minimum viable product. Please see the full version of user stories in <span class="link"><a href="https://docs.google.com/spreadsheets/d/1IIDmzyZ5HCwVuzfia5TiiaG3Ssx-3svBmv1Y2bZSVuc/edit?usp=sharing" target="_blank">here</a></span>.</p><br>
         </li>
         <li class="finding">
           <div class= "inner-finding">
             <img class= "finding-image" src="image/finding.png" alt="finding">
             <h6 class= "finding-h2">From research findings to design solution</h6>
           </div>
-          <p>Looking backwards, I was able to connect the dots between finding problems and recommending solutions. This step provides me the great value as a UX designer to come up with the initial Minimum Viable Product (MVP).</p><br>
+          <p>Looking backwards, I was able to connect the dots between finding problems and recommending solutions. This step provides me the great value as a UX designer to come up with the initial Minimum Viable Product (MVP).</p><br> <br>
         </li>
       </ul>
       <img class="solution-image" src="image/solution.png" alt="solution">
@@ -365,7 +380,7 @@
           <img class="pen-icon" src="image/pen.png" alt="pen">
           <h6 class="pen-h2">Brainstorming and sketching</h6><br>
         </div>
-        <p> At this step, I created user flows mapping out all the high-priority user stories I planed to include in my project and eventually test with users later on. Where possible, I looked for opportunities to also include medium or even low priority user stories in my user flows to make up my MVP for this project. Please see the original user flow in <span class="link"><a href="https://drive.google.com/file/d/1GZv7e2eh2S8PU-ENP851JSMZkBKTUmQF/view?usp=sharing">here</a></span>.</p><br>
+        <p> At this step, I created user flows mapping out all the high-priority user stories I planed to include in my project and eventually test with users later on. Where possible, I looked for opportunities to also include medium or even low priority user stories in my user flows to make up my MVP for this project. Please see the original user flow in <span class="link"><a href="https://drive.google.com/file/d/1GZv7e2eh2S8PU-ENP851JSMZkBKTUmQF/view?usp=sharing" target="_blank">here</a></span>.</p><br>
       </section>
       <img class="paper" src="image/pack-paper-p.png" alt="paper-p">
       <section class="sitemap">
@@ -373,7 +388,7 @@
           <img class="horn" src="image/horn.png" alt="horn"><br>
           <h6 class="horn-h2">Sitemap and content strategy</h6>
         </div>
-        <p> Based on the user stories and user flows, a sitemap has been created for the product. Each destination in the user flows is represented in the sitemap. Using the sitemap, A <span class="link"><a href="https://drive.google.com/file/d/1GZv7e2eh2S8PU-ENP851JSMZkBKTUmQF/view?usp=sharing">Content Strategy</a></span> was created for each part of the sitemap. The sitemap should Include the text and images I might use in my designs.</p><br>
+        <p> Based on the user stories and user flows, a sitemap has been created for the product. Each destination in the user flows is represented in the sitemap. Using the sitemap, A <span class="link"><a href="https://drive.google.com/file/d/1GZv7e2eh2S8PU-ENP851JSMZkBKTUmQF/view?usp=sharing" target="_blank">Content Strategy</a></span> was created for each part of the sitemap. The sitemap should Include the text and images I might use in my designs.</p><br>
       </section>
       <img class="sitemapp" src="image/Sitemaps.png" alt="sitemap">
       <section id="branding" class="branding">
@@ -382,7 +397,7 @@
         </div>
         <div class="fly">
           <img class="fly-image" src="image/fly.png" alt="pen"><br>
-          <h6 class="fly-h2"> Brainstorming, sketching, and <span class="link"><a href="https://docs.google.com/document/d/1s-jotfqNU7UsTdUofOcqSz21oaX0Pzg8WRhsbZ6jqFs/edit?usp=sharing">Research</a></span>.</h6><br>
+          <h6 class="fly-h2"> Brainstorming, sketching, and <span class="link"><a href="https://docs.google.com/document/d/1s-jotfqNU7UsTdUofOcqSz21oaX0Pzg8WRhsbZ6jqFs/edit?usp=sharing" target="_blank">Research</a></span>.</h6><br>
         </div>
       </section>
       <section class="sketch">
@@ -428,8 +443,12 @@
           </div>
         </div>
       <div class="buttons">
-        <a class="styleguide" href="https://www.figma.com/proto/1WUM3McVxcjgJwKD0aEGdQ/PACK-STYLE-GUIDE-2?node-id=181%3A99&scaling=min-zoom">Cloud Style Guide</a>
-        <a class="moodboard" href="https://app.milanote.com/1HPV7O1YUOtj77">Moodboard</a>
+        <div class="styleguide-button">
+          <a class="styleguide" href="https://www.figma.com/proto/1WUM3McVxcjgJwKD0aEGdQ/PACK-STYLE-GUIDE-2?node-id=181%3A99&scaling=min-zoom" target="_blank">Cloud Style Guide</a>
+        </div>
+        <div class="moodboard-button">
+          <a class="moodboard" href="https://app.milanote.com/1HPV7O1YUOtj77" target="_blank">Moodboard</a>
+        </div>
       </div>
       <section class="marketing">
         <div class="marketing-div">
@@ -443,7 +462,7 @@
         <div class="phase">
           <h1><span class="h1-title">02 </span>Wireframes Iteration & Clickable Prototype</h1>
           <p><span class="red-bold-p">I. Initial Design: </span>Based on the paper prototype and user research, an intial wireframe has been designed for the product.</p><br><br>
-          <p><span class="link2"><a href="https://docs.google.com/document/d/1Wsnj8m_r-XHVa_6fw4SIu2Z3Ktp57q7XgQF-S2UhYt0/edit?usp=sharing" class="red-bold-p">II. Usability test - round one: </a></span> Then, the initial wireframe has been tested on two local and one remote users.</p><br><br>
+          <p><span class="link2"><a href="https://docs.google.com/document/d/1Wsnj8m_r-XHVa_6fw4SIu2Z3Ktp57q7XgQF-S2UhYt0/edit?usp=sharing" class="red-bold-p" target="_blank">II. Usability test - round one: </a></span> Then, the initial wireframe has been tested on two local and one remote users.</p><br><br>
         </div>
       </section>
       <div class="box">
@@ -452,14 +471,14 @@
         <img class="img-box-wireframe" src="image/image3.png" alt="image3">
       </div>
       <div class="buttons-2">
-        <a class="wireframe-b" href="https://www.figma.com/proto/0Apb2nY3ECgduioKDH1oC8/Cloud-Storage-Wireframes-Iphone-8-Second-edition-based-on-usability-test?node-id=1024%3A103&scaling=scale-down">Clickable Wireframe</a>
+        <a class="wireframe-b" href="https://www.figma.com/proto/0Apb2nY3ECgduioKDH1oC8/Cloud-Storage-Wireframes-Iphone-8-Second-edition-based-on-usability-test?node-id=1024%3A103&scaling=scale-down" target="_blank">Clickable Wireframe</a>
       </div>
       <section id="mockup" class="mockup">
         <div class="phase">
           <h1><span class="h1-title">03 </span>High fidility mockups iterations</h1>
           <p><span class="red-bold-p">I. Initial Design: </span>Based on the wireframe design and branding, an intial high fidility mockup has been designed for the product.</p><br><br>
           <p><span class="red-bold-p">II. Expert evaluation: </a></span>Based on Bloc program professional designers, the mockup has been modified to second iteration. </p><br><br>
-          <p><span class="link2"><a href="https://docs.google.com/document/d/15HYyNMpkXGwIxufkmd3OF_EimwAQQmUSrTdv0_y0ZxM/edit?usp=sharing" class="red-bold-p">III. Usability test - round two: </a></span> Then, the second iteration mockup has been tested on two remote and one local users. </p><br><br>
+          <p><span class="link2"><a href="https://docs.google.com/document/d/15HYyNMpkXGwIxufkmd3OF_EimwAQQmUSrTdv0_y0ZxM/edit?usp=sharing" class="red-bold-p" target="_blank">III. Usability test - round two: </a></span> Then, the second iteration mockup has been tested on two remote and one local users. </p><br><br>
         </div>
       </section>
       <div class="box">
@@ -468,7 +487,7 @@
         <img class="img-box-mockup" src="image/image6.png" alt="image6">
       </div>
       <div class="buttons-2">
-        <a class="mockup-b" href="https://www.figma.com/proto/hR8w0Kj3fk9re6NpA4aaPc/cloud-storage-high-fidility-mock-up-Mobile-rev-3?node-id=178%3A1&scaling=scale-down">Clickable Mockup</a>
+        <a class="mockup-b" href="https://www.figma.com/proto/hR8w0Kj3fk9re6NpA4aaPc/cloud-storage-high-fidility-mock-up-Mobile-rev-3?node-id=178%3A1&scaling=scale-down" target="_blank">Clickable Mockup</a>
       </div>
       <section class="preference">
         <div class="preference-div">
@@ -477,12 +496,14 @@
         </div>
         <p> At this design step, I've found three different elements where I considered more than one potential style. Then, I created at least two variations of each element, and conducted preference tests on all three.</p><br><br>
       </section>
-      <h3 class="preference-h"> 29 Total participants</h3>
-      <img src="image/pre1.png" class="pre1" alt="pre1">
-      <h3 class="preference-h"> 18 Total participants</h3>
-      <img src="image/pre2.png" class="pre2" alt="pre2">
-      <h3 class="preference-h"> 26 Total participants</h3>
-      <img src="image/pre3.png" class="pre3" alt="pre3">
+      <div class="preference-images">
+        <h3 class="preference-h"> 29 Total participants</h3>
+        <img src="image/pre1.png" class="pre1" alt="pre1">
+        <h3 class="preference-h"> 18 Total participants</h3>
+        <img src="image/pre2.png" class="pre2" alt="pre2">
+        <h3 class="preference-h"> 26 Total participants</h3>
+        <img src="image/pre3.png" class="pre3" alt="pre3">
+      </div>
       <div class="iteration">
         <h2 class="iteration-p">And that’s how the iterative design approach works for my product...</h2>
       </div>
@@ -490,13 +511,13 @@
       <div class="desktop-version">
         <div class= "hand">
           <img class="hand3" src="image/hand3.png" alt="hand3">
-          <p class="desk">PACK DESKTOP <br><br>
-            For the sake of presentation, the mobile design process has been shown in this case study. The same design approach has been applied to desktop version of product.</p><br><br>
-          <a class="desktop-link" href="https://www.figma.com/proto/8KpxkIbJohSgN40lVpGevT/cloud-storage-high-fidility-mock-up-desktop-rev-3?node-id=279%3A53&scaling=min-zoom"><img class="desktop-img" src="image/desktop-version.png" alt="desktop-version"></a>
+          <p class="desktop-platform">PACK DESKTOP <br><br>
+            The cloud storage platform has been designed and tested for the desktop resolution as well. The same design approach has been applied to desktop version of product.</p><br><br>
+          <a class="desktop-link" href="https://www.figma.com/proto/8KpxkIbJohSgN40lVpGevT/cloud-storage-high-fidility-mock-up-desktop-rev-3?node-id=279%3A53&scaling=min-zoom" target="_blank"><img class="desktop-img" src="image/desktop-version.png" alt="desktop-version"></a>
         </div>
       </div>
       <ul id="conclusion" class="conclusion">
-        <li class="phase">
+        <li class="phase2">
           <h1><span class="h1-title">04 </span>Conclusion</h1>
           <div class="pp">
             <div class="one-two">
@@ -517,7 +538,7 @@
           <p class="desk1">PREVIOUS PROJECT</p>
         </div>
         <div class="next">
-          <a href="./busybuscasestudy.html"><p class="desk1">NEXT PROJECT</p></a>
+          <a href="./busybuscasestudy.html"><p class="desk">NEXT PROJECT</p></a>
           <a href="./busybuscasestudy.html"><img class="next-button" src="image/next.png" alt="next"></a>
         </div>
       </div>
@@ -527,10 +548,10 @@
         </div>
         <div class="ul-social">
           <ul id="ul-social-media">
-            <li><a href="https://www.linkedin.com/in/aidagorgani/"><img class="social-logo" src="image/linkedin.png" alt="Linkedin"></a></li>
-            <li><a href="https://github.com/Aidagorgani"><img class="social-logo" src="image/github.png" alt="Github"></a></li>
-            <li><a href="https://www.instagram.com/artworkbyaida/"><img class="social-logo" src="image/instagram.png" alt="Instagram"></a></li>
-            <li><a href="https://www.pinterest.com/aida_gorgani/"><img class="social-logo" src="image/pinterest.png" alt="Pinterest"></a></li>
+            <li><a href="https://www.linkedin.com/in/aidagorgani/" target="_blank"><img class="social-logo" src="image/linkedin.png" alt="Linkedin"></a></li>
+            <li><a href="https://github.com/Aidagorgani" target="_blank"><img class="social-logo" src="image/github.png" alt="Github"></a></li>
+            <li><a href="https://www.instagram.com/artworkbyaida/" target="_blank"><img class="social-logo" src="image/instagram.png" alt="Instagram"></a></li>
+            <li><a href="https://www.pinterest.com/aida_gorgani/" target="_blank"><img class="social-logo" src="image/pinterest.png" alt="Pinterest"></a></li>
           </ul>
         </div>
         <div class="made-in-usa">
