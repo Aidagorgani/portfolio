@@ -968,8 +968,15 @@ li {
   margin: 1rem 20%;
 }
 
-.desk, .desk1 {
+.desk {
   color: white;
+  margin: 5% 1%;
+  line-height: 0.1rem;
+  font-size: 0.9rem;
+}
+
+.desk1 {
+  color: #636267;
   margin: 5% 1%;
   line-height: 0.1rem;
   font-size: 0.9rem;
@@ -1204,12 +1211,20 @@ ul li {
     margin-bottom: 0;
   }
 
-  .desk, .desk1 {
+  .desk {
     color: white;
     margin: 5% 1%;
     line-height: 0.1rem;
     font-size: 2rem;
   }
+
+  .desk1 {
+    color: #636267;
+    margin: 5% 1%;
+    line-height: 0.1rem;
+    font-size: 2rem;
+  }
+
 
   .flex-container {
     margin-left: 5%;
@@ -2021,7 +2036,7 @@ ul li {
   }
 
   .marketing {
-    margin:0 30%;
+    margin:0 25%;
     margin-bottom: 2rem;
     margin-top: 2rem;
   }
@@ -3171,13 +3186,22 @@ ul li {
     margin:0.5rem 0.5rem;
   }
 
-  .desk, .desk1 {
+  .desk {
     color: white;
     margin: 5% 1%;
     line-height: 0.1rem;
     font-size: 2rem;
     padding: 0;
  }
+
+ .desk1 {
+   color: #636267;
+   margin: 5% 1%;
+   line-height: 0.1rem;
+   font-size: 2rem;
+   padding: 0;
+}
+
 
 }
 

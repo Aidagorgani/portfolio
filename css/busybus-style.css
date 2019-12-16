@@ -584,7 +584,14 @@ footer {
   margin:5% 2%;
 }
 
-.desk, .desk1 {
+.desk {
+  color: #636267;
+  margin:5% 1%;
+  line-height: 0.1rem;
+  font-size: 0.9rem;
+}
+
+.desk1 {
   color: white;
   margin:5% 1%;
   line-height: 0.1rem;
@@ -999,8 +1006,15 @@ footer {
     margin:5% 2%;
   }
 
-  .desk, .desk1 {
+  .desk1 {
     color: white;
+    margin:5% 1%;
+    line-height: 0.1rem;
+    font-size: 2rem;
+  }
+
+  .desk {
+    color:#636267;
     margin:5% 1%;
     line-height: 0.1rem;
     font-size: 2rem;
@@ -1587,7 +1601,7 @@ footer {
 
   .com-conclusion-img {
     display: inline-block;
-    width:20%;
+    width:10%;
     margin-bottom:0;
     align-self: center;
   }
@@ -1723,8 +1737,14 @@ footer {
   margin:5% 2%;
 }
 
-.desk,.desk1 {
+.desk1 {
   color: white;
+  margin:5% 1%;
+  line-height: 0.1rem;
+}
+
+.desk {
+  color:#636267;
   margin:5% 1%;
   line-height: 0.1rem;
 }
