@@ -781,11 +781,11 @@ footer {
     border-radius: 3rem 0 0 0; /* top left, top right, bottom right, bottom left */
   }
 
-  .illustrator7 {
-    float: left;
-    margin-left: 5%;
+  img.illustrator7 {
+    float: bottom;
+    margin-left:1%;
     width: 45%;
-    margin-bottom: 0;
+    margin-top: 10%;
   }
 
   .flex-container {
