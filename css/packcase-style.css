@@ -253,6 +253,7 @@ section {
   text-align: center;
   justify-content:space-around;
   margin: 0 10%;
+  font-size: 1.6rem;
 }
 
 .overview-p {
@@ -809,6 +810,7 @@ li {
   text-align: center;
   display: flex;
   margin: 0 10%;
+  font-size: 1.6rem;
   }
 
  .wireframe-b {
