@@ -29,6 +29,14 @@ p {
   font-family: "Montserrat";
 }
 
+#load {
+  width:100%;
+  height:100%;
+  position:fixed;
+  z-index:9999;
+  background:#FBF4EC url('images/loader.gif') no-repeat center center;
+}
+
 .about {
   margin-left: 10%;
   margin-right: 10%;
@@ -544,7 +552,7 @@ a:link {
   }
 
   .project2-image {
-    margin-left: 6%;
+    text-align: center;
     margin-top: 5%;
     margin-bottom: 5%;
     width:100%;
