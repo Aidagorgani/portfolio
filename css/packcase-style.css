@@ -319,12 +319,12 @@ main {
   "flex-container";
   margin-bottom: 25%;
   margin-top: 0;
-  background-image: url("../../image/packsolution.png");
+  background-image: url("../../image/packsolution.jpg");
   background-size: contain;
   background-repeat: no-repeat;
   width: 100%;
   height: 0;
-  padding-bottom: 80%;
+  padding-bottom: 66%;
   margin-bottom: 0;
 }
 
@@ -873,10 +873,10 @@ li {
  .hand {
    background-color: #D7908D;
    display:grid;
-   grid-template-columns: 1fr 2fr;
+   grid-template-columns: 1fr;
    grid-template-areas:
-   "hand3 desk-platform"
-   "desktop-link desktop-link";
+   "desk-platform"
+   "desktop-link";
  }
 
  .hand3 {
@@ -894,8 +894,8 @@ li {
  }
 
  .desktop-img {
-   width:100%;
-   padding:0 10%;
+   width:90%;
+   margin: 5% 5%;
  }
 
  .desktop-link {
@@ -1193,10 +1193,8 @@ ul li {
 .desktop-platform {
    font-size: 1.5rem;
    color: white;
-   margin-top: 15%;
-   margin-left: 2rem;
-   margin-right: 1rem;
-   margin-bottom: 4rem;
+   margin: 10% 10%;
+   line-height: 3rem;
  }
 
 
@@ -1212,12 +1210,12 @@ ul li {
     "flex-container .";
     margin-bottom: 25%;
     margin-top: 0;
-    background-image: url("../../image/packsolution.png");
+    background-image: url("../../image/packsolution.jpg");
     background-size: contain;
     background-repeat: no-repeat;
     width: 100%;
     height: 0;
-    padding-bottom: 80%;
+    padding-bottom: 66%;
     margin-bottom: 0;
   }
 
@@ -2134,9 +2132,9 @@ ul li {
   .hand {
     background-color: #D7908D;
     display:grid;
-    grid-template-columns: 1fr 2fr 3fr;
+    grid-template-columns:2fr 3fr;
     grid-template-areas:
-    "hand3 desktop-platform desktop-link";
+    "desktop-platform desktop-link";
   }
 
   .desk, .desk1 {
@@ -2145,14 +2143,9 @@ ul li {
   }
 
   .desktop-img {
-    padding:2% 0;
-    margin-top: 10%;
-  }
-
-  .hand3 {
-    margin: 20% 0;
-    padding: 5% 0;
-    margin-right: 2%;
+    margin: 5% 5%;
+    width: 90%;
+    padding: 0 0;
   }
 
 .pp {
@@ -2194,7 +2187,8 @@ ul li {
     font-size: 1.5rem;
     color: white;
     margin-top: 15%;
-    margin-left: 2rem;
+    margin-left: 15%;
+    line-height: 3rem;
   }
 
   .social-logo {
@@ -2214,12 +2208,12 @@ ul li {
     grid-template-columns:3fr 9fr;
     grid-template-areas:
     "flex-container .";
-    background-image: url("../../image/packsolution.png");
+    background-image: url("../../image/packsolution.jpg");
     background-size: contain;
     background-repeat: no-repeat;
     width: 100%;
     height: 0;
-    padding-bottom: 80%;
+    padding-bottom: 66%;
     margin-bottom: 0;
   }
 
@@ -3129,22 +3123,23 @@ ul li {
   .hand {
     background-color: #D7908D;
     display:grid;
-    grid-template-columns: 1fr 2fr 3fr;
+    grid-template-columns:2fr 3fr;
     grid-template-areas:
-    "hand3 desktop-platform desktop-link";
+    "desktop-platform desktop-link";
   }
 
   .desktop-platform {
-    margin-top: 30%;
+    margin-top: 15%;
     font-size: 2rem;
-    line-height: 3rem;
+    line-height: 3.5rem;
     color: white;
-    margin-left: 2rem;
+    margin-left: 15%;
+    margin-right: 0;
   }
 
   .desktop-img {
-    padding:2% 0;
-    margin-top: 5%;
+    width: 80%;
+    margin: 5% 10%;
   }
 
   .hand3 {
