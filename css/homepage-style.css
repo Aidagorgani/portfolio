@@ -84,6 +84,7 @@ p {
   "hero"
   "project1"
   "project2"
+  "project3"
   "footer";
   }
 
@@ -96,51 +97,26 @@ p {
  .project1 {
   background-color: #D7908D;
   grid-area: project1;
-  display: grid;
-  grid-template-rows: 1fr auto;
-  grid-template-areas:
-  "project1-image"
-  "project1-info";
 }
 
 .project2 {
-  background-color: #C1BFBF;
+  background-color: #b0abb1;
   grid-area: project2;
-  display: grid;
-  grid-template-rows: 1fr auto;
-  grid-template-areas:
-  "project2-image"
-  "project2-info";
 }
 
-.project1-image {
-  grid-area: project1-image;
-  width:90%;
-  margin: 10% 2.5%;
-  vertical-align: center;
+.project3 {
+  grid-area: project3;
+  background-color: #B0D6FC;
 }
 
-.project1-info {
-  grid-area: project1-info;
-  margin: auto 0;
-}
 
-.project2-image {
-  grid-area: project2-image;
-  max-width: 250px;
-  margin: 1% auto;
-  vertical-align: center;
-}
-
-.project2-info {
-  grid-area: project2-info;
-  margin: auto 0;
-}
-
-.approach {
-  background-color: #62AAB1;
-  grid-area: approach;
+.project1-image, .project2-image, .project3-image {
   width:100%;
+  margin: 0 0;
+}
+
+.project1-info, .project2-info, .project3-info {
+  margin: 5% 10%;
 }
 
 footer {
@@ -214,35 +190,36 @@ a {
   display: inline-block;
 }
 
-.project1, .project2 {
+.project1, .project2, .project3 {
   color: white;
 }
 
 @media (max-width:350px) {
-  .case-button {
+  .case-button, .case-button-2 {
     margin:3rem auto;
     border: 1.5px solid #3F3E87;
     border-radius: 5rem;
     font-weight: 600;
-    padding: 1.2rem 15%;
+    padding: 1.5rem 10%;
+    /* background-color: #3F3E87;
+    color: white; */
   }
 }
 
 @media (min-width:350px) {
-  .case-button {
+  .case-button, .case-button-2 {
     margin:3rem auto;
     border: 1.5px solid #3F3E87;
     border-radius: 5rem;
     font-weight: 600;
-    padding: 1.2rem 20%;
+    padding: 1.5rem 25%;
   }
 }
 
-
 .case-button:hover {
   /* text-shadow: 0px 0px 6px rgba(255, 255, 255, 1); */
- -webkit-box-shadow: 0px 5px 40px -10px rgba(63, 62, 135,0.57);
- -moz-box-shadow: 0px 5px 40px -10px rgba(63, 62, 135,0.57);
+ -webkit-box-shadow: 0px 5px 40px 10px rgba(63, 62, 135,0.57);
+ -moz-box-shadow: 0px 5px 40px 10px rgba(63, 62, 135,0.57);
  transition: all 0.4s ease 0s;
 }
 
@@ -331,10 +308,6 @@ a:link {
   text-decoration: none;
 }
 
-.project2-info, .project1-info {
-  margin: auto 10%;
-}
-
 .button, .button2 {
   text-align: center;
   margin-top: 3rem;
@@ -342,21 +315,15 @@ a:link {
   margin-bottom: 5rem;
 }
 
-.project2-h2, .project1-h2 {
+.project2-h2, .project1-h2, .project3-h2 {
   margin-bottom: 2rem;
 }
 
-.project1-p, .project2-p {
+.project1-p, .project2-p, .project3-p {
   margin-bottom: 4rem;
+  width: 100%;
 }
 
-.approach-img {
-  width:100%;
-}
-
-.approach {
-  display: none;
-}
 
 @media screen and (min-width:768px) {
 
@@ -366,7 +333,7 @@ a:link {
     grid-template-areas:
     "hero project1"
     "hero project2"
-    "hero approach"
+    "hero project3"
     "hero footer";
   }
 
@@ -390,27 +357,15 @@ a:link {
     margin-right: 10%;
   }
 
-  .project1 {
-    grid-template-rows: 1fr;
-    grid-template-areas:
-    "project1-image"
-    "project1-info";
-  }
-
-.project1-image {
-  grid-area: project1-image;
-  width: 95%;
-  margin: 10% 2.5%;
-  vertical-align: center;
+.project1-image, .project2-image, .project3-image {
+  /* grid-area: project1-image; */
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
 }
-
-.project2 {
-  grid-template-rows: 1fr;
-  grid-template-areas:
-  "project2-image"
-  "project2-info";
-}
-
   .work, .bio {
     color: #3F3E87;
   }
@@ -464,46 +419,16 @@ a:link {
     margin-right:10%;
   }
 
-  .project1 {
-    color: white;
+  .project2-info, .project1-info, .project3-info {
+    vertical-align: middle;
   }
 
-  .project2-info, .project1-info {
-    margin: auto 10%;
-  }
-
-  .project2-h2, .project1-h2 {
+  .project2-h2, .project1-h2, .project3-h2 {
     margin-bottom: 2rem;
   }
 
-  .project1-p, .project2-p {
+  .project1-p, .project2-p, .project3-p {
     margin-bottom: 4rem;
-  }
-
-  .approach-h {
-    margin-left: 10%;
-    margin-top: 8%;
-    color: white;
-  }
-
-  .approach-image-1 {
-    width: 100%;
-    margin-top: 4rem;
-    margin-bottom: 2rem;
-  }
-
-  .approach-image-2 {
-    width: 100%;
-    margin-bottom: 2rem;
-  }
-
-  .approach-image-3 {
-    width: 100%;
-    margin-bottom: 4rem;
-  }
-
-  .approach {
-    display:inherit;
   }
 
 }
@@ -517,7 +442,7 @@ a:link {
    grid-template-areas:
    "hero project1"
    "hero project2"
-   "hero approach"
+   "hero project3"
    "hero footer";
  }
 
@@ -535,27 +460,6 @@ a:link {
   .main-title, .about {
     margin-left: 10%;
     margin-right: 10%;
-  }
-
-  .project1 {
-    grid-template-columns: 1fr 2fr;
-    grid-template-areas:
-    "project1-info project1-image";
-    grid-area: project1;
-  }
-
-  .project2 {
-    grid-template-columns: 1fr 2fr;
-    grid-template-areas:
-    "project2-image project2-info";
-    grid-area: project2;
-  }
-
-  .project2-image {
-    text-align: center;
-    margin-top: 5%;
-    margin-bottom: 5%;
-    width:100%;
   }
 
   .work, .bio {
@@ -611,68 +515,67 @@ a:link {
   margin-right:10%;
   }
 
-.project1 {
+.case-button, .case-button-2 {
+  background-color: #3F3E87;
   color: white;
+  }
+
+  .project3-h2, .project3-p {
+    color: #3F3E87;
+  }
+
+ .project1-image, .project2-image, .project3-image {
+   margin: 0 0;
+   width: 100%;
  }
 
- .project1-image {
-   margin-top: 10%;
-   margin-bottom: 5%;
+ .project1-info, .project2-info, .project3-info {
+   /* margin-left: 18%;
+   margin-right: 0; */
+   transition: .5s ease;
+   opacity: 0;
+   position: absolute;
+   top: 50%;
+   left: 52%;
+   transform: translate(-50%, -50%);
+   -ms-transform: translate(-50%, -50%);
+   text-align: left;
+   margin: 0 0;
  }
 
- .project1-info {
-   margin-left: 18%;
-   margin-right: 0;
-}
-
- .project2-info {
-   margin-right: 24%;
-   margin-left: 10%;
+ .project1, .project2, .project3 {
+   position: relative;
+   justify-content: center;
+   align-items: center;
  }
+
+ .project1:hover .project1-image, .project2:hover .project2-image, .project3:hover .project3-image {
+   opacity: 0.1;
+  }
+
+.project1:hover .project1-info, .project2:hover .project2-info, .project3:hover .project3-info {
+    opacity: 1;
+  }
 
  .button {
-   text-align: left;
+   text-align: center;
    margin-top: 5rem;
    font-size: 1.6rem;
  }
 
 .button2 {
-  text-align: left;
+  text-align: center;
   margin-top: 5rem;
   font-size: 1.6rem;
-  margin-right: 35%;
 }
 
 .project2-h2, .project1-h2 {
   margin-bottom: 2rem;
 }
 
-.approach-h {
-  margin-left: 6%;
-  margin-top: 5%;
-  color: white;
-}
 
 .project1-p, .project2-p {
   margin-bottom: 4rem;
- }
-
- .approach-image-1 {
-   width: 100%;
-   margin-top: 8rem;
-   margin-bottom: 2rem;
- }
-
- .approach-image-2 {
-   width: 100%;
-   margin-top: 4rem;
-   margin-bottom: 2rem;
- }
-
- .approach-image-3 {
-   width: 100%;
-   margin-top: 1rem;
-   margin-bottom: 8rem;
  }
 
 }

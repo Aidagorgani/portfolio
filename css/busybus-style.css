@@ -17,6 +17,14 @@ body {
   color:#3F3E87;
 }
 
+#load {
+  width:100%;
+  height:100%;
+  position:fixed;
+  z-index:9999;
+  background:#FBF4EC url('images/loader.gif') no-repeat center center;
+}
+
 h1 {
   font-size: 3rem;
   line-height: 4.5rem;
