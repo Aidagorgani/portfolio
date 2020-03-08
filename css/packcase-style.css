@@ -178,9 +178,9 @@ a {
 	transition-duration: .15s;
 }
 
-.my-logo:hover {
+/* .my-logo:hover {
   transform: scale(1.2, 1.2);
-}
+} */
 
 #flex-container li {
   display: inline;

@@ -172,9 +172,9 @@ footer {
  transform: scale(1.4, 1.4);
 }
 
-.my-logo:hover {
+/* .my-logo:hover {
   transform: scale(1.2, 1.2);
-}
+} */
 
 .about {
   margin-top:2rem;
@@ -218,8 +218,8 @@ a {
 
 .case-button:hover {
   /* text-shadow: 0px 0px 6px rgba(255, 255, 255, 1); */
- -webkit-box-shadow: 0px 5px 40px 10px rgba(63, 62, 135,0.57);
- -moz-box-shadow: 0px 5px 40px 10px rgba(63, 62, 135,0.57);
+ -webkit-box-shadow: 0px 5px 40px 10px rgba(63, 62, 135,0.4);
+ -moz-box-shadow: 0px 5px 40px 10px rgba(63, 62, 135,0.4);
  transition: all 0.4s ease 0s;
 }
 

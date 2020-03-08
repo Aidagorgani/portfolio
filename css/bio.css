@@ -314,9 +314,9 @@ footer {
     line-height: 2.5rem;
   }
 
-  .my-logo:hover {
+  /* .my-logo:hover {
     transform: scale(1.2, 1.2);
-  }
+  } */
 
   #flex-container li {
     display: inline;
